@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#14AA51</color>
+
+    <color name="colorAccent">#17c15c</color>
+
+    <color name="text">#444</color>
+    <color name="text_hard">#222</color>
+
+    <color name="back">#eee</color>
+
+
+    <color name="black">#000</color>
+    <color name="orange">#FA0</color>
+    <color name="white">#FFF</color>
+    <color name="U_main">#14AA51</color>
+    <color name="U_Heavy">#007a38</color>
+    <color name="btn_color">#17c15c</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="hitnscolor">#e1e1e1</color>
+    <color name="hitnscolor1">#DCDCDC</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="U_Light">#74d680</color>
+
+    <color name="yellow">#ffea00</color>
+    <color name="pink1">#e040fb</color>
+    <color name="pink">#FF1493</color>
+    <color name="green">#00c853</color>
+    <color name="red">#F9181B</color>
+    <color name="blue">#466DE0</color>
+    <color name="cyan">#46E0C5</color>
+    <color name="green1">#58C86C</color>
+    <color name="green2">#8DC858</color>
+
+</resources>

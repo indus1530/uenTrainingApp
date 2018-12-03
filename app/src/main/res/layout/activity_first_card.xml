@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/U_Light"
+    android:orientation="vertical"
+    tools:context=".FirstCard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/imgfc"
+            android:layout_width="90dp"
+            android:layout_height="55sp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/unwhite" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- EditText CINIC Starts -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cniccv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_cnic"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/nic_no" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_cnic_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/nic_no"
+                        android:inputType="date"
+                        app:met_mask="#####-#######-#" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText CINIC Ends -->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/firstcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cniccv"
+                android:layout_marginTop="5sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewHead"
+                        android:text="Brief Introduction to Umeed-e-Nau (UeN)" />
+                    <!-- <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:text="Brief Introduction to Umeed-e-Nau (UeN)"
+                         android:textAlignment="center"
+                         android:textColor="@color/black"
+                         android:textSize="20sp"
+                         android:textStyle="bold" />-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="The Umeed-e-Nau (UeN) initiative aims to support the introduction, scale up, and further piloting of high quality and high impact interventions to improve MNCH in Pakistan by harnessing the potential of both public and private sectors. UeN has two major components:\n1 - Introducing proven effective MNC&amp;AH interventions at scale in 8 districts, \n2 - Generating evidence on innovative approaches to improve MNC&amp;AH while included in public health programs in Pakistan."
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="20sp"
+                        android:text="Child health:" />
+                    <!--android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="13sp"
+                    android:text="Child health:"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Interventions focusing on the implementation of the global action plan for pneumonia and diarrhea (GAPPD) in 4 districts of Pakistan."
+
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                    <!--android:textAlignment="center"-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="13sp"
+                        android:text="Training of community health care providers :"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="19sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Within the existing health structure at the provincial, district and UC levels, the project proposes to:"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5sp"
+                        android:text="• Improve the skills and capacities facility based public and private health care providers in providing quick diagnosis to determine if treatment is needed;"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5sp"
+                        android:text="• Appropriate and timely case management at household and facility level as per WHO guidelines"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5sp"
+                        android:text="• Timely referral of severe cases to a higher level health facility"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5sp"
+                        android:text="• Treatment of severe cases at home in case of refusal of referral"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5sp"
+                        android:text="• Appropriate counseling and health education of care taker on preventive strategies including breastfeeding, vaccination, water and sanitation and hygiene;"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5sp"
+                        android:text="• Improve the quality and use of data by the health care providers to track children identified with diarrhea and pneumonia."
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5sp"
+                        android:text="More than 70% of caregivers with sick children seek help from the private sector with a major portion shared by General Practitioners (GPs). Unfortunately, knowledge of GPs regarding the recognition of important signs of pneumonia and appropriate management for pneumonia and diarrhea is lacking. Caregivers also often go directly to chemists to purchase drugs for diarrhea and pneumonia; the project will train GPs on diagnosis and treatment of both diarrhea and pneumonia according to WHO IMNCI guidelines."
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/secondcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstcv"
+                android:layout_marginTop="5sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Significance of GAPPD"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginTop="10sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gappd" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/thirdcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secondcv"
+                android:layout_marginTop="5sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Diarrhea and Pneumonia Care in Pakistan"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dpnpakistan" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fourthcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thirdcv"
+                android:layout_marginTop="5sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Diarrhea and Pneumonia – Significance of timely management"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dpnpakistan2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10sp"
+                        android:text="	 Exclusive breastfeeding\n	Vitamin A supplementation\n•	DTP3 immunization\n•	Measles immunization\n•	HiB3 immunization\n•	Care seeking for pneumonia\n•	Antibiotics for pneumonia\n•	Diarrhea treatment \n•	Improved sanitation facility\n•	Improved drinking water"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dpnpakistan3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20sp"
+                        android:text="GAPPD Framework"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold|italic" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gappd1" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fifthcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fourthcv"
+                android:layout_marginTop="5sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="CASE MANAGEMENT PROCESS"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="The case management process shows the sequence of steps and provides information for performing them. Following are the steps:"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10sp"
+                        android:text="•	Assess the child or young infant\n•	Classify the illness\n•	Pre-referral treatment or treatment of the child\n•	Counsel the mother\n•	Follow-up care"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/table1" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sixthcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fifthcv"
+                android:layout_marginTop="5sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_intro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="INTRODUCTION TO CLASSIFICATION TABLE"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/txt_intro"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/classification_table"
+                        android:textAlignment="center"
+                        android:textColor="@color/pink"
+                        android:textSize="19sp" />
+
+                    <Button
+                        android:id="@+id/btn_pink"
+                        android:layout_width="175sp"
+                        android:layout_height="100sp"
+                        android:layout_below="@+id/txt_desc"
+                        android:layout_marginTop="10sp"
+                        android:background="@color/pink"
+                        android:text="1-Severe Classification\n2-Refer urgently"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btn_yellow"
+                        android:layout_width="175sp"
+                        android:layout_height="100sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/yellow"
+                        android:text="1-Treat in Clinic\n2-Appropriate antibiotic needed"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btn_green"
+                        android:layout_width="175sp"
+                        android:layout_height="100sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="22dp"
+                        android:background="@color/green"
+                        android:text="1-Home treatment\n2-Specific medical treatment NOT needed"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/seventhcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sixthcv"
+                android:layout_marginTop="5sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/btn_fc_start"
+                    style="@style/Button_collder"
+                    android:layout_margin="10dp"
+                    android:text="Let's Start" />
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/U_Light"
+    android:orientation="vertical"
+    tools:context=".DIARRHEA.DiarrheaTraining">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_mnchgdstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_gdstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mnchgdstr"
+            android:layout_centerInParent="true"
+            android:text="DIARRHEA"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/img_diarrheatraining"
+            android:layout_width="90dp"
+            android:layout_height="60sp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/unwhite" />
+
+        <TextView
+            android:id="@+id/txt_diarrheatraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5sp"
+            android:text="Training"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="10dip">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- EditText CINIC Starts -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cniccv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_cnic"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/nic_no" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_cnic_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/nic_no"
+                        android:inputType="date"
+                        app:met_mask="#####-#######-#" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText CINIC Ends -->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_pretest_result"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/cniccv">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_pretest_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_pretest_result"
+                        style="@style/TextView"
+                        android:text="Pre-Test Result" />
+
+                    <EditText
+                        android:id="@+id/ed_pretest_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="Result" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining1cv"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/cv_pretest_result">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatraining1"
+                        style="@style/TextViewHead"
+                        android:text="@string/dia_training_txt100"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining2"
+                        style="@style/TextView"
+                        android:text="@string/dia_training_txt101" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining2cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining1cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatraining4"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt102" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining5"
+                        style="@style/TextView"
+                        android:text="@string/dia_training_txt103" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining3cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining2cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatraining6"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt104"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining7"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt105"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining8"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt106" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining4cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining3cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatraining9"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt107"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining10"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt108" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining11"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt109" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining12"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt110" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining5cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining4cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatraining13"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt111"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea1" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining6cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining5cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatraining14"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt112"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining15"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt113" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining16"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt114"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining17"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt115" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining18"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt116" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining7cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining6cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh1"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt117"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining20"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt118" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining21"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt119" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining22"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt120" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea2" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining8cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining7cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh3"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt121"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining23"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt122" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining24"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt123" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh4"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt124"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining25"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt125" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining26"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt126" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea3" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining9cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining8cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh5"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt127"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining34"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt128" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh6"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt129"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining35"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt130" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining36"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt131" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh7"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt132"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining37"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt133" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining10cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining9cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh8"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt134"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh9"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt135"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining38"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt136" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining11cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining10cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh10"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt137"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining39"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt138" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining12cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining11cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh11"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt139"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea4" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea5" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea6" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh12"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt140"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining40"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt141" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining41"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt142" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining42"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt143" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining43"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt144" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining13cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining12cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh13"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt145"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining45"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt146" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining14cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining13cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh14"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt147"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining46"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt148" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea7" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining49"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt149" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining50"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt150"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining51"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt151" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining52"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt152"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining53"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt153" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining54"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt154"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining55"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt155" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining15cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining14cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh15"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt156"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining56"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt157" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining57"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt158"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining58"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt159" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining59"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt160" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh16"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt161"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining60"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt162" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining16cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining15cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh17"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt163"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea8" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining61"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt164" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining17cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining16cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh18"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt165"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining62"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt166" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining63"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt167" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining18cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining17cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh19"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt168"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining65"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt169" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining66"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt170" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining19cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining18cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh20"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt171"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining67"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt172" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh21"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt173"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining68"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt174" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining69"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt175" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining20cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining19cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh22"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt176"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining70"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt177" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining21cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining20cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh23"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt178"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining71"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt179" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining72"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt180" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining73"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt181" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining22cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining21cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh24"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt182"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining74"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt183" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea9" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining75"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/dia_training_txt184" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining76"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt185" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining23cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining22cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh25"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt186"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining77"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt187" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh26"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt188"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining78"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt189" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining24cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining23cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh32"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt190"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining79"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt190" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh33"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt190"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining80"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt190" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining81"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt190" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh34"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt190"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining82"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt190" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining25cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining24cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh35"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt197"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining83"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt198" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea10" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh36"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/dia_training_txt199"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining84"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt200" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining26cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining25cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh37"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt201"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining85"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt202" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining86"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt203" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining87"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt204" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining88"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt205" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea11" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining27cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining26cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh38"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt206"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh39"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt207"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining89"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt208" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh40"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt209"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining90"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt210" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining91"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt211" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining92"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt212" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining28cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining27cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh41"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt213"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining93"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt214" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh42"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt215"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining94"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt216" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining29cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining28cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh43"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt217"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining95"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt218" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh44"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt219"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining96"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt220" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining30cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining29cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh45"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt221"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh46"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt222"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining97"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt223" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining98"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt224" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining99"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt225" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining100"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt226" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining101"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt227" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining102"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt228" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining103"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt229" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining104"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt230" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining105"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt231" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining106"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt232" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining107"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt233" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining108"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt234" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining31cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining30cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh47"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt235"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining109"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt236" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining32cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining31cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh48"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt237"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining110"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt238" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh49"
+                        style="@style/TextView"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt239"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining111"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt240" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh50"
+                        style="@style/TextView"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt241"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining112"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt242" />
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh51"
+                        style="@style/TextView"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt243"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining113"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt244" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining114"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt245" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea12" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining33cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diatraining32cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh52"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt246"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining115"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt247" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea13" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea14" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/diarrhea15_2" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diatraining34cv"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/diatraining33cv">
+
+                <Button
+                    android:id="@+id/btn_diarrheatrainingsubmit"
+                    style="@style/Button_collder"
+                    android:layout_margin="10dp"
+                    android:text="Completed" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

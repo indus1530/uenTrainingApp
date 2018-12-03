@@ -1,0 +1,1785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/U_Light"
+    android:orientation="vertical"
+    tools:context=".CDB.CdbTraining">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_mnchgdstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_gdstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mnchgdstr"
+            android:layout_centerInParent="true"
+            android:text="Cough &amp; Difficult Breathing"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/img_cdbtraining"
+            android:layout_width="90dp"
+            android:layout_height="60sp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/unwhite" />
+
+        <TextView
+            android:id="@+id/txt_cdbtraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5sp"
+            android:text="Training"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="10dip">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- EditText CINIC Starts -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cniccv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_cnic"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/nic_no" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_cnic_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/nic_no"
+                        android:inputType="date"
+                        app:met_mask="#####-#######-#" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText CINIC Ends -->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_pretest_result"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/cniccv">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_pretest_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_pretest_result"
+                        style="@style/TextView"
+                        android:text="Pre-Test Result" />
+
+                    <EditText
+                        android:id="@+id/ed_pretest_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="Result" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining1cv"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/cv_pretest_result">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining1"
+                        style="@style/TextViewHead"
+                        android:text="@string/overview" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining2"
+                        style="@style/TextView"
+                        android:text="@string/overview_txt1" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining2cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining1cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining4"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/learning_Objectives_txt" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining5"
+                        style="@style/TextView"
+                        android:text="@string/cdb_training_txt2" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining6"
+                        style="@style/TextView1"
+                        android:text="@string/cdb_training_txtq3" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining7"
+                        style="@style/TextView"
+                        android:text="@string/cdb_training_txt4" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining8"
+                        style="@style/TextView"
+                        android:text="@string/cdb_training_txt5" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdb1" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining9"
+                        style="@style/TextView"
+                        android:text="@string/cdb_training_txt6" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining3cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining2cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining10"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txth4" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining11"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt3" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining4cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining3cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining12"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/Ask1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining13"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt8" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh14"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt9" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining5cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining4cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh15"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/Ask2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh13"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt7" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining6cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining5cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining14"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/Look"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining15"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look1_1" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining16"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look1_2" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining17"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look1_3" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining18"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look1_4" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining7cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining6cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh1"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/FB"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining19"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/FB_1" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining8cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining7cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh2"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt10"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh3"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt11"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining20"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt12" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdb2" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining21"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt13" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining22"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt14" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining23"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt15" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining24"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt16" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining25"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt17" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining26"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt18" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining27"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt19" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining28"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt20" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining29"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt21" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining9cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining8cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh4"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/Look2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining30"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look2_1" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining31"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look2_2" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining32"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look2_3" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining33"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look2_4" />
+
+                    <!-- <TextView
+                         android:id="@+id/txt_cdbtrainingh5"
+                         style="@style/Hedaer_textview"
+                         android:layout_marginTop="10sp"
+                         android:textStyle="bold"
+                         android:text="@string/VC"/>-->
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining10cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining9cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh5"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/VC"
+                        android:textStyle="bold" />
+
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_exercise_chest_indrawing"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining11cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining10cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh6"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/Look3"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining34"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look3_1" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining35"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look3_2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdb3" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining36"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look3_3" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining37"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look3_4" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh7"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/VS"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_stridor"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining12cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining11cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh8"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/Look4"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining38"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look4_1" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining39"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look4_2" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining40"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/Look4_3" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh9"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/VW"
+                        android:textStyle="bold" />
+
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_wheeze"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining13cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining12cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh16"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt22"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining41"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt23" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining42"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt24" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh43"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/RM"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh44"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt25" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining14cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining13cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh17"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt26"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining45"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt27" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining15cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining14cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh18"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt28"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining46"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt29" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining47"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt30"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining48"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/cdb_training_txt31" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining16cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining15cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh19"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt32"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining49"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt33" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining50"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt34"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining51"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/cdb_training_txt35" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining17cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining16cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh20"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt36"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining52"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt37" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining53"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt38"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining54"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/cdb_training_txt39" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining55"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/cdb_training_txt40" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdb4" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining18cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining17cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh21"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt41"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh22"
+                        style="@style/TextView"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt42"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining56"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/cdb_training_txt43" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining62"
+                        style="@style/TextView"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt44" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining57"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/cdb_training_txt45"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining58"
+                        style="@style/TextView"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt46"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining59"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/cdb_training_txt47" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining60"
+                        style="@style/TextView"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt48"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining61"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/cdb_training_txt49" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdb5" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining19cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining18cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh23"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt50"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining63"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt51" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining64"
+                        style="@style/TextView"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt52"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining65"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt53" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdb6" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining20cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining19cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh24"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt54"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining66"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt55" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining21cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining20cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh25"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt56"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining67"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt57" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining22cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining21cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh26"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt58"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining68"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt59" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining69"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt60" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining23cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining22cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh27"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt61"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining70"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt62" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining71"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt63" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining72"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt64" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining24cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining23cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh28"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt65"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh29"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt66"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining73"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt67" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh30"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt68"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining74"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt69" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining25cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining24cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh31"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt70"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining75"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt71" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdb7" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining26cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining25cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh32"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt72"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining76"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt73" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining27cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining26cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh33"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt74"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining77"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt75" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdb8" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining28cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining27cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh34"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt76"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh35"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt77"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining29cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining28cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh36"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt78"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining78"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt79" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdb9" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining30cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining29cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh37"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt80"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining79"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt81" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining80"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt82" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cdb10" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining31cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining30cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh38"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt83"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining81"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt84"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining82"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt85" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining83"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt86" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining84"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt87" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining85"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt88" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining86"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt89" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining32cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining31cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh39"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt90"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining87"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt91" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining88"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt92"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining89"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt93" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining90"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt94"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining91"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt95" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining92"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt96"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining93"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt97" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtraining33cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cdbtraining32cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_cdbtrainingh40"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/cdb_training_txt98"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_cdbtraining94"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/cdb_training_txt99" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cdbtrainingncv"
+                style="@style/SAJID_CardView"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/cdbtraining33cv">
+
+                <Button
+                    android:id="@+id/btn_cdbtrainingsubmit"
+                    style="@style/Button_collder"
+                    android:layout_margin="10dp"
+                    android:text="Completed" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

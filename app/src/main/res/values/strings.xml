@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE resources [<!ENTITY gdsq1 "_________________">]>
+
+<resources>
+
+
+    <string name="app_name">MNCH Training</string>
+
+    <string name="gds">General Danger Signs</string>
+    <string name="cdb">Cough and Difficult Breathing</string>
+    <string name="diarrhea">Diarrhea</string>
+    <string name="psbi">Possible Serious Bacterial Infections PSBI (Young Infant)</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_new_survey">New Survey</string>
+    <string name="title_home">Home</string>
+
+    <string name="rb_yes">Yes</string>
+    <string name="rb_No">No</string>
+    <string name="rb_dnt">Don\'t Know</string>
+
+
+    <string-array name="sp_pro">
+
+        <item>Select</item>
+        <item>Sindh</item>
+        <item>Balochistan</item>
+        <item>Punjab</item>
+
+    </string-array>
+
+    <!--NEW FROM IRFAN-->
+
+    <string name="action_settings">Settings</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="default_p">#</string>
+    <string name="default_guest_name">Name</string>
+
+
+    <!-- Welcom section Starts -->
+    <string name="txt_welecom">
+         Assalam o Alaikum\n
+        My name is %%Name\n and I am working with Centre of Excellence in Women and Child Health, Aga Khan University Karachi with the collaboration of National Ministry of Health Services, Regulation and Coordination Government of Pakistan and Provincial Health Departments of Balochistan, Punjab and Sindh. I believe the data collector has asked you
+        a number of questions regarding maternal and child health. I would like to confirm a few questions for monitoring purposes.
+
+</string>
+    <!-- A section Ends -->
+
+
+    <string name="txt_A1">Cluster number</string>
+
+    <string name="txt_A2">Khandan/House Number</string>
+    <string name="txt_B1">Latitude</string>
+    <string name="txt_B2">Longitude</string>
+    <string name="txt_C1">Did the data collector visit your house?</string>
+    <string name="txt_C2">Did the data collector greet you when she came?</string>
+    <string name="txt_C3">Did the data collector introduce herself?</string>
+    <string name="txt_C4">Did the data collector take informed consent?</string>
+    <string name="txt_D1">Name of Head of the household</string>
+    <string name="txt_D2">Total number of members in the household</string>
+
+
+    <string name="txt_D3">Total number of eligible women in the household</string>
+    <string name="txt_D4">Number of children less than 5 yrs in the HH</string>
+    <string name="txt_D5">Name of respondent</string>
+
+
+    <string name="txt_E1">Total number of pregnancies among the WRAs in the HH</string>
+    <string name="txt_E2">Number of children born live in the HH who are still alive</string>
+    <string name="txt_E3">God Forbid (Khuda Na Khuwasta), did any woman in your household die in the past five years due to complications related to pregnancy, delivery and 42 days after delivery</string>
+    <string name="txt_E4">How many women have died</string>
+
+    <string name="txt_I1">Has any child less than 5 years of age in the household had diarrhea in the last 2 weeks in your household</string>
+    <string name="txt_I2">Has any child had an illness with cough that he/she breathes faster than usual with short, rapid breaths or has difficulty breathing in the past two weeks</string>
+    <string name="txt_I3">Did any child have do chest x-ray</string>
+
+    <string name="txt_L1">Do you have a separate room which is used as a kitchen</string>
+    <string name="txt_L2">How many rooms in this HH are used for sleeping</string>
+    <string name="txt_L3">What language do you usually speak in your household</string>
+
+    <string name="rb_L3_1">Urdu </string>
+    <string name="rb_L3_2">Punjabi</string>
+    <string name="rb_L3_3">Sindhi</string>
+    <string name="rb_L3_4">Balochi</string>
+    <string name="rb_L3_5">Siraiki</string>
+    <string name="rb_L3_6">Barauhi</string>
+    <string name="rb_L3_7">Brushaski</string>
+    <string name="rb_L3_8">Pashto</string>
+
+
+    <string name="txt_M1">What is the main source of drinking water for members of your household</string>
+
+    <string name="rb_M1_1">Piped into dwelling</string>
+    <string name="rb_M1_2">Piped into compound, yard or plot</string>
+    <string name="rb_M1_3">Piped to neighbor</string>
+    <string name="rb_M1_4">Public tap / standpipe</string>
+    <string name="rb_M1_5">Filtration Plant/unit</string>
+    <string name="rb_M1_6">Tube Well, Borehole</string>
+    <string name="rb_M1_7">Hand Pump</string>
+    <string name="rb_M1_8">Protected well</string>
+    <string name="rb_M1_9">Unprotected well</string>
+    <string name="rb_M1_10">Rainwater collection</string>
+    <string name="rb_M1_11">Tanker-truck</string>
+    <string name="rb_M1_12">Cart with small tank / drum</string>
+    <string name="rb_M1_13">Surface water (river, stream, dam, lake, pond, canal, irrigation channel)</string>
+    <string name="rb_M1_14">Bottled water</string>
+
+
+    <string name="txt_N1">Do you have any soap or detergent or ash/mud/sand in your house for washing hands</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="classification_table"> <font color='black'><b>CLASSIFICATION TABLES:</b> Signs of illness and their classifications are listed on the ASSESS &amp; CLASSIFY chart in classification tables.  Most classification tables have three rows.
+        Each row of classification chart is colored in </font><b>PINK</b><font color='black'>,</font> <font color='yellow'><b>YELLOW</b></font><font color='black'>, or</font> <font color='green'><b>GREEN</b></font><font color='black'>. The color of the row tells you the severity of child’s illness and thus facilitates appropriate treatment.</font></string>
+    <string name="severe_persistent_diarrhea">o\tFor <b>SEVERE PERSISTENT DIARRHEA</b> the instruction says simply: \'<b>Refer to hospital</b>\'. This means that referral is needed, but not as urgently. There is time to identify appropriate treatments and give all of the treatments before referral.</string>
+    <string name="severe_dehydration">o\tFor <b>SEVERE DEHYDRATION</b>, if that is the child\'s only severe classification and if your clinic has the ability to treat the child, you may keep and treat the child. This child may also have a general danger sign related to dehydration. For example, the child may be lethargic, unconscious, or not able to drink because he or she is severely dehydrated. If you are trained to treat the child according to Plan C (see: <b>TREAT THE CHILD</b>) you may decide to use Plan C to decide whether to refer the child. If the child has another severe classification in addition to <b>SEVERE DEHYDRATION</b>, you should refer the child.</string>
+    <string name="severe_disease">o\tChildren who have a general danger sign have a severe classification <b>VERY SEVERE DISEASE</b> and will be referred for their severe classification (or possibly treated if they have <b>SEVERE DEHYDRATION</b> only).</string>
+
+
+    <string name="sajid">sajid is here</string>
+    <string name="sajid1">Who is there let me know: %s"</string>
+    <string name="gdspretestq1">1- Children with &gdsq1; on the IMNCI chart usually need urgent referral to hospital.</string>
+    <string name="gdspretestq1a1">Mild illness</string>
+    <string name="gdspretestq1a11">1- Children with <font color='U_Heavy'><b>Mild illness</b></font> on the IMNCI chart usually need urgent referral to hospital.</string>
+    <string name="gdspretestq1a2">Pneumonia</string>
+    <string name="gdspretestq1a12">1- Children with <u><i>Pneumonia</i></u> on the IMNCI chart usually need urgent referral to hospital.</string>
+    <string name="gdspretestq1a3">Dehydration</string>
+    <string name="gdspretestq1a13">1- Children with <u><i>Dehydration</i></u> on the IMNCI chart usually need urgent referral to hospital.</string>
+    <string name="gdspretestq1a4">Severe disease/classification</string>
+    <string name="gdspretestq1a14">1- Children with <u><i>Severe disease/classification</i></u> on the IMNCI chart usually need urgent referral to hospital.</string>
+
+    <string name="gdspretestq2">2- _________________is the exception for severe classification or severe disease where referral to the hospital is needed but not urgent.</string>
+    <string name="gdspretestq2a1">Persistent diarrhea</string>
+    <string name="gdspretestq2a21">2- <u><i>Persistent diarrhea</i></u> is the exception for severe classification or severe disease where referral to the hospital is needed but not urgent.</string>
+    <string name="gdspretestq2a2">Severe dehydration</string>
+    <string name="gdspretestq2a22">2- <u><i>Severe dehydration</i></u> is the exception for severe classification or severe disease where referral to the hospital is needed but not urgent.</string>
+    <string name="gdspretestq2a3">Severe persistent diarrhea</string>
+    <string name="gdspretestq2a23">2- <u><i>Severe persistent diarrhea</i></u> is the exception for severe classification or severe disease where referral to the hospital is needed but not urgent.</string>
+    <string name="gdspretestq2a4">Severe pneumonia</string>
+    <string name="gdspretestq2a24">2- <u><i>Severe pneumonia</i></u> is the exception for severe classification or severe disease where referral to the hospital is needed but not urgent.</string>
+
+    <string name="gdspretestq3">3- Presence of even __________ danger sign indicates that underlying disease is severe</string>
+    <string name="gdspretestq3a1">One</string>
+    <string name="gdspretestq3a31">3- Presence of even <u><i>One</i></u> danger sign indicates that underlying disease is severe</string>
+    <string name="gdspretestq3a2">Two</string>
+    <string name="gdspretestq3a32">3- Presence of even <u><i>Two</i></u> danger sign indicates that underlying disease is severe</string>
+    <string name="gdspretestq3a3">Three</string>
+    <string name="gdspretestq3a33">3- Presence of even <u><i>Three</i></u> danger sign indicates that underlying disease is severe</string>
+    <string name="gdspretestq3a4">None</string>
+    <string name="gdspretestq3a34">3- Presence of even <u><i>None</i></u> danger sign indicates that underlying disease is severe</string>
+
+    <string name="gdspretestq4">4- For assessing a general danger sign, a healthcare provider needs to ASK _____ questions and LOOK for ______ observations to observe the child\'s actions.</string>
+    <string name="gdspretestq4a1">One, Two</string>
+    <string name="gdspretestq4a41">4- For assessing a general danger sign, a healthcare provider needs to ASK <u><i>ONE</i></u>  questions and LOOK for <u><i>TWO</i></u>  observations to observe the child\'s actions.</string>
+    <string name="gdspretestq4a2">Two, Two</string>
+    <string name="gdspretestq4a42">4- For assessing a general danger sign, a healthcare provider needs to ASK <u><i>TWO</i></u>  questions and LOOK for <u><i>TWO</i></u>  observations to observe the child\'s actions.</string>
+    <string name="gdspretestq4a3">Three, Two</string>
+    <string name="gdspretestq4a43">4- For assessing a general danger sign, a healthcare provider needs to ASK <u><i>THREE</i></u>  questions and LOOK for <u><i>TWO</i></u>  observations to observe the child\'s actions.</string>
+    <string name="gdspretestq4a4">Three, One</string>
+    <string name="gdspretestq4a44">4- For assessing a general danger sign, a healthcare provider needs to ASK <u><i>THREE</i></u>  questions and LOOK for <u><i>ONE</i></u>  observations to observe the child\'s actions.</string>
+
+    <string name="gdspretestq5">5- Which of the following is NOT a danger sign?</string>
+    <string name="gdspretestq5a1">Child is not able to drink or breastfeed</string>
+    <string name="gdspretestq5a2">Child vomits everything</string>
+    <string name="gdspretestq5a3">Child has had more than one convulsion or prolonged convulsion, or is convulsing now.</string>
+    <string name="gdspretestq5a4">Child is shivering</string>
+
+    <string name="gdspretestq6">6- A classification in a <font color='yellow'><b>YELLOW ROW</b></font> (IMNCI chart) is a classification of very severe disease and needs urgent attention and referral.</string>
+    <string name="gdspretestq6a1">True</string>
+    <string name="gdspretestq6a2">False</string>
+
+    <string name="gdspretestq7">7- Which of the following is NOT true, if a child has a general danger sign?</string>
+    <string name="gdspretestq7a1">Complete assessment immediately - the child has a severe problem.</string>
+    <string name="gdspretestq7a2">Provide urgent pre-referral treatment</string>
+    <string name="gdspretestq7a3">Observe and reassess child after pre-referral treatment</string>
+    <string name="gdspretestq7a4">Refer child to hospital</string>
+
+    <string name="gdspretestq8">8- A child who is not able to hold anything down at all has the sign _______________</string>
+    <string name="gdspretestq8a1">Not able to drink or breastfeed</string>
+    <string name="gdspretestq8a11">8- A child who is not able to hold anything down at all has the sign Not able to drink or breastfeed</string>
+    <string name="gdspretestq8a2">Vomits everything</string>
+    <string name="gdspretestq8a12">8- A child who is not able to hold anything down at all has the sign Vomits everything</string>
+    <string name="gdspretestq8a3">Lethargic</string>
+    <string name="gdspretestq8a13">8- A child who is not able to hold anything down at all has the sign Lethargic</string>
+    <string name="gdspretestq8a4">Unconscious</string>
+    <string name="gdspretestq8a14">8- A child who is not able to hold anything down at all has the sign Unconscious</string>
+
+    <string name="gdspretestq9">9- What is the dose of Diazepam required to Stop Convulsions?</string>
+    <string name="gdspretestq9a1">0.5mg/kg diazepam injection solution per rectum</string>
+    <string name="gdspretestq9a2">0.8mg/kg diazepam injection solution per rectum</string>
+    <string name="gdspretestq9a3">1.0mg/kg diazepam injection solution per rectum</string>
+    <string name="gdspretestq9a4">1.5mg/kg diazepam injection solution per rectum</string>
+
+    <string name="gdspretestq10">10- To make sugar water: Dissolve 4 level teaspoons of sugar (20 grams) in a _______ cup of clean water.</string>
+    <string name="gdspretestq10a1">100-ml</string>
+    <string name="gdspretestq10a101">10- To make sugar water: Dissolve 4 level teaspoons of sugar (20 grams) in a 100-ml cup of clean water.</string>
+    <string name="gdspretestq10a2">150-ml</string>
+    <string name="gdspretestq10a102">10- To make sugar water: Dissolve 4 level teaspoons of sugar (20 grams) in a 150-ml cup of clean water.</string>
+    <string name="gdspretestq10a3">200-ml</string>
+    <string name="gdspretestq10a103">10- To make sugar water: Dissolve 4 level teaspoons of sugar (20 grams) in a 200-ml cup of clean water.</string>
+    <string name="gdspretestq10a4">250-ml</string>
+    <string name="gdspretestq10a104">10- To make sugar water: Dissolve 4 level teaspoons of sugar (20 grams) in a 250-ml cup of clean water.</string>
+
+
+    <string name="cdbtestq1">1- Cough or difficult breathing that lasts for more than 14 days may indicate ______________.</string>
+    <string name="cdbtestq1a1">Tuberculosis</string>
+    <string name="cdbtestq1a11">1- Cough or difficult breathing that lasts for more than 14 days may indicate Tuberculosis.</string>
+    <string name="cdbtestq1a2">Asthma</string>
+    <string name="cdbtestq1a12">1- Cough or difficult breathing that lasts for more than 14 days may indicate Asthma.</string>
+    <string name="cdbtestq1a3">Whooping cough</string>
+    <string name="cdbtestq1a13">1- Cough or difficult breathing that lasts for more than 14 days may indicate Whooping cough.</string>
+    <string name="cdbtestq1a4">All of the above</string>
+    <string name="cdbtestq1a14">1- Cough or difficult breathing that lasts for more than 14 days may indicate All of the above.</string>
+
+    <string name="cdbtestq2">2- Talha is 6 months old. He has fast breathing if:</string>
+    <string name="cdbtestq2a1">30 or more breaths/minute</string>
+    <string name="cdbtestq2a2">40 or more breaths/minute</string>
+    <string name="cdbtestq2a3">50 or more breaths/minute</string>
+    <string name="cdbtestq2a4">60 or more breaths/minute</string>
+
+    <string name="cdbtestq3">3- Fast breathing or ____________ if present in a child between 2 months to 5 years of age are the clinical signs for Pneumonia.</string>
+    <string name="cdbtestq3a1">Wheeze</string>
+    <string name="cdbtestq3a31">3- Fast breathing or Wheeze if present in a child between 2 months to 5 years of age are the clinical signs for Pneumonia.</string>
+    <string name="cdbtestq3a2">Chest in-drawing</string>
+    <string name="cdbtestq3a32">3- Fast breathing or Chest in-drawing if present in a child between 2 months to 5 years of age are the clinical signs for Pneumonia.</string>
+    <string name="cdbtestq3a3">Cough</string>
+    <string name="cdbtestq3a33">3- Fast breathing or Cough if present in a child between 2 months to 5 years of age are the clinical signs for Pneumonia.</string>
+    <string name="cdbtestq3a4">Fever</string>
+    <string name="cdbtestq3a34">3- Fast breathing or Fever if present in a child between 2 months to 5 years of age are the clinical signs for Pneumonia.</string>
+
+    <string name="cdbtestq4">4- The child has chest in drawing if the lower chest wall (lower ribs) goes ____ when the child breathes IN.</string>
+    <string name="cdbtestq4a1">IN</string>
+    <string name="cdbtestq4a41">4- The child has chest in drawing if the lower chest wall (lower ribs) goes IN when the child breathes IN.</string>
+    <string name="cdbtestq4a2">OUT</string>
+    <string name="cdbtestq4a42">4- The child has chest in drawing if the lower chest wall (lower ribs) goes OUT when the child breathes IN.</string>
+
+
+    <string name="cdbtestq5">5- What is the dose of Amoxicillin DT (250 gm) for children aged 12 months up to 3 years?</string>
+    <string name="cdbtestq5a1">(&#189;) tablet twice a day</string>
+    <string name="cdbtestq5a2"> <b>1</b> tablet twice a day</string>
+    <string name="cdbtestq5a3"> <b>2</b> tablet twice a day</string>
+    <string name="cdbtestq5a4"> <b>2.5</b> tablet twice a day</string>
+
+
+    <string name="cdbtestq6">6- The dose for intramuscular antibiotics (urgent referral); Ampicillin _______mg/kg and Gentamicin ________mg/kg</string>
+    <string name="cdbtestq6a1"> 40 mg and 7 mg</string>
+    <string name="cdbtestq6a2"> 45 mg and 7.5 mg</string>
+    <string name="cdbtestq6a3"> 50 mg and 7.5 mg</string>
+    <string name="cdbtestq6a4"> 55 mg and 8 mg</string>
+
+    <string name="cdbtestq7">7- What is the minimum SpO2 saturation level for urgent referral to a health facility?</string>
+    <string name="cdbtestq7a1"> ≥90%</string>
+    <string name="cdbtestq7a2"> ≤90%</string>
+    <string name="cdbtestq7a3"> ≥80%</string>
+    <string name="cdbtestq7a4"> ≥70%</string>
+
+    <string name="cdbtestq8">8- Standard flow rates for oxygen through nasal prongs or nasal catheters are up to ____ L/min for infants, up to _____ L/min for older children</string>
+    <string name="cdbtestq8a1"><![CDATA[2 & 4]]></string>
+    <string name="cdbtestq8a2"><![CDATA[3 & 4]]></string>
+    <string name="cdbtestq8a3"><![CDATA[3.5 & 4.5]]></string>
+    <string name="cdbtestq8a4"><![CDATA[4 & 4.5]]></string>
+
+    <string name="cdbtestq9">9- Following of the vaccines prevent pneumonia infections, <b>EXCEPT:</b></string>
+    <string name="cdbtestq9a1">PCV</string>
+    <string name="cdbtestq9a2">Hib</string>
+    <string name="cdbtestq9a3">Pertussis</string>
+    <string name="cdbtestq9a4">Rotavirus</string>
+
+    <string name="cdbtestq10">10- What are the harmful home remedies for cough?</string>
+    <string name="cdbtestq10a1">Cough syrup containing codeine, antihistamines, alcohol, atropine and expectorants.</string>
+    <string name="cdbtestq10a2">Oral and nasal decongestants</string>
+    <string name="cdbtestq10a3">Opium or alcohol etc.</string>
+    <string name="cdbtestq10a4">All of the above</string>
+
+    <string name="diarrheatestq1">1- The death of a child with acute diarrhea is usually due to _____________.</string>
+    <string name="diarrheatestq1a1">Dehydration</string>
+    <string name="diarrheatestq1a2">Dysentery</string>
+    <string name="diarrheatestq1a3">Hydration</string>
+    <string name="diarrheatestq1a4">Malnutrition</string>
+
+    <string name="diarrheatestq2">2- A child with persistent diarrhea needs Zinc DT for _________ days.</string>
+    <string name="diarrheatestq2a1">10 days</string>
+    <string name="diarrheatestq2a2">12 days</string>
+    <string name="diarrheatestq2a3">14 days</string>
+    <string name="diarrheatestq2a4">16 days</string>
+
+    <string name="diarrheatestq3">3- The antibiotic prescribed for dysentery is __________ for 3 days.</string>
+    <string name="diarrheatestq3a1">Ciprofloxacin</string>
+    <string name="diarrheatestq3a2">Amoxicillin</string>
+    <string name="diarrheatestq3a3">Ampicillin</string>
+    <string name="diarrheatestq3a4">Diazepam</string>
+
+    <string name="diarrheatestq4">4- The common cause of dysentery is ______________ bacteria.</string>
+    <string name="diarrheatestq4a1">Brucella</string>
+    <string name="diarrheatestq4a2">Shigella</string>
+    <string name="diarrheatestq4a3">Bacillus</string>
+    <string name="diarrheatestq4a4">Salmonella</string>
+
+    <string name="diarrheatestq5">5- Which one of the following is a danger sign for severe dehydration?</string>
+    <string name="diarrheatestq5a1">Lethargic or unconscious</string>
+    <string name="diarrheatestq5a2">Not able to drink</string>
+    <string name="diarrheatestq5a3">Sunken eyes</string>
+    <string name="diarrheatestq5a4">All of the above</string>
+
+    <string name="diarrheatestq6">6- Shaista is restless, but drinks quickly when you give her water. How would you classify her dehydration?</string>
+    <string name="diarrheatestq6a1">Severe dehydration</string>
+    <string name="diarrheatestq6a2">Some dehydration</string>
+    <string name="diarrheatestq6a3">No dehydration</string>
+    <string name="diarrheatestq6a4">Persistent diarrhea</string>
+
+    <string name="diarrheatestq7">7- Children with diarrhea who come to a health worker with NO ____________ are put on plan A</string>
+    <string name="diarrheatestq7a1"> Dehydration</string>
+    <string name="diarrheatestq7a2"> Dysentery</string>
+    <string name="diarrheatestq7a3"> Hydration</string>
+    <string name="diarrheatestq7a4"> Pneumonia</string>
+
+    <string name="diarrheatestq8">8- Identify, which one of the following is NOT a rule for home treatment.</string>
+    <string name="diarrheatestq8a1"> Give extra fluids</string>
+    <string name="diarrheatestq8a2"> Give oral Amoxicillin</string>
+    <string name="diarrheatestq8a3"> Continue feeding</string>
+    <string name="diarrheatestq8a4"> When to return (follow-up visit)</string>
+
+    <string name="diarrheatestq9">9- What is the dose of Zinc DT for home treatment for a child 6 months or older_____________?</string>
+    <string name="diarrheatestq9a1"> <b>(&#189;)</b> tablet per day for 12 days</string>
+    <string name="diarrheatestq9a2"> <b>1</b> tablet per day for 10 days</string>
+    <string name="diarrheatestq9a3"> <b>1.5</b> tablets per day for 11 days</string>
+    <string name="diarrheatestq9a4"> <b>2</b> tablets per day for 10 days</string>
+
+    <string name="diarrheatestq10">10- <![CDATA[_____________vaccination is recommended for diarrhea by WHO for children  < 5 years.]]></string>
+    <string name="diarrheatestq10a1"> PCV</string>
+    <string name="diarrheatestq10a2"> Hib</string>
+    <string name="diarrheatestq10a3"> Pertussis</string>
+    <string name="diarrheatestq10a4"> Rotavirus</string>
+
+
+    <string name="psbitestq1">1- Skin pustules among young infants are the sign of ____________________.</string>
+    <string name="psbitestq1a1"> Jaundice</string>
+    <string name="psbitestq1a2"> Local Bacterial Infection</string>
+    <string name="psbitestq1a3"> Thrush</string>
+    <string name="psbitestq1a4"> Diarrhea</string>
+
+    <string name="psbitestq2">2- The follow-up time for sick young infants with diarrhea and pneumonia is ________ days.</string>
+    <string name="psbitestq2a1"> 2nd Day</string>
+    <string name="psbitestq2a2"> 3rd Day</string>
+    <string name="psbitestq2a3"> 4th Day</string>
+    <string name="psbitestq2a4"> 5th Day</string>
+
+    <string name="psbitestq3">3- Persistent vomiting is defined as vomiting following three attempts to feed the infant within ______ minutes, and the infant vomits after each attempt.</string>
+    <string name="psbitestq3a1"> 10 minutes</string>
+    <string name="psbitestq3a2"> 20 minutes</string>
+    <string name="psbitestq3a3"> 30 minutes</string>
+    <string name="psbitestq3a4"> 40 minutes</string>
+
+    <string name="psbitestq4">4- Which one of the following is NOT a danger sign for some dehydration in young infants</string>
+    <string name="psbitestq4a1">Movement only when stimulated or no movement at all</string>
+    <string name="psbitestq4a2">Sunken eyes</string>
+    <string name="psbitestq4a3">Skin pinch goes back very slowly.</string>
+    <string name="psbitestq4a4">Restless and irritable</string>
+
+    <string name="psbitestq5">5- Pre referral treatment for severe Pneumonia or very severe disease in young infant up to 2 months require first dose of an appropriate _________ antibiotic.</string>
+    <string name="psbitestq5a1">Oral</string>
+    <string name="psbitestq5a2">Intravenous</string>
+    <string name="psbitestq5a3">Intramuscular</string>
+    <string name="psbitestq5a4">None of the above</string>
+
+    <string name="psbitestq6">6- What is the correct dose to prepare sugar water?</string>
+    <string name="psbitestq6a1">3 level teaspoons of sugar in a 200-ml cup of clean water.</string>
+    <string name="psbitestq6a2">4 level teaspoons of sugar in a 200-ml cup of clean water.</string>
+    <string name="psbitestq6a3">2 level teaspoons of sugar in a 200-ml cup of clean water.</string>
+    <string name="psbitestq6a4">5 level teaspoons of sugar in a 250-ml cup of clean water.</string>
+
+    <string name="psbitestq7">7- What does APAC process mean?</string>
+    <string name="psbitestq7a1">Ask, Praise, Assess, Check</string>
+    <string name="psbitestq7a2">Assess, Praise, Ask, Counsel</string>
+    <string name="psbitestq7a3">Ask, Praise, Advice, Check</string>
+    <string name="psbitestq7a4">Assess, Prevent, Advice, Counsel</string>
+
+
+    <string name="overview">OVERVIEW</string>
+    <string name="overview_txt">Danger signs indicate severe illness and can appear in many illnesses. Some of the danger signs appear without specific relation to a particular disease/condition, e.g. unconsciousness or drowsiness can appear in pneumonia, diarrhea. Danger signs can appear in any disease. They do not help in diagnosis of a particular disease, but presence of even one danger sign indicates that underlying disease is severe.</string>
+    <string name="overview_txt1">A cough or difficult breathing is a common reason thats why a mother will bring a child to your clinic. The problem may be a mild cold, or it may be a serious problem like pneumonia. How can you tell the difference? How should you treat the child? How should you counsel the mother? The choices may seem confusing, but this chapter will help you make the correct decision.</string>
+    <string name="learning_Objectives_txt">LEARNING OBJECTIVES</string>
+    <string name="gds_training_txt1"><b>A General Danger Sign is present If:</b>\n• Child is not able to drink or breastfeed\n• Child vomits everything\n• Child has had more than one convulsion or prolonged convulsion, or is convulsing now\n• Child is lethargic or unconscious</string>
+    <string name="gds_training_txt2"><b>After you study this chapter, you will know how to:</b>\n• Recognize general danger signs in a sick child\n• Provide urgent pre-referral treatment according to protocol\n• Refer a child when danger signs are present\n• Counsel the care giver</string>
+    <string name="cdb_training_txt2"><b>At the end of this chapter, you will be able to:</b>\n• 	Define cough or difficult breathing\n• Assess cough or difficult breathing\n• Classify cough or difficult breathing\n• Treat a child with cough or difficult breathing according to protocol\n• Counsel Care giver on home care</string>
+    <string name="gds_training_txt3"><b>How will you assess for a General Danger Sign?</b>\nYou will <b>ASK</b> three questions and <b>LOOK</b> for two observations to observe the child\'s actions</string>
+    <string name="cdb_training_txt3">This assessment will examine how quickly the child is breathing, the noises he is making as he breaths, and how much difficult he appears to have while breathing.</string>
+    <string name="gds_training_txt4">ASSESSING ALL SICK CHILDREN FOR GENERAL DANGER SIGNS</string>
+    <string name="cdb_training_txth4">ASSESS A CHILD FOR COUGH OR DIFFICULT BREATHING</string>
+
+    <!-- CDB Training Starts -->
+    <string name="cdb_training_txtq3">What causes cough or difficult breathing?</string>
+    <string name="cdb_training_txt4">Many children who come to your clinic with a cough or difficult breathing may have mild respiratory infections. They may have a cold or bronchitis. These children are not seriously ill and do not need antibiotics, they can be treated at home.</string>
+    <string name="cdb_training_txt5">However, some children with cough or difficult breathing may have pneumonia or another serious respiratory infection. You have learned that pneumonia is one of the major causes of child mortality globally and in Pakistan.</string>
+    <string name="cdb_training_txt6">Children can die from bacterial pneumonia because they cant get enough oxygen (hypoxia) or they get generalized infection (sepsis). Most pneumonia in developing countries is caused by bacteria and can be treated with antibiotics.</string>
+    <string name="gds_training_txt5">ASK: Is the child able to drink or breastfeed?</string>
+    <string name="gds_training_txt6">A child has the sign “not able to drink or breastfeed” if the child is not able to suck or swallow when offered a drink or breast milk.</string>
+    <string name="cdb_training_txt8">Difficult breathing is any unusual pattern of breathing. Caregivers may say that their childs breathing is "fast "or "noisy" or "interrupted." If a mother answers no, look to see if you think the child has cough or difficult breathing.</string>
+    <string name="gds_training_txt7">When you ask the caregiver if the child is able to drink, make sure that she (caregiver) understands the question.</string>
+    <string name="cdb_training_txt9">If the child does not have a cough or difficult breathing, move to the next symptom. You do not need to assess the child further for cough or difficult breathing.</string>
+    <string name="gds_training_txt8">If she says that her child is not able to drink or breastfeed, ask her to describe what happens when she offers the child something to drink. For example, is the child able to take fluid into his mouth and swallow it? If you are not sure about the caregiver\'s answer, ask her to offer the child a drink of clean water or breast milk. <b>Look</b> if the child is swallowing the water or breast milk.</string>
+    <string name="cdb_training_txt7">Cough or difficult breathing that lasts for more than 14 days may indicate tuberculosis, asthma, whooping cough, or some other problem.</string>
+    <string name="gds_training_txt9"><b>Remember!!</b>\nA child who is breastfed may have difficulty in sucking when his nose is blocked. If the child\'s nose is blocked, clear it. If the child can breastfeed after the nose is cleared, the child does not have the danger sign, “not able to drink or breastfeed”.</string>
+    <string name="Ask1">ASK: Does the child have cough or difficult breathing?</string>
+    <string name="Ask2">ASK: For how long?</string>
+    <string name="Look">LOOK: Does the child have fast breathing?</string>
+    <string name="Look1_1">As you have learned, fast breathing is one sign of pneumonia in a child.</string>
+    <string name="Look1_2">How do you determine if a child is breathing faster than he or she normally should be? You count the number of breaths the child takes per minute to determine if fast breathing is present. To count the breaths per minute, use an ARI timer Look for the breathing movement anywhere on the childs chest or abdomen.</string>
+    <string name="Look1_3">The number of breaths for “fast breathing” depends on the childs age. Younger children normally have higher rates of breathing than older.</string>
+    <string name="Look1_4">It is very important that the child is calm and still. If the child is moving or crying, you will not be able to get an accurate count of breaths. Ask the mother to help keep her child calm. </string>
+    <string name="FB"><b>FAST BREATHING</b></string>
+    <string name="FB_1">• For children 2 months up to 12 months of age, 50 or more breaths per minute.\n• For children 12 months up to 5 years, 40 or more breaths per minute.</string>
+    <string name="cdb_training_txt10"><b>How to use an ARI Timer?</b></string>
+    <string name="cdb_training_txt11"><u><b>Instructions on use of ARI timer:</b></u></string>
+    <string name="cdb_training_txt12">To decide whether a breathing rate is normal or fast one has to count the child’s breathing rate and compare it with the normal rate for the child’s age. To do this, practice the following:</string>
+    <string name="cdb_training_txt13">•	Be sure the child is calm. If the child is crying or screaming, wait until the child calms down before you start to measure breathing rate.</string>
+    <string name="cdb_training_txt14">• You should first decide where to observe the childs breathing. Look wherever the breathing is obvious. This may be the childs chest or abdomen. The location does not matter, provided that you can clearly see the breathing movements.</string>
+    <string name="cdb_training_txt15">• 	You should ask the parent to lift the childs shirt so that you can see the childs chest and abdomen. Do not start the timer or begin counting until you are focused on the child. You must wait until the child is calm before starting the count.</string>
+    <string name="cdb_training_txt16">• 	Stand where you can see the child’s breathing easily. Look at the child’s lower part of the chest. This is the part where the last rib can be seen</string>
+    <string name="cdb_training_txt17">• 	Push the Start/Stop button once. A short "beep" sound will be heard to show that the timer is starting. Actual counting of the respiratory rate must begin as soon this initial beep is heard. Audible clicks will sound every second so that you can be sure that timing is in progress while you continue to observe the patient.</string>
+    <string name="cdb_training_txt18">• 	The timer will give a short beep at the start and two short beeps at the end of 60 seconds (one minute) when it will automatically shut off. Stop counting when the two short beeps are heard.</string>
+    <string name="cdb_training_txt19">• 	Ask the caregiver for the age of the child and compare your count with the normal count for the childs age.</string>
+    <string name="cdb_training_txt20">• 	If the child moves or cries during the counting, the count is invalid and must be retaken. A high temperature can also cause the breathing rate to be higher than normal.</string>
+    <string name="cdb_training_txt21">• 	The child may be sleeping or breast feeding during the count. This is alright.</string>
+    <string name="Look2">LOOK: for chest in drawing</string>
+    <string name="Look2_1">Chest in drawing occurs when the child needs to make a greater effort than normal to breathe in. You will look for chest in drawing when the child breathes <u>IN</u>.</string>
+    <string name="Look2_2">In normal breathing, the whole chest wall (upper and lower) and the abdomen move OUT when the child breathes IN. The child has chest in drawing if the lower chest wall (lower ribs) goes IN when the child breathes <u>IN</u>. </string>
+    <string name="Look2_3">For chest in drawing to be present, it must be visible and present all the time you are observing the child. If you still do not see the lower chest wall go <b>IN</b> when the child breathes <b>IN</b>, the child does not have chest in drawing</string>
+    <string name="Look2_4">Here are some helpful tips to look for chest in-drawing:\n• Ask the caregiver to lift the childs shirt, when you count breaths.\n• If the childs body is bent at the waist, it is hard to see the lower chest wall move. \n• Ask the caregiver to change the child's position so he/she is lying flat in her lap.</string>
+    <string name="VC">Video: Chest in-drawing:</string>
+    <string name="Look3">LOOK and LISTEN for stridor</string>
+    <string name="Look3_1">Stridor is a harsh noise made when a child breaths IN. It occurs when the larynx, trachea or epiglottis is swollen. These conditions are often called croup. This swelling interferes with air entering the lungs. If the swelling blocks the childs airway, it can be life threatening.</string>
+    <string name="Look3_2">To look and listen for stridor, <b>LOOK</b> when the child breathes <b>IN</b></string>
+    <string name="Look3_3">Put your ear to the childs mouth because stridor can be difficult to hear. Sometimes you will hear a wet noise if the childs nose is blocked. Clear the nose, and listen again.</string>
+    <string name="Look3_4">Be sure to look and listen for stridor when the child is calm. A child who is not very ill may have stridor only when he is crying or upset. However, a child who is calm and has stridor means it’s a dangerous situation. You may only hear a wheezing noise when the child breathes OUT — this is not stridor.</string>
+    <string name="VS">Video: Stridor:</string>
+    <string name="Look4">LOOK and LISTEN for wheezing </string>
+    <string name="Look4_1">Wheeze is a soft, musical noise when the child breaths <u><b>OUT</b></u>. It may be caused by swelling and narrowing of the small airways of the lungs or by a contraction of the smooth muscles surrounding the airways in the lung.</string>
+    <string name="Look4_2">Look to see when the child is breathing OUT. Listen for the wheeze noise by <u>holding your ear near the childs mouth</u>, since the noise may be difficult to hear. Wheezing is caused by a narrowing of the air passages in the lungs. The breathing out takes longer than normal and requires effort.Sometimes so little air moves that there is no noise. Look to see if the breathing out phase requires great effort and is longer than normal.</string>
+    <string name="Look4_3">If the child is wheezing, ask the mother if her child has had a previous episode of wheezing within the last year. A child with "recurrent wheeze" has had more thanone episode of wheeze in a 12 month period. The main causes of wheezing are asthma and respiratory infections including bronchiolitis and pneumonia.</string>
+    <string name="VW">Video: Wheeze:</string>
+    <string name="cdb_training_txt22">HOW IS PULSE OXIMETER USED IN CASE OF SEVERE PNEUMONIA/VERY SEVERE DISEASE?</string>
+    <string name="cdb_training_txt23">Using pulse oximeter, determine SpO2 saturation. If SpO2 saturation is Less then 90%, refer urgently to 24 hours health facility having oxygensupplies.</string>
+    <string name="cdb_training_txt24"><b>Instructions:</b>\n• To start, align the top of the user’s finger with LED light.\n• Insert the child’s finger into pulse oximeter and wait for the unit to power on.\n• After 5 seconds you will see the readings in pulse oximeter.\n• The reading on the left indicates SpO2 that is the oxygen saturation level of blood.\n• The reading on the right indicates pulse rate (# of times per minute heart beats).</string>
+    <string name="RM">REMEMBER!!</string>
+    <string name="cdb_training_txt25">While taking readings; inaccurate readings can be caused by:\n• Too much movement.\n• Too much external light at the reading site.\n• Poor circulation.\nNail polish does not affect the pulse oximeter readings.</string>
+    <string name="cdb_training_txt26">CLASSIFY COUGH OR DIFFICULT BREATHING</string>
+    <string name="cdb_training_txt27">Now you will learn how to classify cough or difficulty using the signs. There are three possible classifications for a child with cough or difficult breathing:<b>\n1.	SEVERE PNEUMONIA OR VERY SEVERE DISEASE</b><b>\n2.	PNEUMONIA</b><b>\n3.	COUGH OR COLD</b></string>
+    <string name="cdb_training_txt28">SEVERE PNEUMONIA OR VERY SEVERE DISEASE (PINK)</string>
+    <string name="cdb_training_txt29">A child with cough or difficult breathing and any general danger sign or stridor (in a calm child) or SpO2 saturation Less then 90% with pulse oximeter (if available) is classified as having <u><b>SEVERE PNEUMONIA OR VERY SEVERE DISEASE</b></u>. The child may have another serious acute lower respiratory infection such as bronchiolitis, pertussis, or a wheezing problem. </string>
+    <string name="cdb_training_txt30">What actions will you take?</string>
+    <string name="cdb_training_txt31">A child classified as having SEVERE PNEUMONIA OR VERY SEVERE DISEASE is seriously ill. He or she needs urgent referral to a hospital for treatments such as oxygen, a bronchodilator, or injectable antibiotics. Before the child leaves, give the first dose of an appropriate oral antibiotic (amoxicillin). The antibiotic helps prevent severe pneumonia from becoming worse. It also helps treat other serious bacterial infections such as sepsis or meningitis.</string>
+    <string name="cdb_training_txt32">PNEUMONIA (YELLOW)</string>
+    <string name="cdb_training_txt33">A child with cough or difficult breathing who has fast breathing and or chest in drawing is classified as having PNEUMONIA. This child should not have a general danger sign or stridor at rest.</string>
+    <string name="cdb_training_txt34">What actions will you take?</string>
+    <string name="cdb_training_txt35">A child with PNEUMONIA needs treatment with oral Amoxicillin Syrup/Tablet (DT) for 5 days. You will begin this treatment in the clinic, and it will continue at home. Later in this section, you will read about how to identify and give an antibiotic. You will also learn how to teach caregivers to give treatments at home. If the child has wheezing, this will require treatment with an inhaled bronchodilator.</string>
+    <string name="cdb_training_txt36">COUGH OR COLD (GREEN)</string>
+    <string name="cdb_training_txt37">A child with cough or difficult breathing but none of the signs already discussed — general danger signs, chest in drawing, stridor when calm, or fast breathing — are classified as COUGH OR COLD.</string>
+    <string name="cdb_training_txt38">What actions will you take?</string>
+    <string name="cdb_training_txt39">A child with COUGH OR COLD <b>does not need an antibiotic</b>. The antibiotic will not relieve the childs symptoms. It will not prevent the cold from developing into pneumonia. Therefore, give the mother advice about good home care like safe remedies.</string>
+    <string name="cdb_training_txt40">A child with a cold normally improves in one to two weeks. However, a child who has a chronic <b>cough</b> lasting more than 2 weeks, he/she may have tuberculosis, asthma, whooping cough or another problem. A child with a chronic cough needs to be referred to hospital for further assessment.</string>
+    <string name="cdb_training_txt41">Pre referral treatment for severe pneumonia or very severe disease treatment and dosage</string>
+    <string name="cdb_training_txt42">OXYGEN THERAPY</string>
+    <string name="cdb_training_txt43">•	Standard flow rates for oxygen through nasal prongs or nasal catheters are 0.5–1 L/min for neonates, up to 2 L/min for infants, up to 4 L/min for older children.</string>
+    <string name="cdb_training_txt44">GIVE TO CHILDREN BEING REFERRED URGENTLY</string>
+    <string name="cdb_training_txt45">•	Give Ampicillin (50mg/kg) and Gentamicin (7.5 mg/kg).</string>
+    <string name="cdb_training_txt46">AMPICILLIN</string>
+    <string name="cdb_training_txt47">•	Dilute 500mg vial with 2.1 ml of sterile water (500mg/2.5m1).\n• IF REFERRAL IS NOT POSSIBLE OR DELAYED, repeat the ampicillin injection every 6 hours.\n•	Where there is a strong suspicion of meningitis, the dose of ampicillin can be increased 4 times.</string>
+    <string name="cdb_training_txt48">GENTAMICIN</string>
+    <string name="cdb_training_txt49">•	Give 7.5 mg/kg/day once daily.</string>
+    <string name="cdb_training_txt50">Appropriate antibiotic for pneumonia treatment and dosage</string>
+    <string name="cdb_training_txt51">Amoxicillin is the first line antibiotic for treating pneumonia due to its efficacy and increasing resistance to co-trimoxazole.</string>
+    <string name="cdb_training_txt52">How do you decide on the appropriate dosage? </string>
+    <string name="cdb_training_txt53">The treatment table in chart booklet identifies the correct antibiotic and schedule.Correct dosage of the antibiotic is determined by:\n1. Choose the row for the child's weight or age. Use weight over age.\n2.	The correct dose is listed at the intersection of the column and row.</string>
+    <string name="cdb_training_txt54">If wheezing is present</string>
+    <string name="cdb_training_txt55">If the child has wheezing and will require an inhaler treatment in the clinic or at home, review the TREAT THE CHILD chart for inhaled salbutamol for wheezing.\n• From salbutamol metered dose inhaler (100 µg/puff) give 2 puffs.\n• Repeat up to 3 times every 15-20 minutes before classifying pneumonia.</string>
+    <string name="cdb_training_txt56">What is a soothing remedy for the throat?</string>
+    <string name="cdb_training_txt57">To soothe the throat or relieve a cough, use a safe remedy. Such remedies can be homemade, given at the clinic, or bought at a pharmacy. It is important that they are safe. Homemade remedies are as effective as those bought in a store.</string>
+    <string name="cdb_training_txt58">Safe remedies to recommend</string>
+    <string name="cdb_training_txt59">•	Breast milk for exclusively breastfed infant.\n•	 Honey with water: one tea spoon honey in half cup of luke warm water.\n• Green tea, soup etc.</string>
+    <string name="cdb_training_txt60">If the child is exclusively breastfed, do not give other drinks or remedies. Breast milk is the best soothing remedy for an exclusively breastfed child.</string>
+    <string name="cdb_training_txt61">Harmful remedies to discourage</string>
+    <string name="cdb_training_txt62">•	Cough syrup containing codeine, antihistamines, alcohol, atropine and expectorants.\n• Oral and nasal decongestants.\n•	Do not massage or bind the chest.\n•	Do not give opium, alcohol etc.</string>
+    <string name="cdb_training_txt63">The cough syrups may sedate the child and interfere with the childs feeding. They may also interfere with the childs ability to cough up secretions from the lungs.</string>
+    <string name="cdb_training_txt64">When explaining how to give the safe remedy, it is not necessary to watch the mother practice giving the remedy to the child. Exact dosing is not important with this practice.</string>
+    <string name="cdb_training_txt65">COUNSEL THE CAREGIVER</string>
+    <string name="cdb_training_txt66">WHY MUST YOU COUNSEL THE CAREGIVER?</string>
+    <string name="cdb_training_txt67">This is an important opportunity to counsel home treatment, feeding, care in the home, and when to return to the clinic as you assess, classify, treat, and counsel:\n• ASK and LISTEN to find out what the childs problems are and what the caregiver is already doing for the child.\n• PRAISE the caregiver for what she has done well.\n• ADVISE her how to care for her child at home.\n•	 CHECK the caregiver's understanding, using checking questions.</string>
+    <string name="cdb_training_txt68">Three basic teaching steps:</string>
+    <string name="cdb_training_txt69">•	<b>GIVE INFORMATION</b> – use words the caregiver understands, and focus on the most important messages.\n•	<b>SHOW AN EXAMPLE</b> – using familiar objects as teaching aids.\n• <b>LET HER PRACTICE</b> – affirm, give feedback, and allow for more practice as needed  </string>
+    <string name="cdb_training_txt70">HOW WILL YOU COUNSEL A CAREGIVER ABOUT COUGH OR DIFFICULT BREATHING?</string>
+    <string name="cdb_training_txt71">There are several topics relevant to cough or difficult breathing. You will read more about these topics below. They include:\n•	Giving oral antibiotics at home.\n•	Giving soothing remedies at home.\n•	When to return immediately.\n•	When to follow-up</string>
+    <string name="cdb_training_txt72">Giving oral medicines at home</string>
+    <string name="cdb_training_txt73">The important points to remember are:\n• DETERMINE APPROPRIATE MEDICINES and DOSAGE – for childs weight and age.\n• EXPLAIN TREATMENT —tell caregiver why you are giving the drug to the child.\n•	 DEMONSTRATE – how to measure a dose.\n•	 LET HER PRACTICE – Watch the caregiver practice measuring a dose by her. Tell her what she has done correctly when she measures the dose. If she measured the dose incorrectly, show her again how to measure it.\n• ASK CAREGIVER TO GIVE FIRST DOSE to the child.\n• EXPLAIN DRUG CAREFULLY —Tell the mother how much of the drug to give her child. Tell her how many times per day to give the dose. Tell her when to give it (such as early morning, lunch, dinner, before going to bed) and for how many days.</string>
+    <string name="cdb_training_txt74">How do you label and package a drug?</string>
+    <string name="cdb_training_txt75">To write information on a drug label, be sure to write the instructions clearly so that a literate person is able to read and understand them:\n•	Write the full name of the drug.\n•	Write the total quantity (number) of tablets or syrup to complete the course of treatment.\n• Write the daily dose and schedule. For example: 1/2 tablet twice daily for 5 days.\n•	Write the correct dose for the patient to take. For example, the number of tablets or spoonsful of syrup.\n•	 Write when to give the dose. For example, early morning, lunch, dinner, before going to bed.\n•	 To package the drug, put the total amount of each drug into its own labeled drug container. Use clean containers. This could be an envelope, paper, tube or bottle. It is important to keep medicines clean. After you have labeled and packaged the drug, give it to the mother.</string>
+    <string name="cdb_training_txt76">TIPS FOR DRUG LABELS</string>
+    <string name="cdb_training_txt77">•	<b>REPEAT IF MORE THAN ONE DRUG</b> — give, collect, count, and package each drug separately.\n• <b>EMPHASIZES COURSE OF TREATMENT</b> — explain that all the tablets or syrup must be used to finish the course of treatment, even if the child gets better.\n• <b>CHECK CAREGIVER UNDERSTANDS</b> — ask checking questions to make sure she understands how to treat her child. In some clinics, a drug dispenser has the task of teaching the caregiver to give treatment and checking the caregiver's understanding. If this is your situation, teach the skills you are learning here to that dispenser.</string>
+    <string name="cdb_training_txt78">When to Return for Follow-Up Care?</string>
+    <string name="cdb_training_txt79">The <b>TREATMENT TABLE</b> designates how soon the child should return for follow-up</string>
+    <string name="cdb_training_txt80">When to return immediately?</string>
+    <string name="cdb_training_txt81">You should always counsel the caregiver on looking for signs that they should bring the child immediately to the clinic.</string>
+    <string name="cdb_training_txt82">Advise the caregiver to <u><b>RETURN IMMEDIATELY</b></u> if the child has any of these signs: </string>
+    <string name="cdb_training_txt83">PROVIDE FOLLOW-UP CARE FOR COUGH OR DIFFICULT BREATHING</string>
+    <string name="cdb_training_txt84">What are the steps to providing follow-up care?</string>
+    <string name="cdb_training_txt85">During a follow-up visit, you will do two things.</string>
+    <string name="cdb_training_txt86">First, you assess previous classifications</string>
+    <string name="cdb_training_txt87">	You will check the child for general danger signs.</string>
+    <string name="cdb_training_txt88">	You will assess for cough or difficult breathing. You will ASK:\n• Is the child breathing slower than on his first visit?\n•	Is there fever?\n•	Is the child eating better?</string>
+    <string name="cdb_training_txt89">	You will assess if the childs respiratory condition is:\n• <b>IMPROVING</b>\n• <b>THE SAME</b>\n• <b>WORSENING</b></string>
+    <string name="cdb_training_txt90">When should a child with cough or difficult breathing return for follow-up?</string>
+    <string name="cdb_training_txt91">A child with PNEUMONIA should follow-up after 3 days (if not able to follow up should continue antibiotics for at least 5 days). A child with COUGH OR COLD should follow-up after 5 days if not improving. You have read in the box above about what signs you will ask in the follow-up visit. You will use these to decide if the child is improving, worsening, or the same.</string>
+    <string name="cdb_training_txt92">CHILD HAS A GENERAL DANGER SIGN</string>
+    <string name="cdb_training_txt93">The condition of child is getting worse. <u><b>This child needs urgent referral to a hospital</b></u>.</string>
+    <string name="cdb_training_txt94">CHEST INDRAWING OR BREATHING RATE, FEVER, AND EATING ARE SAME</string>
+    <string name="cdb_training_txt95">The signs may not be exactly the same as 3 days before — but the child is not worse, and not improving. <u><b>This child needs urgent referral to a hospital</b></u>.</string>
+    <string name="cdb_training_txt96">IS BREATHING SLOWER AND WITHOUT CHEST INDRAWING, EATING BETTER, AND LESS FEVER</string>
+    <string name="cdb_training_txt97">The child is improving. The child may cough, but most children who are improving will no longer have fast breathing. The fever is lower or completely gone.</string>
+    <string name="cdb_training_txt98">What actions will you take?</string>
+    <string name="cdb_training_txt99">Tell the mother that the child should finish taking the 5 days of the antibiotic. Review with her the importance of finishing the entire 5 days.</string>
+    <!-- CDB Training Ends -->
+
+    <!-- Diarrhea Training Starts -->
+    <string name="dia_training_txt100">OVERVIEW</string>
+    <string name="dia_training_txt101">Diarrhea is a very common problem in the children you see at your clinic. <b>Diarrhea can be serious - and even lead to death if child becomes dehydrated</b>.</string>
+    <string name="dia_training_txt102">LEARNING OBJECTIVE</string>
+    <string name="dia_training_txt103">After you study this chapter, you will be able to:\n• Define diarrhea and types of diarrhea.\n• Recognize clinical signs of dehydration.\n• Assess diarrhea in sick children.\n• Assess dehydration in young infants and sick children.\n• Classify diarrhea and severity of dehydration.\n• Provide management plans A, B, and C for dehydration.\n• Counsel the caregiver about home treatment for diarrhea and dehydration.</string>
+    <string name="dia_training_txt104">DEFINE DIARRHEA</string>
+    <string name="dia_training_txt105">What is diarrhea?</string>
+    <string name="dia_training_txt106">Diarrhea occurs when stools contain more water than normal. Diarrhea is also called looseor waterystools. It is common in children, especially those between 6 months and 2 years of age. It is more common in babies under 6 months who are drinking cows milk or infant feeding formulas. Frequent passing of normal stools is not diarrhea. The number of stools normally passed in a day varies with the diet and age of the child. In many regions diarrhea is defined as three or more loose or watery stools in a 24-hour period.</string>
+    <string name="dia_training_txt107">What are the types of diarrhea?</string>
+    <string name="dia_training_txt108">Most diarrhea which cause dehydration are loose or watery Cholera is one example of loose or watery diarrhea.  Only a small proportion of all loose or watery diarrhea are due to cholera.</string>
+    <string name="dia_training_txt109">If an episode of diarrhea lasts less than 14 days, it is acute diarrhea. Acute watery diarrhea causes dehydration and contributes to malnutrition. The death of a child with acute diarrhea is usually due to dehydration.</string>
+    <string name="dia_training_txt110">If the diarrhea lasts 14 days or more, it is persistent diarrhea. Up to 20% of episodes of diarrhea become persistent. Persistent diarrhea often causes nutritional problems and contributes to deaths in children. Diarrhea with blood in the stool, with or without mucus, is called dysentery. The most common cause of dysentery is Shigella bacteria. Amoebic dysentery is not common in young children. A child may have both watery diarrhea and dysentery.</string>
+    <string name="dia_training_txt111">ASSESS, CLASSIFY AND TREAT DIARRHEA</string>
+    <string name="dia_training_txt112">TREAT THE CHILD WITH DIARRHEA</string>
+    <string name="dia_training_txt113">Children with diarrhea are treated for dehydration. They are also treated for their diarrhea, if they have persistent diarrhea or dysentery. </string>
+    <string name="dia_training_txt114">WHAT TREATMENTS ARE IDENTIFIED FOR DIARRHEA AND DEHYDRATION?</string>
+    <string name="dia_training_txt115">The color-coded classifications indicate where the treatment can be delivered — by urgent referral, at the clinic, or at home.</string>
+    <string name="dia_training_txt116">Identified treatments are listed below. These are all new treatments, so you will learn about all of them in this section:\n•	 Giving extra fluids and food.\n• Giving LoORS for dehydration.\n• IV fluids.\n•	NG fluids.\n• Zinc DT.\n• Ciprofloxacin for dysentery.</string>
+    <string name="dia_training_txt117">HOW DO YOU TREAT DEHYDRATION?</string>
+    <string name="dia_training_txt118">When you classified the severity of dehydration, you identified the appropriate treatment to replenish fluids or prevent dehydration. </string>
+    <string name="dia_training_txt119">There are three plans to provide fluid and replace water and salts lost in diarrhea:\n• PLAN A — treat ‘NO DEHYDRATION’ at home.\n• PLAN B — treat ‘SOME DEHYDRATION’ at clinic with LoORS.\n• PLAN C — treat ‘SEVERE DEHYDRATION’ urgently with intravenous (IV) fluids.</string>
+    <string name="dia_training_txt120">In the following pages, you will now learn how to give Plan A, B, and C.</string>
+    <string name="dia_training_txt121">PLAN C (SEVERE DEHYDRATION)</string>
+    <string name="dia_training_txt122">Severely dehydrated children and young infants need to have water and salts quickly replaced. Plan C requires rapid hydration using IV fluids or a nasogastric (NG) tube.</string>
+    <string name="dia_training_txt123">It is important to note that rehydration therapy using IV fluids or using a nasogastric (NG) tube is recommended only for children who have <u><b>SEVERE DEHYDRATION</b></u>.</string>
+    <string name="dia_training_txt124">In your clinic, where is the safest place to give plan C?</string>
+    <string name="dia_training_txt125">This is important for you to determine based on available equipment and your training. If you cannot give IV or NG fluid and the child cannot drink, refer the child urgently to the nearest hospital that can give IV or NG treatment.</string>
+    <string name="dia_training_txt126">If IV (intravenous) treatment is available within a 30-minute drive, refer urgently to hospital for treatment with IV fluids. On the way to hospital, have the mother offer frequent sips of LoORS to her sick child.</string>
+    <string name="dia_training_txt127">PLAN B (SOME DEHYDRATION)</string>
+    <string name="dia_training_txt128">A child or young infant with some dehydration needs fluid, zinc supplementation, and food. You will give zinc supplements just as you will for Plan A.</string>
+    <string name="dia_training_txt129">How is plan B given?</string>
+    <string name="dia_training_txt130">Plan B begins with a 4-hour treatment period at the clinic. During the 4 hours, the mother slowly gives a recommended amount of LoORS solution. If a child who has SOME DEHYDRATION needs treatment for other problems, you should start treating the dehydration first. Then provide the other treatments.</string>
+    <string name="dia_training_txt131">After the 4 hours, you will reassess and classify the childs dehydration. If the signs are gone, put the child on Plan A for home treatment. If there is still some dehydration, the child repeats Plan B. If the child now has SEVERE DEHYDRATION, put the child on Plan C.</string>
+    <string name="dia_training_txt132">What happens if a child has a severe classification and needs plan B?</string>
+    <string name="dia_training_txt133">A child who has a severe classification and <u>SOME DEHYDRATION</u> needs urgent referral to hospital. Do not try to rehydrate the child before he leaves. Quickly give the mother some LoORS solution. Show her how to give frequent sips to child on the way to the hospital.</string>
+    <string name="dia_training_txt134">How will you teach the caregiver to give LoORS in the clinic?</string>
+    <string name="dia_training_txt135">1. Determine amountof LoORS to give during first 4 hours</string>
+    <string name="dia_training_txt136">Use the chart in Plan B to determine how much LoORS to give. To find the recommended amount, look below the childs weight (or age only if the weight is not known). The child will usually want to drink as much as he needs. If the child wants more or less than the estimated amount, give him what he wants. The mothers should also breastfeed whenever the baby wants to, and then resume the LoORS solution.</string>
+    <string name="dia_training_txt137">2. Show the mother how to give LoORS solution.</string>
+    <string name="dia_training_txt138">Find a comfortable place in clinic for the mother to sit with her child. Tell her how much LoORS solution to give over the next 4 hours. If the child is less than 2 years, show her how to give a spoonful frequently. If the child is older, show her how to give frequent sips from a cup. Sit with her while she gives the child the first few sips from a cup or spoon. Ask her if she has any questions.</string>
+    <string name="dia_training_txt139">3. The exception is a child with Severe Persistent Diarrhea. This child should be rehydrated then referred.</string>
+    <string name="dia_training_txt140">What will you do while the mother gives ORS for 4 hours?</string>
+    <string name="dia_training_txt141">Show the caregiver where to wash her hands, and where she can change the child’s nappy or where the child can use a toilet.</string>
+    <string name="dia_training_txt142">Check with the mother from time to time to see if she has problems. If the child is not drinking the ORS solution well, try another method of giving the solution. You may try using a dropper or a syringe without the needle.</string>
+    <string name="dia_training_txt143">This also provides valuable time to teach the mother about care for her child. The first concern is to rehydrate the child. When the child is obviously improving, the mother can turn her attention to learning. Teach her about mixing and giving ORS solution (Plan A).</string>
+    <string name="dia_training_txt144">It is a good idea to have printed information that the mother can study while she is sitting with her child. Posters on the wall can also reinforce this information.</string>
+    <string name="dia_training_txt145">Tips for the young infants</string>
+    <string name="dia_training_txt146">During the first 4 hours of rehydration, encourage the mother to pause to breastfeed the infant whenever the infant wants, then resume giving LoORS. Give a young infant who does not breastfeed additional 100-200 ml clean water during this period.</string>
+    <string name="dia_training_txt147">In the clinic, give recommended amount of LoORS over 4 hours period</string>
+    <string name="dia_training_txt148"> Determine amount of LoORS to give during first 4 hours.</string>
+    <string name="dia_training_txt149">Use the childs age only when you do not know the weight. The approximate amount of LoORS required (in ml) can also be calculated by multiplying the childs weight (in kg) times 75.\n• If the child wants more LoORS than shown, give more.\n• For infants under 6 months who are not breastfed, also give 100-200 ml clean water during this period if you use standard LoORS. This is not needed if you use new low Osmolar ORS.</string>
+    <string name="dia_training_txt150">Show the mother how to give LoORS solution.</string>
+    <string name="dia_training_txt151">•	 Give frequent small sips from a cup.\n•	 If the child vomits, wait 10 minutes. Then continue, but more slowly.\n• Continue breastfeeding whenever the child wants.</string>
+    <string name="dia_training_txt152">After 4 hours:</string>
+    <string name="dia_training_txt153">•	 Reassess the child and classify the child for dehydration.\n• Select the appropriate plan to continue treatment.\n• Begin feeding the child in clinic.</string>
+    <string name="dia_training_txt154">If the mother must leave before completing treatment:</string>
+    <string name="dia_training_txt155">•	 Show her how to prepare LoORS solution at home.\n•	Show her how much LoORS is required to finish 4- hour treatment at home.\n•	Give her enough LoORS packets to complete rehydration. Also give her 2 packets as recommended in Plan A.\n•	Explain the 4 rules of Home Treatment:\n• Give extra fluid and LoORS.\n•	 Give zinc DT.\n• Continue feeding (exclusive breastfeeding if age less than 6 months).\n• When to return.</string>
+    <string name="dia_training_txt156">How will you reassess the child after 4 hours?</string>
+    <string name="dia_training_txt157">After four hours you will reassess the child using the ASSESS AND CLASSIFY chart. Classify the dehydration. Choose the appropriate plan to continue treatment. If the child is not taking the LoORS solution, or seems to be getting worse, reassess before four hours.</string>
+    <string name="dia_training_txt158">Depending on your classifications, you will take further action:</string>
+    <string name="dia_training_txt159">• If the child has NO DEHYDRATION, move to Plan A. Counsel on home care.\n• If the child has SOME DEHYDRATION, choose Plan B again. Begin feeding the child in clinic. Offer food, milk, or juice. Continue to breastfeed frequently if child is breastfed.\n• If the child is worse and now has SEVERE DEHYDRATION, begin Plan C.</string>
+    <string name="dia_training_txt160">If the childs eyes are puffy, it is a sign of over hydration. It is not a danger sign or a sign of hypernatremia. It is simply a sign that the child has been rehydrated and does not need any more LoORS solution at this time. The child should be given clean water or breast milk, and LoORS according to Plan A when the puffiness is gone.</string>
+    <string name="dia_training_txt161">What happens if a caregiver must leave before finishing 4 hours of LoORS?</string>
+    <string name="dia_training_txt162">• Show the caregiver how to prepare LoORS solution and have her practice.\n• Show her how much LoORS is required to complete the 4-hour treatment at home.\n•	Give her packets to complete rehydration PLUS 2 more packets as recommended in Plan A.\n• Explain 4 rules of home treatment.</string>
+    <string name="dia_training_txt163">PLAN A (NO DEHYDRATION), TREAT AT HOME</string>
+    <string name="dia_training_txt164">A child with diarrhea but no dehydration requires fluid, zinc, and food to prevent dehydration. This child can be treated at home with Plan A.</string>
+    <string name="dia_training_txt165">What is plan A?</string>
+    <string name="dia_training_txt166">Plan A is based on the four rules of home treatment. These are critical for you to remember. Plan A requires you to counsel the childs mother about the 4 rules of home treatment. As such, your teaching and advising skills are an important part of Plan A.</string>
+    <string name="dia_training_txt167">Plan A is also an important treatment plan because eventually, all children with diarrhea will require Plan A. Children with diarrhea who come to a health worker with NO DEHYDR ATION are put on Plan A right away. Child with more serious dehydration will first be treated with Plan B or C, and then they will be put on Plan A.</string>
+    <string name="dia_training_txt168">What are the 4 rules of home treatment?</string>
+    <string name="dia_training_txt169">The four rules of home treatment are very important to remember:</string>
+    <string name="dia_training_txt170">	Give extra fluids and LoORS — as much as the child will take.\n	Give zinc DT.\n	Continue feeding.\n	When to return (for a follow-up visit, or immediately if danger signs develop).</string>
+    <string name="dia_training_txt171">RULE 1: GIVE EXTRA FLUID</string>
+    <string name="dia_training_txt172">Tell the caregiver to give as much fluid as the child will take. It is very important for the child to have extra fluid — as much as the child will take. The purpose of giving extra fluid is to replace the fluid lost in diarrhea and thus to prevent dehydration. The critical action is to give more fluid than usual, as soon as the diarrhea starts.</string>
+    <string name="dia_training_txt173">How should the caregiver give extra fluid?</string>
+    <string name="dia_training_txt174">Tell the mother that breastfeeding should continue, with the addition of LoORS and clean water. If the child is exclusively breastfed, it is important for this child to be breastfed more frequently than usual. Breastfed children under 4 months should first be offered a breastfeed then given LoORS.</string>
+    <string name="dia_training_txt175">If the child is not being breastfed, the child should receive LoORS solution, food- based fluids (soup, rice water, yoghurt drinks), and clean water.</string>
+    <string name="dia_training_txt176">Tips for the young infant</string>
+    <string name="dia_training_txt177"> If infant is exclusively breastfeeding, it is important not to introduce a food-based fluid.\n If infant will be given LoORS solution at home, you will show how much LoORS to give the infant after each loose stool. Mother should offer a breastfeed, then give LoORS.</string>
+    <string name="dia_training_txt178">How will you teach the caregiver to mix LoORS?</string>
+    <string name="dia_training_txt179">Teach the caregiver how to mix and give LoORS. Ask the caregiver to practice doing it as you observe. The steps for making LoORS are (follow along in drawings below):</string>
+    <string name="dia_training_txt180">• Wash your hands with soap and water.\n•	Pour all the powder from one packet into a clean container. Use any available container, such as a jar, bowl or bottle.\n• Measure 1 liter of clean water (or correct amount for packet used). It is best to boil and cool the water, but if this is not possible, use the cleanest drinking water available.\n•	Pour the water into the container. Mix well until the powder is completely dissolved.\n• Taste the solution so you know how it tastes.</string>
+    <string name="dia_training_txt181"><b>The caregiver should mix fresh LoORS every day, in a clean container</b>. She should keep the container covered. She should throw away any solution remaining from the day before.</string>
+    <string name="dia_training_txt182">How will the caregiver get LoORS to use in the home?</string>
+    <string name="dia_training_txt183">Give the caregiver 2 packets of LoORS to use at home. Show her how much fluid should be given in addition to the usual fluid intake:</string>
+    <string name="dia_training_txt184">Figure 1: Preparation of LoORS at home</string>
+    <string name="dia_training_txt185">• Up to 2 years: 50-100 ml after each loose stool.\n•	2 years or older: 100-200 ml after each loose stool.</string>
+    <string name="dia_training_txt186">How will you teach the caregiver to give LoORS?</string>
+    <string name="dia_training_txt187">Finally, give the caregiver instructions for giving LoORS:\n1.	Give frequent small sips from a cup.\n2.	If child vomits, wait 10 minutes. Then continue, but more slowly.\n3.	Continue giving extra fluid/LoORS until the diarrhea stops.</string>
+    <string name="dia_training_txt188">When is LoORS especially important?</string>
+    <string name="dia_training_txt189">It is especially important to give LoORS at home when:\n• Child was treated with Plan B or C during this visit — in other words, the child has just been rehydrated and needs LoORS to prevent dehydration from coming back.\n• Child cannot return to the clinic if the diarrhea gets worse — for example, if the family lives far away or the mother has a job that she cannot leave.</string>
+    <string name="dia_training_txt190">RULE 2: GIVE ZINC DT</string>
+    <string name="dia_training_txt191">Zinc treatment can considerably reduce the duration and severity of a childs diarrheal episode. It is also shown to decrease stool output and decrease the need to hospitalize a child with diarrhea. Zinc is only given to children up to 5 years. This box describes how much zinc to give a child with diarrhea. Review this information in Plan A in your Chart available in the module.</string>
+    <string name="dia_training_txt192">GIVE ZINC DT (one tablet is 20 mg zinc)</string>
+    <string name="dia_training_txt193">• Remind the caregiver to give zinc DT supplements for the full 10 days,\n• Tell the caregiver how much zinc DT to give.\n• Up to 6 months: 1/2 tablet per day, for 10 days.\n• 6 months or older: 1 tablet per day, for 10 days.\n• Show the caregiver how to give zinc DT.\n• Infants: dissolve the tablet in a small amount of breast milk, LoORS, or clean water in a small cup or spoon.\n• Older children: tablets can be chewed or dissolved in small amount of clean water in a cup or spoon.</string>
+    <string name="dia_training_txt194"><b>Show the mother how to give the zinc to her baby with diarrhea</b>. For example, infants can be given the tablet dissolved in a small amount of expressed breast milk LoORS, or clean water in a cup. Older children can chew the tablet or take it in a small amount of clean water.</string>
+    <string name="dia_training_txt195">The mother should give her child the first zinc supplement.</string>
+    <string name="dia_training_txt196">If a child is up to 6 months, give half a 20 mg tablet daily for 10 days. A child 6 months or older can take a whole 20 mg tablet. Explain how she will continue to give this treatment for 10 days. Check her understanding with checking questions, and answer any problems she has.</string>
+    <string name="dia_training_txt197">RULE 3: CONTINUE FEEDING</string>
+    <string name="dia_training_txt198">You will learn more about special feeding recommendations if the child has persistent diarrhea.</string>
+    <string name="dia_training_txt199">Figure 2: Continue feeding during diarrhea</string>
+    <string name="dia_training_txt200">The caregiver should continue feeding, as explained in the previous TREAT section. <b>You will also remember that children with persistent diarrhea have special feeding needs</b>. If children have difficulty to digest milk other than breast milk, caregivers need to temporarily reduce the amount of other milk in the childs diet. To make up for this reduction, the child must take more breast milk or other foods. Continue other foods appropriate for the child's age. The child with persistent diarrhea should be seen again after 5 days for follow-up, and will be given further feeding instructions during this visit.</string>
+    <string name="dia_training_txt201">RULE 4: WHEN TO RETURN</string>
+    <string name="dia_training_txt202">You have learned the signs when a caregiver should return immediately to a health worker.</string>
+    <string name="dia_training_txt203"><b>Tell the mother of any sick child that the signs to return are:</b>\n•	 Not able to drink or breastfeed.\n•	 Becomes sicker.\n•	Develops a fever.</string>
+    <string name="dia_training_txt204">If the child has diarrhea, also tell the mother to return if the child has:\n• Blood in stool.\n•	 Drinking poorly — also includes not able to drink or breastfeed.\n• Not passing urine for more than 6 hours.</string>
+    <string name="dia_training_txt205"><b>Remember that if the child is required to follow-up for more than one illness</b>, they should return for follow-up at the earliest definite date. The child should follow up:</string>
+    <string name="dia_training_txt206">How will you treat persistent diarrhea?</string>
+    <string name="dia_training_txt207">How will you treat severe persistent diarrhea?</string>
+    <string name="dia_training_txt208">Children with this classification have persistent diarrhea (14 days or longer) and signs of dehydration. These children should be referred to hospital. They need special attention to prevent fluid loss. You should treat dehydration before referral, unless child has another severe classification.</string>
+    <string name="dia_training_txt209">How will you treat persistent diarrhea?</string>
+    <string name="dia_training_txt210">Children with this classification have persistent diarrhea (14 days or longer) and no signs of dehydration. Special feeding is the most important treatment for persistent diarrhea with no signs of dehydration. Children with persistent diarrhea may have difficulty in digesting milk other than breast milk. They need to temporarily reduce the amount of other milk in their diet.</string>
+    <string name="dia_training_txt211">Special feeding advice for a child with persistent diarrhea includes:\n•	If still breastfeeding, give more frequent, longer breastfeeds, day and night.\n• If taking other milk:\n• Replace with increased breastfeeding, OR\n• Replace with fermented milk products, such as yogurt, OR\n• Replace half the milk with nutrient-rich semi-solid food.\n• For other foods, follow feeding recommendations for the childs age: give small, frequent meals (at least 6 times a day), and avoid very sweet foods or drinks.</string>
+    <string name="dia_training_txt212"><b>The child also should receive zinc DT for 10 days</b>. The child should follow up in 5 days.</string>
+    <string name="dia_training_txt213">How will you treat dysentery?</string>
+    <string name="dia_training_txt214">Children with dysentery should receive ciprofloxacin for 3 days. The box "Give an Appropriate Oral Antibiotic" in the chart booklet tells the recommended antibiotics. They should also receive zinc DT. Zinc should be given in the same way that you learned previously in Plan A and B. Treat dehydration as classified. Children should follow-up for the dysentery in 3 days.</string>
+    <string name="dia_training_txt215">Note: When should antibiotics be used for diarrhea?</string>
+    <string name="dia_training_txt216">Antibiotics are not effective in treating most cases of diarrhea. They rarely help and make some children sicker. Unnecessary use of antibiotics may increase the resistance of some pathogens. In addition, antibiotics are costly. Money is often wasted on ineffective treatment. Therefore, do not give antibiotics routinely. The only types of diarrhea that should be treated with antibiotics are DYSENTERY and diarrhea with SEVERE DEHYDRATION with cholera in the area.</string>
+    <string name="dia_training_txt217">COUNSEL THE CAREGIVER</string>
+    <string name="dia_training_txt218">Good teaching and advising skills are particularly important when treating dehydration and diarrhea. As you read in the previous section on treatment, the caregiver gives many of the treatments in the clinic or at home. This requires you to teach them how to give the treatment.</string>
+    <string name="dia_training_txt219">What are the 4 rules of home treatment?</string>
+    <string name="dia_training_txt220"><b>It is very important to counsel caregivers on the 4 rules of home treatment</b>. This is required for Plan A. Child classified with NO DEHYDRATION need Plan A. After children who required Plan B or C have completed this plan, they will also require Plan A at home (details provided with plan A in previous pages).</string>
+    <string name="dia_training_txt221">PROVIDE FOLLOW-UP CARE FOR DIARRHEA</string>
+    <string name="dia_training_txt222">Do you remember the steps for providing follow-up care?</string>
+    <string name="dia_training_txt223">First, you will re-assess your earlier classifications. Is the child:\n• IMPROVING\n• THE SAME\n•WORSENING</string>
+    <string name="dia_training_txt224">Second, you will reassess the child using the chart to see if there are any new issues.</string>
+    <string name="dia_training_txt225">Persistent diarrhea (follow-up 5 days)</string>
+    <string name="dia_training_txt226">First you will ASK:</string>
+    <string name="dia_training_txt227">Has the diarrhea stopped?</string>
+    <string name="dia_training_txt228">How many loose stools is the child having per day?</string>
+    <string name="dia_training_txt229">DIARRHEA HAS STOPPED (less than 3 stools/day)</string>
+    <string name="dia_training_txt230">Tell the mother to follow the usual feeding recommendations for the childs age. If the child is not normally fed in this way, you need to teach her the feeding recommendations on the COUNSEL chart.</string>
+    <string name="dia_training_txt231">DIARRHEA HAS NOT STOPPED (more than 3 stools/day)</string>
+    <string name="dia_training_txt232">Do a full reassessment of the child. Identify and manage any problems that require immediate attention such as dehydration. Then refer the child to hospital.</string>
+    <string name="dia_training_txt233">Dysentery (follow-up 3 days)</string>
+    <string name="dia_training_txt234">First you will ASK:\n• Are there fewer stools?\n•	Is there less blood in the stool?\n•	Is there less fever?\n•	Is there less abdominal pain?\n• Is the child eating better?</string>
+    <string name="dia_training_txt235">Fewer stools, less blood in stools, less fever, less abdominal pain, and eating better.</string>
+    <string name="dia_training_txt236">The child is improving on the antibiotic ciprofloxacin. Usually all of these signs will diminish if the antibiotic is working. If only some signs have diminished, use your judgment to decide if the child is improving. Tell the mother to finish the 3 days of the ciprofloxacin prescribed. Review with the mother the importance of finishing the antibiotic.</string>
+    <string name="dia_training_txt237">Child is Dehydrated</string>
+    <string name="dia_training_txt238">Use the classification table to classify the childs dehydration. Select the appropriate fluid plan and treat the dehydration.</string>
+    <string name="dia_training_txt239">More stools, blood in stools, fever, abdominal pain, and eating is same or worse.</string>
+    <string name="dia_training_txt240">The child is not improving on the antibiotic. Stop the first antibiotic and give the second-line antibiotic recommended for Shigella for 5 days. Refer to TREAT chart. Antibiotic resistance of Shigella may be causing the lack of improvement. Advise the caregiver to return in 3 days.</string>
+    <string name="dia_training_txt241">What actions will you take?</string>
+    <string name="dia_training_txt242">•	 Give the first dose of the new antibiotic in the clinic.\n•	 Teach the caregiver how and when to give the antibiotic and help her plan how to give it.\n• Advice the caregiver to bring the child back again after two more days.</string>
+    <string name="dia_training_txt243">What actions will you take on the follow-up visit in 3 days?</string>
+    <string name="dia_training_txt244"> If the child has received the second-line antibiotic for two days, and has not improved, the child may have Amoebiasis. This child may be treated with metronidazole if it is available or can be obtained by the family, or referred for treatment. Amoebiasis can only be diagnosed with certainty when trophozoites of E. histolytic containing red blood cells are seen in a fresh stool sample.</string>
+    <string name="dia_training_txt245">• FOR CHOLERA:\nFIRST-LINE ANTIBIOTIC FOR CHOLERA: _____________________________________\nSECOND-LINE ANTIBIOTIC FOR CHOLERA: __________________________________</string>
+    <string name="dia_training_txt246">REFER if the non-improving child has any of these 3 high-risk factors:</string>
+    <string name="dia_training_txt247">1.	Less than 12 months old, or\n2.	Was dehydrated on the first visit, or\n3.	Had measles within the last 3 months</string>
+    <!-- Diarrhea Training Ends -->
+
+    <!-- PSBI Training Starts -->
+    <string name="psbi_training_txt1">INTRODUCTION</string>
+    <string name="psbi_training_txt2">In this module you will learn to manage a sick young infant, defined as an infant aged up to 2 months. This includes the neonatal period, which is the first 4 weeks of life. The process is very similar to the one you have learned for managing the sick child age 2 months up to 5 years. All the steps are in the chart booklet, Management of the Sick Young Infant Age up to 2 Months:</string>
+    <string name="psbi_training_txt3">o	Assess\no Classify\no Treat\no Counsel the mother\no Follow-up</string>
+    <string name="psbi_training_txt4">LEARNING OBJECTIVES</string>
+    <string name="psbi_training_txt5">This module will describe the following tasks and allow you to practice some of them (some will be practiced in the clinic):</string>
+    <string name="psbi_training_txt6">• Assessing and classifying a young infant for possible serious bacterial infection or very severe disease, pneumonia, and local infection.\n• Assessing and classifying a young infant with DIARRHEA.\n• Determining if a sick young infant needs urgent referral or can be treated in the clinic and/or at home.\n• Providing pre-referral treatment to a young infant with very severe disease.\n• Where referral is refused or not possible, further assessing and classifying the young infant and determining appropriate treatment.\n• Preparing and giving an injection of gentamicin.\n• Treating a young infant with oral antibiotics.\n• Giving extra fluid for DIARRHEA and continued feeding.\n• Advising the mother how to give home care for the young infant.\n•	Giving follow-up care for the sick young infant.</string>
+    <string name="psbi_training_txt7">ASSESS AND CLASSIFY THE SICK YOUNG INFANT</string>
+    <string name="psbi_training_txt8">A mother (or other family member such as the father, grandmother, sister or brother) usually brings a young infant to the clinic because the infant is sick.  But mothers also bring their infants for well-baby visits, immunization sessions and for other problems. The steps on the YOUNG INFANT charts describe what you should do when a mother brings her young infant to the clinic because the infant is sick.</string>
+    <string name="psbi_training_txt9">Ask the mother what the young infants problems are. Determine if this is an initial or follow-up visit for these problems. If this is a follow-up visit, you should manage the infant according to the special instructions for a follow-up visit. These special instructions are in the follow-up boxes toward the end of the YOUNG INFANT chart booklet.</string>
+    <string name="psbi_training_txt10">If it is an initial visit, follow the sequence of steps on the chart. This section teaches the steps to assess and classify a sick young infant at an initial visit:</string>
+    <string name="psbi_training_txt11">•	Check for signs of possible serious bacterial infection or very severe disease, pneumonia, and local infection.  Then classify the young infant based on the signs found.\n•	 Ask about DIARRHEA. If the infant has DIARRHEA, assess the related signs. Classify the young infant for dehydration.\n• Check the young infants immunization status.</string>
+    <string name="psbi_training_txt12">If you find a reason that a young infant needs urgent referral, you may continue and complete the assessment of illness quickly.</string>
+    <string name="psbi_training_txt13">CHECK THE YOUNG INFANT FOR POSSIBLE SERIOUS BACTERIAL INFECTION OR VERY SEVERE DISEASE, PNEUMONIA AND LOCAL INFECTION.</string>
+    <string name="psbi_training_txt14">Young infants with possible serious bacterial infection (PSBI) are very sick and need urgent referral. Thus <i>every</i> sick young infant needs to be assessed carefully. In this assessment you are looking for signs of severe disease. A young infant can become sick and die <i>very quickly</i> from serious bacterial infections such as pneumonia, sepsis and meningitis. The signs of very severe disease also identify young infants who have other serious conditions like severe birth asphyxia and complications of preterm birth.</string>
+    <string name="psbi_training_txt15">The steps to assess the young infant are shown below:</string>
+    <string name="psbi_training_txt16"><b>ASK:</b>\n•	 Is the infant having difficulty in feeding?\n•	Has the infant had convulsions (fits)?</string>
+    <string name="psbi_training_txt17"><b>LOOK AND FEEL:</b>\n• Count the breaths in one minute. Repeat the count if 60 or more breaths per minute.\n• Look for severe chest indrawing.\n• Measure axillary temperature.\n• Look at the young infant's movements. <i>If infant is sleeping, ask the mother to wake him/her</i>.\n- Does the infant move on his/her own? If the infant is not moving, gently stimulate him/her.\n- Does the infant move only when stimulated but then stops?\n- Does the infant not move at all?\n• Look at the umbilicus. Is it red or draining pus?Look for skin pustules.</string>
+    <string name="psbi_training_txt18">It is important to assess the signs in the order on the chart, and to keep the young infant calm. The young infant <i>must be calm</i> and may be asleep while you assess the first two signs, that is, count breathing and look for severe lower chest in-drawing. If the infant is awake, observe his or her movements.</string>
+    <string name="psbi_training_txt19">To assess the next few signs, you will pick up the infant and then undress him, look at the skin all over his body and measure his temperature.  If the infant was sleeping earlier, by this time he or she will probably be awake.  Then you can see and observe his or her movements.</string>
+    <string name="psbi_training_txt20">How to assess each sign is described below:</string>
+    <string name="psbi_training_txt21">ASK:  Is the infant having difficulty in feeding?</string>
+    <string name="psbi_training_txt22">Ask the mother if the infant is feeding well. Any difficulty mentioned by the mother is important. A newborn who has not been able to feed since birth may be premature or may have complications such as birth asphyxia. A young infant who was feeding well earlier but stopped feeding well, or an infant who is not feeding at all has very severe disease.</string>
+    <string name="psbi_training_txt23">You will be able to confirm how the infant breastfeeds later in the assessment when you ask the mother to put the infant to the breast.</string>
+    <string name="psbi_training_txt24">ASK:  Has the infant had convulsions (fits) during this illness?</string>
+    <string name="psbi_training_txt25">Ask the mother if the young infant has had convulsions during this current illness. Use words the mother understands.  For example, the mother may know convulsions as "fits" or "spasms."  During a convulsion, the young infants arms and legs may become stiff.  The infant may stop breathing and become blue. Many times there may only be rhythmic movements of a part of the body, such as rhythmic twitching of the mouth or blinking of eyes. The young infant may lose consciousness.</string>
+    <string name="psbi_training_txt26">LOOK:  Count the breaths in one minute. Repeat the count if 60 or more breaths per minute.</string>
+    <string name="psbi_training_txt27">Count the breathing rate as you would in an older infant or young child. Young infants usually breathe faster than older infants and young children. The breathing rate of a healthy young infant is commonly more than 50 breaths per minute. Therefore, 60 breaths per minute or more is the cut-off used to identify fast breathing in a young infant.</string>
+    <string name="psbi_training_txt28">If the first count is 60 breaths or more, repeat the count. This is important because the breathing rate of a young infant is often irregular. The young infant will occasionally stop breathing for a few seconds, followed by a period of faster breathing. If the second count is also 60 breaths or more, the young infant has fast breathing.</string>
+    <string name="psbi_training_txt29">LOOK for severe chest in-drawing.</string>
+    <string name="psbi_training_txt30">Look for chest in-drawing as you would look for chest in-drawing in an older infant or young child. However, mild chest in-drawing is normal in a young infant because the chest wall is soft.  Severe chest in-drawing is very deep and easy to see.  Severe chest in-drawing is a sign of pneumonia and is serious in a young infant.</string>
+    <string name="psbi_training_txt31">FEEL: Measure axillary temperature.</string>
+    <string name="psbi_training_txt32">The thresholds in the YOUNG INFANT chart are based on axillary temperature. Fever (axillary temperature of 38C or above) is uncommon in the first two months of life.  If a young infant has fever, this may mean the infant has possible serious bacterial infection.  Fever may be the only sign of a serious bacterial infection.  Young infants can also respond to infection by dropping their body temperature to below 35.5C (axillary temperature).  Low body temperature is called hypothermia.</string>
+    <string name="psbi_training_txt33">If you find that the temperature is 38C or above or is below 35.5C, repeat the measurement after 30 minutes. In the meantime, remove clothing and let the baby who has fever cool.  If the baby has hypothermia in winter, wrap the baby to warm her for 30 minutes. Use the second reading to decide if the infant has fever or low temperature.</string>
+    <string name="psbi_training_txt34">LOOK at the umbilicus – is it red or draining pus?</string>
+    <string name="psbi_training_txt35">The umbilical cord usually separates one week after birth and the wound heals within 15 days. Redness at the end of the umbilicus or pus draining from the umbilicus are signs of umbilical infection. Early recognition and treatment of an infected umbilicus are essential to prevent sepsis.</string>
+    <string name="psbi_training_txt36">LOOK for skin pustules.  Are there pustules?</string>
+    <string name="psbi_training_txt37">Examine the skin on the entire body.  Skin pustules are red spots or blisters which contain pus.</string>
+    <string name="psbi_training_txt38">LOOK at the young infants movements.  Does the young infant move on his/her own? Does the infant move only when stimulated but then stops? Does the infant not move at all?</string>
+    <string name="psbi_training_txt39">Young infants often sleep most of the time, and this is not a sign of illness. Observe the infants movements while you do the assessment. If a young infant does not wake up during the assessment, ask the mother to wake him. An awake young infant will normally move his arms or legs or turn his head several times in a minute if you watch him closely. If the infant is awake but has no spontaneous movements, gently stimulate the young infant. If the infant moves only when stimulated and then stops moving, or does not move at all, it is a sign of possible serious bacterial infection or very severe disease. An infant who cannot be woken up even after stimulation also should also be considered to have this sign.</string>
+    <string name="psbi_training_txt40">CLASSIFY ALL SICK YOUNG INFANTS FOR POSSIBLE SERIOUS BACTERIAL INFECTION OR VERY SEVERE DISEASE, PNEUMONIA, AND LOCAL INFECTION.</string>
+    <string name="psbi_training_txt41">To classify all sick young infants for possible serious bacterial infection or very severe disease, pneumonia and local infection, compare the infants signs to signs listed in the chart and choose the appropriate classification.  If the infant has any sign in the pink row, select POSSIBLE SERIOUS BACTERIAL INFECTION OR VERY SEVERE DISEASE. If the infant has only the sign in the second row and no sign in the pink row, select PNEUMONIA. If the infant has any sign in the third row, select LOCAL INFECTION.  An infant who has none of the signs in the top three rows gets the classification SEVERE DISEASE OR LOCAL INFECTION UNLIKELY.</string>
+    <string name="psbi_training_txt42">Video: PSBI</string>
+    <string name="psbi_training_txt43">ASSESS DIARRHEA</string>
+    <string name="psbi_training_txt44">If the mother says that the young infant has DIARRHEA, assess and classify for dehydration.  The normally frequent, loose or semi-solid stools of a breastfed young infant are not DIARRHEA.  The mother of a breastfed young infant can recognize DIARRHEA because the consistency or frequency of the stools is different than normal. A young infant has DIARRHEA if the stools have changed from usual pattern and are more frequent than usual, and are watery (more water than fecal matter). The assessment is similar to the assessment of DIARRHEA for an older infant or young child, but fewer signs are checked.  Thirst is not assessed because it is not possible to distinguish thirst from hunger in a young infant.</string>
+    <string name="psbi_training_txt45">IF YES,LOOK AND FEEL:</string>
+    <string name="psbi_training_txt46">Look at the young infants general condition:\n Infant’s movements\n-   Does the infant move on his/her own?\nDoes the infant move only when stimulated but then stops?\n- 	Does the infant not move at all?\n-  	Is the infant restless and irritable?\n Is the infant restless\n Is the infant restless and irri\nDoes it go back:\n- Very slowly (longer than 2 seconds)?\n- Slowly?</string>
+    <string name="psbi_training_txt47">Read the steps to assess the child for dehydration if the child has DIARRHEA.</string>
+    <string name="psbi_training_txt48">CLASSIFY DIARRHEA FOR DEHYDRATION</string>
+    <string name="psbi_training_txt49">DIARRHEA in a young infant is classified in a similar way as in an older infant or young child.  Compare the infant's signs to the signs listed in the chart and choose one classification for dehydration.</string>
+    <string name="psbi_training_txt50">THEN CHECK THE YOUNG INFANTS IMMUNIZATION STATUS</string>
+    <string name="psbi_training_txt51">Check immunization status just as you would for an older infant or young child. Has the young infant received all the immunizations recommended for his age? Does the young infant need any immunization today?</string>
+    <string name="psbi_training_txt52">Remember that you should not give OPV0 to an infant who is more than 14 days old. Therefore, if an infant has not received these vaccines by the time he is 15 days old, you should wait to give OPV and other vaccines as per EPI schedule.</string>
+    <string name="psbi_training_txt53">If young infant is going to be referred, do not immunize before referral. The staff at the referral site should make the decision about immunizing the infant when the infant is admitted. This will avoid delaying referral.</string>
+    <string name="psbi_training_txt54">IDENTIFY APPROPRIATE TREATMENT</string>
+    <string name="psbi_training_txt55">For each of the young infants classifications, find the treatments recommended on the <i>YOUNG INFANT</i> charts.</string>
+    <string name="psbi_training_txt56">DETERMINE IF THE YOUNG INFANT NEEDS URGENT REFERRAL</string>
+    <string name="psbi_training_txt57">If the infant has any classification in a pink row, he or she needs urgent referral for hospital care.</string>
+    <string name="psbi_training_txt58">These severe (pink) classifications are:</string>
+    <string name="psbi_training_txt59">•	 POSSIBLE SERIOUS BACTERIAL INFECTION OR VERY SEVERE DISEASE\n•	 SEVERE DEHYDRATION</string>
+    <string name="psbi_training_txt60">When you decide that a young infant needs urgent referral, begin talking to the mother about the need to take the infant for hospital care.</string>
+    <string name="psbi_training_txt61">IDENTIFY URGENT, PRE-REFERRAL TREATMENT FOR A YOUNG INFANT WHO NEEDS TO BE URGENTLY REFERRED</string>
+    <string name="psbi_training_txt62">Before urgently referring a young infant to hospital, identify all appropriate pre-referral treatments.  Urgent pre-referral treatments are listed for each classification in a pink row in bold print on the chart. For any severe (pink) classification that you have written on the front of the recording form, quickly write the appropriate pre-referral treatments on the back of the form.</string>
+    <string name="psbi_training_txt63">Of the four classifications that require urgent referral, only the young infant who has POSSIBLE SERIOUS BACTERIAL INFECTION OR VERY SEVERE DISEASE should receive a first dose of intramuscular antibiotics prior to referral. However, all young infants who are urgently referred should be treated to prevent low blood sugar and their mothers should be taught how to keep the young infant warm on the way to the hospital.</string>
+    <string name="psbi_training_txt64">Treatments for other classifications should not be given before referral because they are not urgently needed and would delay referral.  For example, do not teach a mother how to treat a local infection before referral.  Do not give immunizations before referral.</string>
+    <string name="psbi_training_txt65">IDENTIFY TREATMENTS FOR A YOUNG INFANT WHO DOES NOT NEED URGENT REFERRAL</string>
+    <string name="psbi_training_txt66">Identify treatments for each classification by reading the chart. Classifications in yellow rows or green rows can be satisfactorily treated at home, with a follow-up visit to check that the infant is improving.</string>
+    <string name="psbi_training_txt67">Classifications in yellow include:</string>
+    <string name="psbi_training_txt68">– PNEUMONIA (in infant 7 to 59 days old with fast breathing as the only sign of illness)\n– LOCAL INFECTION\n– SOME DEHYDRATION</string>
+    <string name="psbi_training_txt69">Classifications in green rows usually call for advising the mother about home care.</string>
+    <string name="psbi_training_txt70">For <u>each</u> classification that you have written on the front of the recording form, record on the back of the form the treatments needed, advice to give the mother, and when to return for a follow-up visit.</string>
+    <string name="psbi_training_txt71">Follow-up visits are especially important for a young infant.  If you find at the follow-up visit that the infant is worse, you will refer the infant to the hospital.  A young infant with jaundice should return in one day; that means 24 hours later.  A young infant who has DIARRHEA with some dehydration or no dehydration, or local infection, should return in two days (that means after 48 hours, or 2 days of treatment).  A young infant who receives antibiotics for pneumonia or severe pneumonia should return in 3 days. A breastfed infant with low weight for age should return for follow-up in 14 days.</string>
+    <string name="psbi_training_txt72">When to return for follow-up is summarized in the Young Infant Chart Booklet.</string>
+    <string name="psbi_training_txt73">TREAT THE SICK YOUNG INFANT WHO NEEDS URGENT REFERRAL</string>
+    <string name="psbi_training_txt74">The sick young infant with a severe disease classification is at risk of death and needs to have treatment immediately. The best treatment option for the sick young infant with severe signs is at hospital level. Health workers need to use good counseling and negotiation skills when talking to and supporting caregivers to accept referral.</string>
+    <string name="psbi_training_txt75">GIVE URGENT PRE-REFERRAL TREATMENTS</string>
+    <string name="psbi_training_txt76">Below are the urgent pre-referral treatments for a young infant:</string>
+    <string name="psbi_training_txt77">1.	Give first dose of intramuscular antibiotics if the infant has the classification POSSIBLE SERIOUS BACTERIAL INFECTION OR VERY SEVERE DISEASE.\n2.	Treat the young infant to prevent low blood sugar.\n3.	Teach the mother how to keep the infant warm on the way to the hospital.  Keeping a sick young infant warm is very important.\n4.	If the infant has SEVERE DEHYDRATION or SOME DEHYDRATION, give the mother some prepared LoORS solution and ask her to give frequent sips of LoORS on the way. Also advise the mother to continue breastfeeding.</string>
+    <string name="psbi_training_txt78">While you are giving the pre-referral treatments, you will also explain to the mother the need for referral and try to resolve any problems, prepare a referral note, gather any necessary supplies for the trip, and finally review with her what to do on the way to the hospital.</string>
+    <string name="psbi_training_txt79">REFER THE YOUNG INFANT</string>
+    <string name="psbi_training_txt80">Explain to the caregivers that young infants are particularly vulnerable. When they are seriously ill, they need hospital care and need to receive it promptly.  Many families have reasons NOT to take a young infant to hospital.  If this is the case, you will have to address these reasons and explain that the infant's illness can best be treated at the hospital.</string>
+    <string name="psbi_training_txt81"><i>Explain to the mother/family the need for referral, and get her/their agreement to take the infant.  If you suspect that she/they does not want to take the infant, find out why</i>.  Possible reasons are:</string>
+    <string name="psbi_training_txt82">• She/they thinks that hospitals are places where people often die, and she fears that her infant will die there too\n• She cannot leave home and tend to her infant during a hospital stay because\n- There is no one to take care of her other children, or\n- She is needed for farming, or\n- She may lose a job.\n• She/they does not have money to pay for transportation, hospital bills, medicines, or food for herself during the hospital stay. </string>
+    <string name="psbi_training_txt83"><i>Calm the mothers fears and help her resolve any problems</i>.  For example:</string>
+    <string name="psbi_training_txt84">•	 If the mother fears that her infant will die at the hospital, reassure her that the hospital has physicians, supplies, and equipment that can help cure her infant.\n•	Explain what will happen at the hospital and how that will help her infant.\n•	If the mother needs help at home while she is at the hospital, ask questions and make suggestions about who could help.  For example, ask whether her husband, sister or mother could help with the other children or with meals while she is away.\n•	Discuss with the mother how she can travel to the hospital.  Help arrange transportation if necessary.\nYou may not be able to help the mother solve her problems and be sure that she goes to the hospital.  However, it is important to do everything you can to help.</string>
+    <string name="psbi_training_txt85"><i>Write a referral note for the mother to take with her to the hospital.  Tell her to give it to the health worker there</i>.  Write:</string>
+    <string name="psbi_training_txt86">•	 The name and age of the infant.\n•	The reason for referral (symptoms and signs leading to severe classification),\n• Treatment that you have given.\n•	Comments (any other information that the health worker at the hospital needs to know in order to care for the infant, such as earlier treatment of the illness or description of the infant’s problems).\n•	The date and time of referral.\n• Your name and the name of your clinic.\nThere is an example referral note at the back of the Young Infant Chart Booklet.</string>
+    <string name="psbi_training_txt87"><i>Give the mother any supplies and instructions needed to care for her infant on the way to the hospital</i>:</string>
+    <string name="psbi_training_txt88">•	 If the infant has SOME DEHYDRATION or SEVERE DEHYDRATION and can drink, give the mother some LoORS solution for the infant to sip frequently on the way.\n• Review and encourage the mother to follow your instructions on the way to the hospital.\n-	Keep the young infant warm during the trip.\n–	Continue breastfeeding.</string>
+    <string name="psbi_training_txt89">However, sometimes there are sick young infants who do not have access to a hospital, either because of distance or some reason that the family refuses referral. In these cases, there is something further that the health worker can do, as described in the following section.</string>
+    <string name="psbi_training_txt90">WHERE REFERRAL IS REFUSED OR NOT POSSIBLE, FURTHER ASSESS AND CLASSIFY THE SICK YOUNG INFANT</string>
+    <string name="psbi_training_txt91">The best possible treatment for an infant with a very severe illness is at a hospital. However, referral is not possible in many cases because access to hospital is difficult. The family may not have money for medicine, transport, lodging and food in larger towns, and transportation might not be available.</string>
+    <string name="psbi_training_txt92">Parents may not be able to take an infant to a larger health center or hospital, in spite of the health worker’s efforts to explain the need for referral.</string>
+    <string name="psbi_training_txt93">The reality is that very few newborns are seen at hospitals because of barriers to referral.  In such cases, the health worker should do all that she can do to help the family care for the baby.</string>
+    <string name="psbi_training_txt94">To help reduce deaths in severely ill newborns who cannot access treatment in hospital, the health worker can further assess and classify the young infant to determine <b>whether</b> the infant can be treated as an outpatient, and <b>what treatment</b> can be given.</string>
+    <string name="psbi_training_txt95">To further assess and classify the sick young infant where referral is refused or not possible, check for the signs in the left column of the chart. When the infant has signs in more than one row, choose the most severe classification.</string>
+    <string name="psbi_training_txt96">TREAT THE SICK YOUNG INFANT AND COUNSEL THE MOTHER</string>
+    <string name="psbi_training_txt97">Based on the young infant’s classifications, you have determined the treatments and counselling needed.</string>
+    <string name="psbi_training_txt98">How to give the different treatments and how to counsel the mother are in the chart booklet.</string>
+    <string name="psbi_training_txt99">GIVE AN INTRAMUSCULAR INJECTION OF GENTAMICIN</string>
+    <string name="psbi_training_txt100">Young infants with POSSIBLE SERIOUS BACTERIAL INFECTION OR VERY SEVERE DISEASE are often infected with a broader range of bacteria than older infants.  The combination of gentamicin and amoxicillin is effective against this broader range of bacteria. Young infants in this classification get two antibiotics: intramuscular gentamicin and oral amoxicillin tablets.</string>
+    <string name="psbi_training_txt101">There are three situations when you will give a young infant gentamicin intramuscularly:</string>
+    <string name="psbi_training_txt102">• For a young infant classified as POSSIBLE SERIOUS BACTERIAL INFECTION OR VERY SEVERE DISEASE, give the first dose of gentamicin intramuscularly prior to urgent referral.\n• Where referral is refused or not possible, and the young infant is classified as CLINICAL SEVERE INFECTION after further assessment, give a daily gentamicin injection. In addition, the mother will give oral amoxicillin tablets to the young infant twice each day.\n• Where referral is refused or not possible, and the young infant is classified as CRITICAL ILLNESS after further assessment, and referral is still not possible, give a daily injection of gentamicin. In addition, give an injection of ampicillin twice each day.</string>
+    <string name="psbi_training_txt103">PREPARATION OF A GENTAMICIN INJECTION</string>
+    <string name="psbi_training_txt104">Gentamicin may be available in an ampoule containing either 80 mg or 40 mg in 2 ml solution. When gentamicin will be given to a young infant, the strength should be 20 mg/ml.</string>
+    <string name="psbi_training_txt105">If the ampoule available contains 80 mg (that is 40 mg/ml), you will need to dilute it to obtain the required strength of 20 mg/ml. Follow steps 1 through 10 below:</string>
+    <string name="psbi_training_txt106">1)	Put the needle straight through the open top of the ampoule.  You may tip the ampoule carefully (ampoules do not spill very easily because the opening is narrow).</string>
+    <string name="psbi_training_txt107">2)	Withdraw gentamicin from the ampoule.\n–	 Pull up slightly more than 1 ml of gentamicin into the syringe.\n–	Remove needle/syringe from ampoule.\n– Hold syringe with exposed needle upwards. Tap the syringe to displace any air bubbles.</string>
+    <string name="psbi_training_txt108">3)	Press the plunger slowly to displace air on top, continuing to depress the plunger until no further air can be expelled, then continuing slowly to press until exactly 1 mL remains in the syringe.</string>
+    <string name="psbi_training_txt109">4)	Place syringe on clean tray. Do not touch the exposed needle.</string>
+    <string name="psbi_training_txt110">5)	Discard the contents of the ampoule (but not the ampoule itself) by vigorously shaking out the fluid into a bucket. Do not touch or tap the vial onto any object or surface (since it can easily break). Ensure that there are no drops of fluid left in the ampoule.</string>
+    <string name="psbi_training_txt111">6)	Replace the 1 ml of gentamicin back into the emptied ampoule.\n–	 Carefully place the end of the needle inside the ampoule.\n– Completely depress the plunger slowly and carefully, so that all of the 1 ml of gentamicin is expelled back into the empty ampoule.\n–	 Place the ampoule upright on a hard flat surface (e.g., a tray).</string>
+    <string name="psbi_training_txt112">7)	Open an ampoule of distilled water.</string>
+    <string name="psbi_training_txt113">8)	Using the same syringe and needle (as long as it has remained sterile), put the needle straight through the open top of the ampoule and withdraw 1 (one) ml of distilled water into the syringe.</string>
+    <string name="psbi_training_txt114">9)	Insert 1 ml of distilled water into the original gentamicin ampoule (which now contains exactly 1 ml of gentamicin).</string>
+    <string name="psbi_training_txt115">10)	Mix the contents of the ampoule (1 ml gentamicin and 1 ml water) by repeatedly drawing up the full 2 ml contents up into the syringe, and then expelling it back into the ampoule at least 3 times, without removing the needle from the ampoule. There is no need to make measurements at this step, since this is just for mixing.</string>
+    <string name="psbi_training_txt116">Measuring the exact dose of 20 mg/ml gentamicin to administer to the young infant</string>
+    <string name="psbi_training_txt117">Using the syringe and needle draw up the exact dose of 20 mg/ml gentamicin:</string>
+    <string name="psbi_training_txt118">– Choose the dose from the row of the table in the chart booklet which is closest to the infants weight.\n–	Pull up slightly more than the required volume of 20 mg/ml gentamicin into the syringe.\n– Remove needle/syringe from ampoule.\n– Hold the syringe with the exposed needle upwards. Tap the syringe to displace any air bubbles. Press the plunger slowly to displace air on top, continuing to depress the plunger until no further air can be expelled, then continuing very slowly to press until exactly the required volume (dose) remains in the syringe.</string>
+    <string name="psbi_training_txt119">Place syringe on clean tray. Do not touch the exposed needle.</string>
+    <string name="psbi_training_txt120">Use of gentamicin</string>
+    <string name="psbi_training_txt121">Gentamicin is given to young infants who have POSSIBLE SEVERE BACTERIAL INFECTION OR VERY SEVERE DISEASE prior to their referral to hospital, and, where referral is refused or not possible, is given to young infants classified as CLINICAL SEVERE INFECTION or CRITICAL ILLNESS.</string>
+    <string name="psbi_training_txt122">A health worker should refer to the dosing tables in the chart bookletall the time and never try to memorize the dosages. It is easy to make mistakes; by referring to the chart booklet the health worker can assure that the correct medicine and dose is given to the young infant. As when giving any injection, health workers must use proper infection prevention techniques and dispose of the used syringe and needle in a safe box after giving the injection.</string>
+    <string name="psbi_training_txt123">The gentamicin injection is given in the front and side (anterior-lateral) of the baby’s mid-thigh, half way from the knee to the top of the leg. The injection is given in the muscle in the thigh. See the illustration below.</string>
+    <string name="psbi_training_txt124">Give ONLY ONE injection of gentamicin daily and give the injection in the right or left thigh alternately from day to day.</string>
+    <string name="psbi_training_txt125">A health worker must administer the full course of treatment with gentamicin (2 days or 7 days depending on the option chosen by your country). If the course of treatment is 7 days, a health worker will have to be present to give the injection every day, even during the weekend.</string>
+    <string name="psbi_training_txt126">Give the following information to the mother or caregiver:\n• Explain what medicines are to be given to the young infant: gentamicin injection and, if the young infant is not being referred, oral amoxicillin will be given by the family.\n•	Explain to the mother why the medicine is given.\n•	Instruct the mother that the young infant should return each day for another injection (tomorrow, or every day for 6 more days), even if the young infant improves.\n• Discuss with the mother where the young infant could receive the next injection. It could be given by a trained health worker at the health facility or home.</string>
+    <string name="psbi_training_txt127">Injection:  Possible Mistakes and Consequent Dangers.</string>
+    <string name="psbi_training_txt128">GIVE AN APPROPRIATE ORAL ANTIBIOTIC</string>
+    <string name="psbi_training_txt129">Refer to the box on the YOUNG INFANT chart for the recommended antibiotic. Teaching a mother how to give the oral medicine at home is an essential part of giving an oral medication to a young infant. Teaching her should include the steps below:</string>
+    <string name="psbi_training_txt130">Follow the steps below to teach a mother how to give an oral antibiotic at home.</string>
+    <string name="psbi_training_txt131">Determine the appropriate oral medicine for the young infant and the dosage for the infant’s weight.</string>
+    <string name="psbi_training_txt132">Oral amoxicillin is given to young infants who:\n• Have LOCAL INFECTION, or\n• Have PNEUMONIA (fast breathing alone) in infant 7–59 days old.</string>
+    <string name="psbi_training_txt133">When referral is refused or not possible, oral amoxicillin is also given to young infants who:\n• Have CLINICAL SEVERE INFECTION, or\n• Have SEVERE PNEUMONIA (fast breathing alone) in infant less than 7 days old.</string>
+    <string name="psbi_training_txt134">Determine the correct dose of oral amoxicillin from the table on chart. Choose the dose according to the young infant’s weight and the formulation of amoxicillin available.</string>
+    <string name="psbi_training_txt135">Tell the mother the reason for giving the medicine to the infant, including:</string>
+    <string name="psbi_training_txt136">• why you are giving the oral medicine to her infant, and\n• what problem it is treating.</string>
+    <string name="psbi_training_txt137">Demonstrate how to measure a dose.</string>
+    <string name="psbi_training_txt138">Collect a container of the medicine and check its expiry date.  Do not use expired medicines.</string>
+    <string name="psbi_training_txt139">If you will give the mother dispersible amoxicillin tablets, determine the strength of the tablets (250 mg or 125 mg) and determine the dose according to the weight of the young infant. Show the mother how to measure the correct dose (e.g. 1/2 tablet, 1 tablet).</string>
+    <string name="psbi_training_txt140">If you will give her amoxicillin syrup, determine the correct dose for the young infant’s weight. Then show the mother how to measure the correct number of millilitres (ml) of amoxicillin syrup for one dose at home.  Use a spoon like a spoon that the mother will have at home to measure the correct dose.</string>
+    <string name="psbi_training_txt141">Remind the mother that she should wash her hands before opening and measuring the medicine.</string>
+    <string name="psbi_training_txt142">Observe the mother while practicing measuring a dose.</string>
+    <string name="psbi_training_txt143">Ask the mother to measure a dose by herself.  Observe her as she practices.  Tell her what she has done correctly.  If she measured the dose incorrectly, show her again how to measure it.\nIf using a dispersible tablet, she should place the tablet in a spoon. Show her how to add a bit of breastmilk to the spoon and watch as the tablet dissolves.</string>
+    <string name="psbi_training_txt144">Ask the mother to give the first dose to her infant.</string>
+    <string name="psbi_training_txt145">Watch as she measures and gives the syrup or dissolved tablet.\nTell the mother to watch the infant for 30 minutes after giving the dose.  If the infant vomits within the 30 minutes (the syrup may be seen in the vomit), give another dose.</string>
+    <string name="psbi_training_txt146">Explain carefully how to give the medicine.  Label and package the medicine.</string>
+    <string name="psbi_training_txt147">Tell the mother how many times per day to give the dose.  Tell her when to give it (such as early morning, lunch, dinner, before going to bed) and for how many days.</string>
+    <string name="psbi_training_txt148">Explain that all the tablets or syrup must be used to complete the course of treatment, even if the infantgets better.</string>
+    <string name="psbi_training_txt149">Explain to the mother that even if the infant seems better, she should continue to treat the infant.  This is important because the bacteria may still be present even though the signs of disease are gone.\nAdvise the mother to keep all medicines out of the reach of children.  Also tell her to store medicines in a dry and dark place that is free of mice and insects.</string>
+    <string name="psbi_training_txt150">Check the mothers understanding before she leaves the clinic.</string>
+    <string name="psbi_training_txt151">Ask the mother checking questions, such as:\n• "How much will you give each time?"\n• "When will you give it?"\n• "For how many days?"\n•	 "How will you measure the dose?"</string>
+    <string name="psbi_training_txt152">If you feel that the mother is likely to have problems when she gives her infant the medicine(s) at home, offer more <b>information, examples</b> and <b>practice</b>.  An infant needs to be treated correctly to get better.</string>
+    <string name="psbi_training_txt153">TEACH THE MOTHER HOW TO TREAT LOCAL INFECTIONS AT HOME</string>
+    <string name="psbi_training_txt154">There are three types of local infection in a young infant that a mother can treat at home:  an umbilicus which is red or draining pus, or skin pustules.  These local infections are treated in the same way that mouth ulcers are treated in an older infant or young child. Twice each day for an infected umbilicus or skin pustules, the mother cleans the infected area and then applies gentian violet.  Half-strength gentian violet must be used in the mouth.</string>
+    <string name="psbi_training_txt155">Explain and demonstrate the treatment to the mother.  Then watch her and guide her as needed while she gives the treatment to her infant.  Ask her to return for follow-up after3 days, or sooner if the infection worsens.  Explain that she should stop using gentian violet after 5 days (for umbilical or skin infection).  Ask her checking questions to be sure that she knows to give the treatment twice daily and when to return.</string>
+    <string name="psbi_training_txt156">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt157">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt158">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt159">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt160">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt161">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt162">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt163">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt164">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt165">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt166">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt167">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt168">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt169">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt170">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt171">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt172">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt173">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt174">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt175">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt176">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt177">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt178">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt179">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt180">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt181">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt182">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt183">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt184">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt185">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt186">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt187">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt188">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt189">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt190">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt191">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt192">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt193">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt194">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt195">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt196">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt197">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt198">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt199">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt200">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt201">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt202">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt203">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt204">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt205">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt206">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt207">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt208">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt209">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt210">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt211">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt212">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt213">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt214">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt215">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt216">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt217">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt218">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt219">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt220">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt221">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt222">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt223">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt224">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt225">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt226">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt227">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt228">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt229">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt230">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt231">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt232">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt233">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt234">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt235">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt236">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt237">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt238">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt239">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt240">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt241">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt242">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt243">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt244">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt245">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt246">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt247">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt248">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt249">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt250">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt251">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt252">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt253">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt254">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt255">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt256">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt257">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt258">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt259">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt260">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt261">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt262">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt263">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt264">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt265">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt266">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt267">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt268">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt269">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt270">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt271">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt272">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt273">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt274">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt275">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt276">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt277">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt278">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt279">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt280">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt281">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt282">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt283">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt284">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt285">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt286">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt287">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt288">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt289">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt290">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt291">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt292">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt293">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt294">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+    <string name="psbi_training_txt295">If the mother will treat skin pustules or umbilical infection, give her a bottle of full strength (0.5%) gentian violet.</string>
+
+
+    <!-- PSBI Training Ends -->
+
+
+    <string name="ask2">ASK: Does your child vomit everything?</string>
+    <string name="ask2_1">A child who is not able to hold anything down at all has the sign “vomits everything”. A child who vomits everything will not be able to hold down food, fluids, or oral drugs. A child who vomits several times but can hold down some fluids does not have this general danger sign. When you ask the question, use words that the caregiver understands. Give her time to answer. If the caregiver is not sure if the child is vomiting everything, help her answer clearly. For example, ask the caregiver how often the child vomits? Also ask if each time the child swallows food or fluids, does the child vomit? If you are not sure of the caregiver\'s answers, ask her to offer the child a drink. See if the child vomits.</string>
+    <string name="ask3">ASK: Has your child had convulsions?</string>
+    <string name="ask3_1">Ask the caregiver if the child has had more than one convulsion, or prolonged convulsions, <b>during this current illness.</b>\n During convulsion, the child\'s arms and legs stiffen because the muscles are contracting. The child may lose consciousness or not able to respond to spoken directions. Use words the caregiver understands. For example, the caregiver may call convulsions "fits" or "spasms"</string>
+    <string name="look1">LOOK: See if the child is convulsing now</string>
+    <string name="look1_1">During a convulsion the child\'s arms and legs stiffen because the muscles are contracting. The child loses consciousness and is not able to respond to spoken directions.\n• If the child is convulsing now, treat the child by managing the airway and giving diazepam rectally.\n<b>REMEMBER!!</b> convulsions are considered a general danger sign only if the child is aged less than 6 months or if a child aged 6 months or more has had more than one episode of convulsions during the present illness or convulsions lasted for more than 15 minutes.</string>
+    <string name="look2">LOOK: Is the child lethargic or unconscious?</string>
+    <string name="look2_1">• A lethargic child is not awake and alert when he/she should be. The child is drowsy and does not show interest in what is happening around him/her.\n• Often the lethargic child does not look at his caregiver or watch your face when you talk, or will not respond if you clap or snap your fingers. The child may stare blankly and appear not to notice what is going on around him/her.\n• An unconscious child cannot be wakened. He does not respond when he is touched, shaken, or spoken to. Ask the caregiver if the child seems unusually sleepy or if she cannot wake the child. Look to see if the child wakens when the caregiver talks or shakes the child or when you clap your hands.</string>
+    <string name="gds_training_txt10">CLASSIFY CHILD WITH A GENERAL DANGER SIGN</string>
+    <string name="gds_training_txt11">There is only one classification for child with any general danger sign i.e. very severe disease.</string>
+    <string name="gds_training_txt12">You will learn to record information about the sick child on a <b>Recording Form</b> . The front of the Recording Form is based on ASSESS &amp; CLASSIFY chart. It lists the questions to ask the mother and the signs for which you should look, listen and feel.\nIn most of the exercises in this module, you will only use part of the <b>Recording Form</b>. As you learn each step in the chart, you will use more of it.</string>
+    <string name="gds_training_txt13">When is urgent referral required?</string>
+    <string name="gds_training_txt14">Children with general danger signs and/or any condition with a pink classification require urgent pre-referral treatment and referral. These classifications indicate very serious illness.</string>
+    <string name="gds_training_txt15">It is important to remember that once you have identified a general danger sign, you must conduct an assessment and determine any pre-referral treatment so that you do not delay the referral.</string>
+    <string name="gds_training_txt16">• If a child has a general danger sign, you must take <b>IMMEDIATE ACTION</b>\n    • Complete assessment immediately\n    • Provide urgent pre-referral treatment\n    • Refer <b>URGENTLY</b></string>
+    <string name="gds_training_txt17">Video: Assess &amp; Classify Danger Sign</string>
+    <string name="gds_training_txt18">HOW DO YOU DETERMINE URGENT PRE-REFERRAL TREATMENT?</string>
+    <string name="gds_training_txt19">Some treatments should not be given before referral. Treatments that are not urgently needed, will only delay referral. For example, do not teach a care giver how to treat a local infection or give immunizations before referral.</string>
+    <string name="gds_training_txt20">Give Diazepam to Stop Convulsions</string>
+    <string name="gds_training_txt21">\t<b>•</b> Turn the child to his/her side and clear the airway. Avoid putting things in the mouth.\n\n\t<b>•</b> Give 0.5mg/kg diazepam injection solution per rectum using a small syringe without a needle (like tuberculin syringe) or using a catheter.\n\n\t<b>•</b> Check for low blood sugar, then treat or prevent.\n\n\t<b>•</b> Give oxygen and REFER\n\n\t<b>•</b> If convulsions have not stopped after 10 minutes repeat diazepam dose</string>
+    <string name="gds_training_txt22">Treat the Child to Prevent Low Blood Sugar:</string>
+    <string name="gds_training_txt23">\t <b>If the child is not able to swallow:</b> \n\t\t<b>•</b>  Give 50 ml of milk or sugar water* by nasogastric tube. \n\t\t<b>•</b>  If no nasogastric tube available, give 1 teaspoon of sugar moistened with 1-2 drops of water sublingually and repeat doses every 20 minutes to prevent relapse \n\n\t<b>If the child is able to breastfeed:</b> \n\t\t<b>•</b>  Ask the mother to breastfeed the child. \n\n\t<b>If the child is not able to breastfeed but is able to swallow:</b> \n\t\t<b>•</b>  Give expressed breast milk or a breast-milk substitute. \n\t\t<b>•</b>  If neither of these is available, give sugar water*. \n\t\t<b>•</b>  Give 30 - 50 ml of milk or sugar water* before departure.</string>
+    <string name="gds_training_txt24">HOW TO URGENTLY REFER THE CHILD?</string>
+    <string name="gds_training_txt25">There are four steps to referring a child or a sick young infant to hospital:</string>
+    <string name="cb_A4207_b_DK">Don\'t Know</string>
+    <string name="session_status">Session Status:</string>
+    <string name="rb_status1">Session Completed</string>
+    <string name="rb_status2">Session completed (Partially)</string>
+    <string name="rb_status3">Session Postponed</string>
+    <string name="rb_status4">Session Refused</string>
+    <string name="nic_no">Valid CNIC</string>
+    <string name="description_zoom_touch_close">Zoom touch close</string>
+
+    <!-- E Ends -->
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/U_Light"
+    android:orientation="vertical"
+    tools:context=".GDS.GdsRecordingForm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_mnchgdsform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_maingdsform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mnchgdsform"
+            android:layout_centerInParent="true"
+            android:text="General Danger Signs"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/img_gdsform"
+            android:layout_width="90dp"
+            android:layout_height="60sp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/unwhite" />
+
+        <TextView
+            android:id="@+id/txt_gdsform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5sp"
+            android:text="Recording Form"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="10dip">
+
+
+        <LinearLayout
+            android:id="@+id/ll_patient"
+            style="@style/Q_Linerlayout_new">
+
+
+            <!--EditText CINIC Starts-->
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/cniccv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_cnic"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/nic_no" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_cnic_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nic_no"
+                        android:inputType="date"
+                        app:met_mask="#####-#######-#"
+                        android:clickable="false"
+                        android:focusable="false"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>-->
+            <!--EditText CINIC Ends-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdspretest1cv"
+                style="@style/SAJID_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_gdspretestq1"
+                    style="@style/Q_Linerlayout_v">
+
+                    <EditText
+                        android:id="@+id/ed_patient_name"
+                        style="@style/EditText_Name"
+                        android:layout_marginTop="20dp"
+                        android:hint="Patient Name" />
+
+                    <EditText
+                        android:id="@+id/ed_patient_age"
+                        style="@style/EditText_number"
+                        android:hint="Patient Age" />
+
+                    <EditText
+                        android:id="@+id/ed_patient_weight"
+                        style="@style/EditText_number"
+                        android:hint="Patient Weight in Kilograms" />
+
+                    <EditText
+                        android:id="@+id/ed_patient_bodytemp"
+                        style="@style/EditText_number"
+                        android:hint="Patient Body Temperature in Celcius" />
+
+                    <EditText
+                        android:id="@+id/ed_patient_symptoms"
+                        style="@style/EditText_varchar"
+                        android:hint="What are the infant's problems?" />
+
+
+                    <TextView
+                        android:id="@+id/txt_patient_gender"
+                        style="@style/TextView"
+                        android:text="Patient Gender" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_male"
+                            style="@style/RadioButton"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:id="@+id/rb_female"
+                            style="@style/RadioButton"
+                            android:text="Female" />
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:id="@+id/txt_visit_type"
+                        style="@style/TextView"
+                        android:text="Patient visit type" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_initial"
+                            style="@style/RadioButton"
+                            android:text="Initial" />
+
+                        <RadioButton
+                            android:id="@+id/rb_followup"
+                            style="@style/RadioButton"
+                            android:text="Follow-up" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdspretest11cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdspretest10cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/btn_gdspretestsubmit"
+                    style="@style/Button_collder"
+                    android:layout_margin="10dp"
+                    android:text="Submit" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

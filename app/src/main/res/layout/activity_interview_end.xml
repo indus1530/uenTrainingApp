@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/U_Light"
+    android:orientation="vertical"
+    tools:context=".InterviewEnd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mnchmainpsbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/img_psbitest"
+            android:layout_width="90dp"
+            android:layout_height="60sp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/unwhite" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5sp"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:paddingTop="5sp"
+        android:scrollbarSize="10dip">
+
+
+        <LinearLayout style="@style/Q_Linerlayout_v">
+
+            <!-- EditText CNIC Starts -->
+            <android.support.v7.widget.CardView style="@style/SAJID_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_cnic"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/nic_no" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_cnic_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/nic_no"
+                        android:inputType="date"
+                        app:met_mask="#####-#######-#" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText CNIC Ends -->
+
+            <android.support.v7.widget.CardView style="@style/SAJID_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_result"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="Training" />
+
+                    <EditText
+                        android:id="@+id/ed_training"
+                        style="@style/EditText_varchar"
+                        android:clickable="false"
+                        android:focusable="false" />
+
+
+                    <TextView
+                        style="@style/TextView"
+                        android:layout_marginTop="30sp"
+                        android:text="Pre Test Result" />
+
+                    <EditText
+                        android:id="@+id/ed_pretest_result"
+                        style="@style/EditText_number"
+                        android:clickable="false"
+                        android:focusable="false" />
+
+
+                    <TextView
+                        style="@style/TextView"
+                        android:layout_marginTop="30sp"
+                        android:text="Post Test Result" />
+
+                    <EditText
+                        android:id="@+id/ed_posttest_result"
+                        style="@style/EditText_number"
+                        android:clickable="false"
+                        android:focusable="false" />
+
+                    <TextView
+                        style="@style/TextView"
+                        android:layout_marginTop="30sp"
+                        android:text="Post Test Percentage" />
+
+                    <EditText
+                        android:id="@+id/ed_ptp"
+                        style="@style/EditText_varchar"
+                        android:clickable="false"
+                        android:focusable="false" />
+
+                    <TextView
+                        style="@style/TextView"
+                        android:layout_marginTop="30sp"
+                        android:text="Remarks" />
+
+                    <EditText
+                        android:id="@+id/ed_remarks"
+                        style="@style/EditText_varchar"
+                        android:clickable="false"
+                        android:focusable="false" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView style="@style/SAJID_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_next_session"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        android:id="@+id/txt_next_session"
+                        style="@style/TextView"
+                        android:text="NEXT SESSION DATE &amp; TIME" />
+
+                    <EditText
+                        android:id="@+id/ed_next_session_date"
+                        style="@style/EditText_date"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="date" />
+
+                    <EditText
+                        android:id="@+id/ed_next_session_time"
+                        style="@style/EditText_date"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="time" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Radio Buttons EndInter Starts -->
+            <android.support.v7.widget.CardView style="@style/SAJID_CardView">
+
+                <LinearLayout
+                    android:id="@+id/ll_session_status"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/session_status" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_status1"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_status1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_status2"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_status2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_status3"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_status3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_status4"
+                            style="@style/RadioButton"
+                            android:text="@string/rb_status4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- Radio Buttons EndInter Ends -->
+
+
+            <android.support.v7.widget.CardView style="@style/SAJID_CardView">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    style="@style/Button_collder"
+                    android:layout_margin="10dp"
+                    android:text="SUBMIT" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

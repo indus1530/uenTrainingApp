@@ -1,0 +1,2991 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/U_Light"
+    android:orientation="vertical"
+    tools:context=".PSBI.PsbiTraining">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_mnchgdstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_gdstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mnchgdstr"
+            android:layout_centerInParent="true"
+            android:text="POSSIBLE SERIOUS BACTERIAL INFECTIONS"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/img_psbitraining"
+            android:layout_width="90dp"
+            android:layout_height="60sp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/unwhite" />
+
+        <TextView
+            android:id="@+id/txt_psbitraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5sp"
+            android:text="Training"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="10dip">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- EditText CINIC Starts -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cniccv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_cnic"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/nic_no" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_cnic_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/nic_no"
+                        android:inputType="date"
+                        app:met_mask="#####-#######-#" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText CINIC Ends -->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_pretest_result"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/cniccv">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_pretest_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_pretest_result"
+                        style="@style/TextView"
+                        android:text="Pre-Test Result" />
+
+                    <EditText
+                        android:id="@+id/ed_pretest_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="Result" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining1cv"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/cv_pretest_result">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining1"
+                        style="@style/TextViewHead"
+                        android:text="@string/psbi_training_txt1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining2"
+                        style="@style/TextView"
+                        android:text="@string/psbi_training_txt2" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining3"
+                        style="@style/TextView"
+                        android:text="@string/psbi_training_txt3" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining2cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining1cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining4"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt4" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining5"
+                        style="@style/TextView"
+                        android:text="@string/psbi_training_txt5" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining6"
+                        style="@style/TextView"
+                        android:text="@string/psbi_training_txt6" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining3cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining2cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining7"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt7"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining8"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt8" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining9"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt9" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining10"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt10" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining11"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt11" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining12"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt12" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining4cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining3cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining13"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt13"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining14"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt14" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining15"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt15" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining16"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt16" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining17"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt17" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining18"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt18" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining19"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt19" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining20"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt20" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining21"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt21"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining22"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt22" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining23"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt23" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining5cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining4cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining24"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt24"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining25"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt25" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining6cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining5cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining26"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt26"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining27"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt27" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining28"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt28" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining29"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt29"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining30"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt30" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining7cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining6cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining31"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt31"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining32"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt32" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining33"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt33" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining8cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining7cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diatrainingh3"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/dia_training_txt121"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_diatraining23"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/dia_training_txt122" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining9cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining8cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining34"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt34"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining35"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt35" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining36"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt36"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining37"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt37" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining38"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt38"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining39"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt39" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining10cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining9cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining40"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt40"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining41"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt41" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi1" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining42"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt42" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_psbi"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining11cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining10cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining43"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt43"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining44"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt44" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining45"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt45"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining46"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt46" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining47"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt47" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining12cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining11cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining48"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt48"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining49"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt49" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi2" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining13cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining12cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining50"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt50"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining51"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt51" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining52"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt52" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining53"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt53" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining14cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining13cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining54"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt54"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining55"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt55" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining15cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining14cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining56"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt56"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining57"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt57" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining58"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt58"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining59"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt59" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining60"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt60" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining16cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining15cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining61"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt61"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining62"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt62" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining63"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt63" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining64"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt64" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining17cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining16cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining65"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt65"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining66"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt66" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining67"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt67" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining68"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt68" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining69"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt69" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining70"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt70" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining71"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt71" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi3" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining72"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt72" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining18cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining17cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining73"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt73"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining74"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt74" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining19cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining18cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining75"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt75"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining76"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt76" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining77"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt77" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining78"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt78" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining20cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining19cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining79"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt79"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining80"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt80" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining81"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt81" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining82"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt82" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining83"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt83" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining84"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt84" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining85"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt85" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining86"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt86" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining87"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt87" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining88"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt88" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining89"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt89" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining21cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining20cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining90"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt90"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining91"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt91" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining92"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt92" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining93"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt93" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining94"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt94" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining95"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt95" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining22cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining21cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining96"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt96"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining97"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt97" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining98"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt98" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining23cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining22cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining99"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt99"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining100"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt100" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining101"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt101" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining102"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt102" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining24cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining23cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining103"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt103"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining104"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt104" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining105"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt105" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining106"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt106" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining107"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt107" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining108"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt108" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining109"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt109" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining110"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt110" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining111"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt111" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining112"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt112" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining113"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt113" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining114"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt114" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining115"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt115" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining25cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining24cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining116"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt116"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining117"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt117" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining118"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt118" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining119"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt119" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining26cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining25cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining120"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt120"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining121"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt121" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining122"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt122" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining123"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt123" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining124"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt124" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining125"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt125" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi4" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining126"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt126" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi5" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining127"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt127"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi6" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining27cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining26cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining128"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt128"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining129"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt129" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining130"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt130" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining131"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt131"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining132"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt132" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining133"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt133" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining134"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt134" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining135"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt135"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining136"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt136" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining137"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt137"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining138"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt138" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining139"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt139" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining140"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt140" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining141"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt141" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining142"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt142"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining143"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt143" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining144"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt144"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining145"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt145" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining146"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt146"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining147"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt147" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining148"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt148"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining149"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt149" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining150"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt150"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining151"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt151" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining152"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt152" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining28cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining27cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining153"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt153"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining154"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt154" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining155"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt155" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining156"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt156" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining29cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining28cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining163"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt163"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining164"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt164"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining165"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt165" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining166"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt166" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining167"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt167" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining168"
+                        style="@style/TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt168" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining169"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt169" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining30cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining29cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining170"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt170"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining171"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt171" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining172"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt172" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining173"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt173" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining174"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt174" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining175"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt175" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining176"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt176" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining31cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining30cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining177"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt177"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining178"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt178" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining179"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt179" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining180"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt180" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining181"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt181" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining182"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt182" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining183"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt183" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining32cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining31cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining184"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt184"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining185"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt185" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining186"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt186" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining187"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt187" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining188"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt188" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining189"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt189" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining190"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt190" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining191"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt191" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining33cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining32cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining192"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt192"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining193"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt193" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining194"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt194" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining195"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt195"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining196"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt196" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining197"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt197"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining198"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt198" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining199"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt199"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining200"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt200" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining201"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt201"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining202"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt202" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining203"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt203"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining204"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt204" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining205"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt205" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining206"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt206" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining34cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining33cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining207"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt207"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining208"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt208" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining209"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt209" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining210"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt210" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining211"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt211" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining35cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining34cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining212"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt212"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining213"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt213" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining214"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt214" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining215"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt215" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining216"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt216" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining36cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining35cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining217"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt217"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining218"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt218" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining219"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt219" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining220"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt220" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining221"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt221" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining222"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt222" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining223"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt223" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining37cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining36cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining229"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt229"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining230"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt230" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining231"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt231" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining232"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt232" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining233"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt233" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining234"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt234" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining235"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt235" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining236"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt236"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi7" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining38cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining37cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining237"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt237"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining238"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt238" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining39cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining38cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining239"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt239"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining240"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt240" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining241"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt241" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining242"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt242" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining243"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt243" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining244"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt244" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining245"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt245" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining246"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt246" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi8" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining40cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining39cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining247"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt247"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining248"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt248" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining249"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt249" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining250"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt250" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining251"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt251" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining252"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt252" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining253"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt253" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi9" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining254"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt254" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining255"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt255" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining256"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt256" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining257"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt257" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining41cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining40cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining258"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt258"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining259"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt259" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining260"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt260" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining261"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt261" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining262"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt262" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi10" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining263"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt263" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining264"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt264" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining42cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining41cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining265"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt265"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining266"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt266" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining267"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt267" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi11" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining268"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt268" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining269"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt269" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining270"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt270" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining43cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining42cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining271"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt271"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining272"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt272" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining273"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt273" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining274"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt274" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining275"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt275" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining276"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt276" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining44cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining43cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining277"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt277"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining278"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt278" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining45cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/psbitraining44cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining279"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt279"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining280"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt280" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining281"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt281" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining282"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt282" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining283"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt283" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining284"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt284" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining285"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt285" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining286"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt286" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining287"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt287" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining288"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt288" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining289"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt289" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining290"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt290" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining291"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt291" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining292"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt292" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining293"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt293" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining294"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/psbi_training_txt294" />
+
+                    <TextView
+                        android:id="@+id/txt_psbitraining295"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/psbi_training_txt295"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/psbi12" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/psbitraining46cv"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/psbitraining45cv">
+
+                <Button
+                    android:id="@+id/btn_psbitrainingsubmit"
+                    style="@style/Button_collder"
+                    android:layout_margin="10dp"
+                    android:text="Completed" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

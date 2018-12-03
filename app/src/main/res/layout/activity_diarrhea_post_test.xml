@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/U_Light"
+    android:orientation="vertical"
+    tools:context=".DIARRHEA.DiarrheaPostTest">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_mnchmainDiarrhea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_diarrheamain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mnchmainDiarrhea"
+            android:layout_centerInParent="true"
+            android:text="Diarrhea"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/img_diarrheaposttest"
+            android:layout_width="90dp"
+            android:layout_height="60sp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/unwhite" />
+
+        <TextView
+            android:id="@+id/txt_diarrheaposttest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5sp"
+            android:text="POST-TEST"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="10dip">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- EditText CINIC Starts -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cniccv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_cnic"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/nic_no" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_cnic_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/nic_no"
+                        android:inputType="date"
+                        app:met_mask="#####-#######-#" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText CINIC Ends -->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_pretest_result"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/cniccv">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_pretest_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_pretest_result"
+                        style="@style/TextView"
+                        android:text="Pre-Test Result" />
+
+                    <EditText
+                        android:id="@+id/ed_pretest_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="Result" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest1cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_pretest_result"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_diarrheaposttestq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diarrheaposttestq1"
+                        style="@style/TextView"
+                        android:text="@string/diarrheatestq1" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq1a1"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq1a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq1a2"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq1a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq1a3"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq1a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq1a4"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq1a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest2cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diarrheaposttest1cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_diarrheaposttestq2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diarrheaposttestq2"
+                        style="@style/TextView"
+                        android:text="@string/diarrheatestq2" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq2a1"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq2a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq2a2"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq2a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq2a3"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq2a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq2a4"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq2a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest3cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diarrheaposttest2cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_diarrheaposttestq3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diarrheaposttestq3"
+                        style="@style/TextView"
+                        android:text="@string/diarrheatestq3" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq3a1"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq3a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq3a2"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq3a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq3a3"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq3a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq3a4"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq3a4" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest4cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diarrheaposttest3cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_diarrheaposttestq4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diarrheaposttestq4"
+                        style="@style/TextView"
+                        android:text="@string/diarrheatestq4" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq4a1"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq4a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq4a2"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq4a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq4a3"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq4a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq4a4"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq4a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest5cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diarrheaposttest4cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_diarrheaposttestq5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diarrheaposttestq5"
+                        style="@style/TextView"
+                        android:text="@string/diarrheatestq5" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq5a1"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq5a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq5a2"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq5a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq5a3"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq5a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq5a4"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq5a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest6cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diarrheaposttest5cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_diarrheaposttestq6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diarrheaposttestq6"
+                        style="@style/TextView"
+                        android:text="@string/diarrheatestq6" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq6a1"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq6a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq6a2"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq6a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq6a3"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq6a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq6a4"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq6a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest7cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diarrheaposttest6cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_diarrheaposttestq7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diarrheaposttestq7"
+                        style="@style/TextView"
+                        android:text="@string/diarrheatestq7" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq7a1"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq7a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq7a2"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq7a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq7a3"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq7a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq7a4"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq7a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest8cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diarrheaposttest7cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_diarrheaposttestq8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diarrheaposttestq8"
+                        style="@style/TextView"
+                        android:text="@string/diarrheatestq8" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq8a1"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq8a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq8a2"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq8a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq8a3"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq8a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq8a4"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq8a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest9cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diarrheaposttest8cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_diarrheaposttestq9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diarrheaposttestq9"
+                        style="@style/TextView"
+                        android:text="@string/diarrheatestq9" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq9a1"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq9a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq9a2"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq9a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq9a3"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq9a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq9a4"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq9a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest10cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diarrheaposttest9cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_diarrheaposttestq10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_diarrheaposttestq10"
+                        style="@style/TextView"
+                        android:text="@string/diarrheatestq10" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq10a1"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq10a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq10a2"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq10a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq10a3"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq10a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_diarrheaposttestq10a4"
+                            style="@style/RadioButton"
+                            android:text="@string/diarrheatestq10a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/diarrheaposttest11cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diarrheaposttest10cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/btn_diarrheaposttestsubmit"
+                    style="@style/Button_collder"
+                    android:layout_margin="10dp"
+                    android:text="Submit" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

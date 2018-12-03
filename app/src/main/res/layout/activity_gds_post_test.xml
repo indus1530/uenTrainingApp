@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/U_Light"
+    android:orientation="vertical"
+    tools:context=".GDS.GdsPostTest">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_mnchgdsposttest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_maingdsposttest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mnchgdsposttest"
+            android:layout_centerInParent="true"
+            android:text="General Danger Signs"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/img_gdsposttest"
+            android:layout_width="90dp"
+            android:layout_height="60sp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/unwhite" />
+
+        <TextView
+            android:id="@+id/txt_gdsposttest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5sp"
+            android:text="POST-TEST"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="10dip">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- EditText CINIC Starts -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cniccv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_cnic"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/nic_no" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_cnic_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/nic_no"
+                        android:inputType="date"
+                        app:met_mask="#####-#######-#" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText CINIC Ends -->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_pretest_result"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/cniccv">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_pretest_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_pretest_result"
+                        style="@style/TextView"
+                        android:text="GDS Pre Test Result" />
+
+                    <EditText
+                        android:id="@+id/ed_pretest_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="Result" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest1cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_pretest_result"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gdsposttestq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/txt_gdsposttestq1"
+                        style="@style/TextView"
+                        android:text="@string/gdspretestq1" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq1a1"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq1a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq1a2"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq1a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq1a3"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq1a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq1a4"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq1a4" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest2cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdsposttest1cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gdsposttestq2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/txt_gdsposttestq2"
+                        style="@style/TextView"
+                        android:text="@string/gdspretestq2" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq2a1"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq2a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq2a2"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq2a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq2a3"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq2a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq2a4"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq2a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest3cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdsposttest2cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gdsposttestq3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/txt_gdsposttestq3"
+                        style="@style/TextView"
+                        android:text="@string/gdspretestq3" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq3a1"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq3a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq3a2"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq3a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq3a3"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq3a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq3a4"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq3a4" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest4cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdsposttest3cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gdsposttestq4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/txt_gdsposttestq4"
+                        style="@style/TextView"
+                        android:text="@string/gdspretestq4" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq4a1"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq4a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq4a2"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq4a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq4a3"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq4a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq4a4"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq4a4" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest5cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdsposttest4cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gdsposttestq5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/txt_gdsposttestq5"
+                        style="@style/TextView"
+                        android:text="@string/gdspretestq5" />
+
+
+                    <RadioGroup style="@style/RadioGroup"
+
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq5a1"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq5a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq5a2"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq5a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq5a3"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq5a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq5a4"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq5a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest6cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdsposttest5cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gdsposttestq6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/txt_gdsposttestq6"
+                        style="@style/TextView"
+                        android:text="@string/gdspretestq6" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq6a1"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq6a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq6a2"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq6a2" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest7cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdsposttest6cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gdsposttestq7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/txt_gdsposttestq7"
+                        style="@style/TextView"
+                        android:text="@string/gdspretestq7" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq7a1"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq7a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq7a2"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq7a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq7a3"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq7a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq7a4"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq7a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest8cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdsposttest7cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gdsposttestq8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdsposttestq8"
+                        style="@style/TextView"
+                        android:text="@string/gdspretestq8" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq8a1"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq8a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq8a2"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq8a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq8a3"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq8a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq8a4"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq8a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest9cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdsposttest8cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gdsposttestq9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdsposttestq9"
+                        style="@style/TextView"
+                        android:text="@string/gdspretestq9" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq9a1"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq9a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq9a2"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq9a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq9a3"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq9a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq9a4"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq9a4" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest10cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdsposttest9cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_gdsposttestq10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdsposttestq10"
+                        style="@style/TextView"
+                        android:text="@string/gdspretestq10" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq10a1"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq10a1" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq10a2"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq10a2" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq10a3"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq10a3" />
+
+                        <RadioButton
+                            android:id="@+id/rb_gdsposttestq10a4"
+                            style="@style/RadioButton"
+                            android:text="@string/gdspretestq10a4" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdsposttest12cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdsposttest10cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/btn_gdsposttestsubmit"
+                    style="@style/Button_collder"
+                    android:layout_margin="10dp"
+                    android:text="Submit" />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

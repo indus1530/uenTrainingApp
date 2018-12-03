@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/U_Light"
+    android:orientation="vertical"
+    tools:context=".GDS.GdsTraining">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_mnchgdstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txt_gdstr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mnchgdstr"
+            android:layout_centerInParent="true"
+            android:text="General Danger Sign"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/img_gdstraining"
+            android:layout_width="90dp"
+            android:layout_height="60sp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/unwhite" />
+
+        <TextView
+            android:id="@+id/txt_gdstraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5sp"
+            android:text="Training"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="10dip">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- EditText CINIC Starts -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cniccv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_cnic"
+                    style="@style/Q_Linerlayout_v">
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/nic_no" />
+
+                    <com.santalu.widget.MaskEditText
+                        android:id="@+id/ed_cnic_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="@string/nic_no"
+                        android:inputType="date"
+                        app:met_mask="#####-#######-#" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- EditText CINIC Ends -->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_pretest_result"
+                style="@style/SAJID_CardView"
+                android:layout_below="@+id/cniccv">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_pretest_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_pretest_result"
+                        style="@style/TextView"
+                        android:text="GDS Pre Test Result" />
+
+                    <EditText
+                        android:id="@+id/ed_pretest_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="Result" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining1cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_pretest_result"
+                android:layout_marginTop="7sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh1"
+                        style="@style/TextViewHead"
+                        android:text="@string/overview" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh2"
+                        style="@style/TextView"
+                        android:text="@string/overview_txt" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh3"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt1" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining2cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining1cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh4"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/learning_Objectives_txt" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh5"
+                        style="@style/TextView"
+                        android:text="@string/gds_training_txt2" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining3cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining2cv"
+                android:layout_marginTop="7sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh6"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/gds_training_txt4" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh7"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt3" />
+
+                    <ImageButton
+                        android:id="@+id/gds12"
+                        android:layout_width="match_parent"
+                        android:layout_height="280sp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gds1" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining4cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining3cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh8"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/gds_training_txt5" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh9"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt6" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh10"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt7"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh11"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt8" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh12"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt9" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining5cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining4cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh13"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/ask2" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh14"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/ask2_1" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining6cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining5cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh15"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/ask3" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh16"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/ask3_1" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining7cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining6cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh17"
+                        style="@style/TextViewHead"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/look1" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh18"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/look1_1" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining8cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining7cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh19"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/look2" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh20"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/look2_1" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining9cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining8cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh21"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/gds_training_txt10" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh22"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt11" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="180sp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gds2" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh23"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt12" />
+
+                    <Button
+                        android:id="@+id/btn_recordingform"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:background="@color/pink"
+                        android:text="Recording Form"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining10cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining9cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh24"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/gds_training_txt13" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh25"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt14" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_diazepam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gds3" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh26"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt15" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh27"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt16" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining11cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining10cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh28"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/gds_training_txt17" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_sd"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining12cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining11cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh29"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/gds_training_txt18" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh30"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt19" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh31"
+                        style="@style/TextView"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/gds_training_txt20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh32"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/gds_training_txt21" />
+
+                    <ImageView
+                        android:id="@+id/img_table1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/table2" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh33"
+                        style="@style/TextView"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/gds_training_txt22"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh34"
+                        style="@style/TextView"
+                        android:layout_marginTop="2sp"
+                        android:text="@string/gds_training_txt23" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstraining13cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining12cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh35"
+                        style="@style/Hedaer_textview"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/gds_training_txt24" />
+
+                    <TextView
+                        android:id="@+id/txt_gdstrainingh36"
+                        style="@style/TextView"
+                        android:layout_below="@+id/txt_gdstrainingh35"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/gds_training_txt25" />
+
+                    <Button
+                        android:id="@+id/btn_blue"
+                        android:layout_width="130sp"
+                        android:layout_height="100sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@+id/txt_gdstrainingh35"
+                        android:background="@color/blue"
+                        android:text="Explain The Caregiver the need for Referral"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btn_cyan"
+                        android:layout_width="130sp"
+                        android:layout_height="100sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="153dp"
+                        android:background="@color/cyan"
+                        android:text="calm the caregiver's fears"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btn_green2"
+                        android:layout_width="130sp"
+                        android:layout_height="100sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/txt_gdstrainingh36"
+                        android:layout_marginEnd="156dp"
+                        android:background="@color/green2"
+                        android:text="Write a referral note"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btn_green1"
+                        android:layout_width="130sp"
+                        android:layout_height="100sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="12dp"
+                        android:background="@color/green1"
+                        android:text="Give supplies &amp; instructions needed"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gdstrainingncv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gdstraining13cv"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/btn_gdstrainingsubmit"
+                    style="@style/Button_collder"
+                    android:layout_margin="10dp"
+                    android:text="Completed" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

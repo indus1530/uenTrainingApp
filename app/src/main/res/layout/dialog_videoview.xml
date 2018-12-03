@@ -1,0 +1,332 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/U_Light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <VideoView
+            android:id="@+id/videoview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scrollbarSize="10dip">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/vv_cv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_c1"
+                        style="@style/Hedaer_textview"
+                        android:text="Child 1" />
+
+                    <TextView
+                        android:id="@+id/txt_c1l"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="Lethargic" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_c1l_yes"
+                            style="@style/RadioButton"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/rb_c1l_no"
+                            style="@style/RadioButton"
+                            android:text="NO" />
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:id="@+id/txt_c1u"
+                        style="@style/TextView"
+                        android:layout_marginTop="15sp"
+                        android:text="Unconscious" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_c1u_yes"
+                            style="@style/RadioButton"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/rb_c1u_no"
+                            style="@style/RadioButton"
+                            android:text="NO" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/vv_cv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vv_cv1"
+                android:layout_marginTop="15sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_c2"
+                        style="@style/Hedaer_textview"
+                        android:text="Child 2" />
+
+                    <TextView
+                        android:id="@+id/txt_c2l"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="Lethargic" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_c2l_yes"
+                            style="@style/RadioButton"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/rb_c2l_no"
+                            style="@style/RadioButton"
+                            android:text="NO" />
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:id="@+id/txt_c2u"
+                        style="@style/TextView"
+                        android:layout_marginTop="15sp"
+                        android:text="Unconscious" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_c2u_yes"
+                            style="@style/RadioButton"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/rb_c2u_no"
+                            style="@style/RadioButton"
+                            android:text="NO" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/vv_cv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vv_cv2"
+                android:layout_marginTop="15sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_c3"
+                        style="@style/Hedaer_textview"
+                        android:text="Child 3" />
+
+                    <TextView
+                        android:id="@+id/txt_c3l"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="Lethargic" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_c3l_yes"
+                            style="@style/RadioButton"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/rb_c3l_no"
+                            style="@style/RadioButton"
+                            android:text="NO" />
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:id="@+id/txt_c3u"
+                        style="@style/TextView"
+                        android:layout_marginTop="15sp"
+                        android:text="Unconscious" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_c3u_yes"
+                            style="@style/RadioButton"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/rb_c3u_no"
+                            style="@style/RadioButton"
+                            android:text="NO" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/vv_cv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vv_cv3"
+                android:layout_marginTop="15sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_c4"
+                        style="@style/Hedaer_textview"
+                        android:text="Child 4" />
+
+                    <TextView
+                        android:id="@+id/txt_c4l"
+                        style="@style/TextView"
+                        android:layout_marginTop="5sp"
+                        android:text="Lethargic" />
+
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_c4l_yes"
+                            style="@style/RadioButton"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/rb_c4l_no"
+                            style="@style/RadioButton"
+                            android:text="NO" />
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:id="@+id/txt_c4u"
+                        style="@style/TextView"
+                        android:layout_marginTop="15sp"
+                        android:text="Unconscious" />
+
+                    <RadioGroup style="@style/RadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/rb_c4u_yes"
+                            style="@style/RadioButton"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/rb_c4u_no"
+                            style="@style/RadioButton"
+                            android:text="NO" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/vv_cv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vv_cv4"
+                android:layout_marginTop="10sp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <Button
+                    android:id="@+id/btn_gdstestsave"
+                    style="@style/Button_collder"
+                    android:layout_margin="10dp"
+                    android:text="Submit" />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
