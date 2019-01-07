@@ -677,49 +677,48 @@
                         android:layout_marginTop="5sp"
                         android:text="@string/gds_training_txt25" />
 
-                    <Button
-                        android:id="@+id/btn_blue"
-                        android:layout_width="130sp"
-                        android:layout_height="100sp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignStart="@+id/txt_gdstrainingh35"
-                        android:background="@color/blue"
-                        android:text="Explain The Caregiver the need for Referral"
-                        android:textColor="@color/black" />
-
-                    <Button
-                        android:id="@+id/btn_cyan"
-                        android:layout_width="130sp"
-                        android:layout_height="100sp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="153dp"
-                        android:background="@color/cyan"
-                        android:text="calm the caregiver's fears"
-                        android:textColor="@color/black" />
-
-                    <Button
-                        android:id="@+id/btn_green2"
-                        android:layout_width="130sp"
-                        android:layout_height="100sp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentEnd="true"
+                    <LinearLayout
+                        style="@style/Q_Linerlayout_v"
                         android:layout_below="@+id/txt_gdstrainingh36"
-                        android:layout_marginEnd="156dp"
-                        android:background="@color/green2"
-                        android:text="Write a referral note"
-                        android:textColor="@color/black" />
+                        android:gravity="center"
+                        android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/btn_green1"
-                        android:layout_width="130sp"
-                        android:layout_height="100sp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginEnd="12dp"
-                        android:background="@color/green1"
-                        android:text="Give supplies &amp; instructions needed"
-                        android:textColor="@color/black" />
+                        <Button
+                            android:id="@+id/btn_green2"
+                            android:layout_width="130sp"
+                            android:layout_height="90sp"
+                            android:background="@color/green2"
+                            android:text="Write a referral note"
+                            android:textColor="@color/black"/>
+
+                        <Button
+                            android:id="@+id/btn_blue"
+                            android:layout_width="130sp"
+                            android:layout_height="90sp"
+                            android:background="@color/blue"
+                            android:text="Explain The Caregiver the need for Referral"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="5sp"/>
+
+                        <Button
+                            android:id="@+id/btn_cyan"
+                            android:layout_width="130sp"
+                            android:layout_height="90sp"
+                            android:background="@color/cyan"
+                            android:text="calm the caregiver's fears"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginRight="5sp"/>
+
+                        <Button
+                            android:id="@+id/btn_green1"
+                            android:layout_width="130sp"
+                            android:layout_height="90sp"
+                            android:background="@color/green1"
+                            android:text="Give supplies &amp; instructions needed"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
 
                 </RelativeLayout>
 

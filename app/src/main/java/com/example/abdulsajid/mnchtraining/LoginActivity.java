@@ -78,7 +78,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnTouchList
 
                             // Intent intent = new Intent(LoginActivity.this, FirstCard.class);
 
-                            Intent intent = new Intent(LoginActivity.this, GdsTraining.class);
+                            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
 //                             intent.putExtra("qa_officer", textUsername.getText().toString().trim());
                             LoginActivity.this.startActivity(intent);
                             LoginActivity.this.finish();

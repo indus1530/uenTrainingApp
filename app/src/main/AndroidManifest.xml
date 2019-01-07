@@ -56,7 +56,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".GDS.GdsTraining"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".videact"

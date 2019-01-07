@@ -1,4 +1,4 @@
-package com.example.abdulsajid.mnchtraining.utils;
+package utils;
 
 import java.util.HashMap;
 

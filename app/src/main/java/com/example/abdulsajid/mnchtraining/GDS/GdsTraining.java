@@ -71,13 +71,13 @@ public class GdsTraining extends AppCompatActivity implements View.OnClickListen
 
         Initialization();
 
-        /*Intent getcnicno = getIntent();
+        Intent getcnicno = getIntent();
         cnic_no = getcnicno.getExtras().getString("cnic_no");
         pretest_result = getcnicno.getExtras().getString("pretest_result");
         ed_cnic_no.setText(cnic_no);
         ed_pretest_result.setText(pretest_result);
         ed_cnic_no.setEnabled(false);
-        ed_pretest_result.setEnabled(false);*/
+        ed_pretest_result.setEnabled(false);
 
         gds12.setOnClickListener(this);
         imgbtn_sd.setOnClickListener(this);

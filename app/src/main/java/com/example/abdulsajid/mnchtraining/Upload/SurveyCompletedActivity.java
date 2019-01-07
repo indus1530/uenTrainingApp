@@ -133,7 +133,6 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
                         if (arrr[1].contains("General Danger Signs")) {
                             upload_gds(arrr[0], parseInt(arrr[2]), vh.itemView);
 
-
                         } else if (arrr[1].contains("Cough & Difficult Breathing")) {
                             upload_cdb(arrr[0], parseInt(arrr[2]), vh.itemView);
 
@@ -189,7 +188,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
     //USING PROStaff
     public void upload_gds(final String cnic_no, final int id, final View itemView) {
 
-        final String ROOT_URL = "http://10.198.97.62:80/sm/Welcome/collect_GDS";
+        final String ROOT_URL = "http://10.198.97.79:80/sm/Welcome/collect_GDS";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -347,7 +346,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_cdb(final String cnic_no, final int id, final View itemView) {
 
-        final String ROOT_URL = "http://10.198.97.62:80/sm/Welcome/collect_CDB";
+        final String ROOT_URL = "http://10.198.97.79:80/sm/Welcome/collect_CDB";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -506,7 +505,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_diarrhea(final String cnic_no, final int id, final View itemView) {
 
-        final String ROOT_URL = "http://10.198.97.62:80/sm/Welcome/collect_Diarrhea";
+        final String ROOT_URL = "http://10.198.97.79:80/sm/Welcome/collect_Diarrhea";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
@@ -665,7 +664,7 @@ class SurveyCompletedCustomAdapter extends RecyclerView.Adapter {
 
     public void upload_psbi(final String cnic_no, final int id, final View itemView) {
 
-        final String ROOT_URL = "http://10.198.97.62:80/sm/Welcome/collect_PSBI";
+        final String ROOT_URL = "http://10.198.97.79:80/sm/Welcome/collect_PSBI";
 
         final RequestQueue myRequestQueue = Volley.newRequestQueue(mContext);
 
