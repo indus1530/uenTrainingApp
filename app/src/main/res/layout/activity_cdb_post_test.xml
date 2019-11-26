@@ -100,6 +100,14 @@
                         android:inputType="date"
                         app:met_mask="#####-#######-#" />
 
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="AutoCompleteTextView" />
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
