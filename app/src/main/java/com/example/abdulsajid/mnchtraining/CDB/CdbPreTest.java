@@ -643,7 +643,7 @@ public class CdbPreTest extends AppCompatActivity implements RadioButton.OnCheck
     }
 
     public void onBackPressed() {
-        Toast.makeText(this, "You are not allowed to go on back screen SORRY!!! \nIf you want to do so PLEASE CONTACT Dr. Samia", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You are not allowed to go on back screen SORRY!!!", Toast.LENGTH_LONG).show();
     }
 
 
