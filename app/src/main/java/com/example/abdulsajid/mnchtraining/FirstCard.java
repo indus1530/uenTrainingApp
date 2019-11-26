@@ -99,7 +99,7 @@ public class FirstCard extends AppCompatActivity implements View.OnClickListener
 
 
     public void onBackPressed() {
-        Toast.makeText(this, "YOU ARE NOT ALLOWED TO GO ON BACK SCREEN SORRY!!! \nIF YOU WANT TO DO SO PLEASE CONTACT MISS SHAZIA BANO or DR.SHAH MUHAMMAD", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "YOU ARE NOT ALLOWED TO GO ON BACK SCREEN SORRY!!!", Toast.LENGTH_LONG).show();
     }
 
 }
