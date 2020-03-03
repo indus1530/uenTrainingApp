@@ -53,36 +53,32 @@ public class FirstCard extends AppCompatActivity implements View.OnClickListener
     }
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View v) {
 
-        switch (view.getId()) {
+        switch (v.getId()) {
 
-            case view.getId() == R.id.btn_pink
-                final AlertDialog b = new AlertDialog.Builder(this).create();
-                LayoutInflater layinflat = getLayoutInflater();
-                View v = layinflat.inflate(R.layout.dialog_pink, null);
+            final AlertDialog b = new AlertDialog.Builder(this).create();
+            LayoutInflater layinflat = getLayoutInflater();
+
+            case v.getId() == R.id.btn_pink
+                v = layinflat.inflate(R.layout.dialog_pink, null);
                 b.setView(v);
                 b.show();
                 break;
 
-            case view.getId() == R.id.btn_yellow
-                final AlertDialog b = new AlertDialog.Builder(this).create();
-                LayoutInflater layoutInflater = getLayoutInflater();
-                View v = layoutInflater.inflate(R.layout.dialog_yellow, null);
+            case v.getId() == R.id.btn_yellow
+                v = layinflat.inflate(R.layout.dialog_yellow, null);
                 b.setView(v);
                 b.show();
                 break;
 
-            case view.getId() == R.id.btn_green
-                final AlertDialog b = new AlertDialog.Builder(this).create();
-                LayoutInflater layoutInflater = getLayoutInflater();
-                View v = layoutInflater.inflate(R.layout.dialog_green, null);
+            case v.getId() == R.id.btn_green
+                v = layinflat.inflate(R.layout.dialog_green, null);
                 b.setView(v);
                 b.show();
                 break;
 
-            case view.getId() == R.id.btn_fc_start
-
+            case v.getId() == R.id.btn_fc_start
                 ed_cnic_no.getText().toString().trim().length() > 0 ?
                         cnic_no = ed_cnic_no.getText().toString().trim();
         }
