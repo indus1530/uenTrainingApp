@@ -85,12 +85,12 @@ public class FirstCard extends AppCompatActivity implements View.OnClickListener
 
                 ed_cnic_no.getText().toString().trim().length() > 0 ?
                         cnic_no = ed_cnic_no.getText().toString().trim();
-
-            Intent intt = new Intent(this, MainActivity.class);
-            intt.putExtra("cnic_no", cnic_no);
-            startActivity(intt);
-            this.finish();
         }
+
+        Intent intt = new Intent(this, MainActivity.class);
+        intt.putExtra("cnic_no", cnic_no);
+        startActivity(intt);
+        this.finish();
     }
 
 
