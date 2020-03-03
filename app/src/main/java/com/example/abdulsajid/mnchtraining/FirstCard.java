@@ -59,8 +59,8 @@ public class FirstCard extends AppCompatActivity implements View.OnClickListener
 
             final AlertDialog b = new AlertDialog.Builder(this).create();
 
-            LayoutInflater layoutInflater = getLayoutInflater();
-            View v = layoutInflater.inflate(R.layout.dialog_pink, null);
+            LayoutInflater layinflat = getLayoutInflater();
+            View v = layinflat.inflate(R.layout.dialog_pink, null);
             b.setView(v);
             b.show();
 
