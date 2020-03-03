@@ -412,8 +412,9 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
         cnic_no = ed_cnic_no.getText().toString().length() > 0 ? ed_cnic_no.getText().toString().trim() : "0";
 
         //Q1
-        if (rb_cdbposttestq1a1.isChecked()) {
-            cdbposttestq1 = "1";
+        if () {
+            cdbposttestq1 = rb_cdbposttestq1a1.isChecked() = "1"
+                    :
         }
         if (rb_cdbposttestq1a2.isChecked()) {
             cdbposttestq1 = "2";
