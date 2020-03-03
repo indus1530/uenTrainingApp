@@ -79,19 +79,18 @@ public class FirstCard extends AppCompatActivity implements View.OnClickListener
                 View v = layoutInflater.inflate(R.layout.dialog_green, null);
                 b.setView(v);
                 b.show();
+                break;
 
-        } else if (view.getId() == R.id.btn_fc_start) {
+            case view.getId() == R.id.btn_fc_start
 
-            if (ed_cnic_no.getText().toString().trim().length() > 0) {
-                cnic_no = ed_cnic_no.getText().toString().trim();
-            }
+                ed_cnic_no.getText().toString().trim().length() > 0 ?
+                        cnic_no = ed_cnic_no.getText().toString().trim();
 
             Intent intt = new Intent(this, MainActivity.class);
             intt.putExtra("cnic_no", cnic_no);
             startActivity(intt);
             this.finish();
         }
-    }
     }
 
 
