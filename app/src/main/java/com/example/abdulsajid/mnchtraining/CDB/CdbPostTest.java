@@ -405,13 +405,13 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
                 : "0";
         temp = cdbposttestq1.equals("2") ? temp + 1 : temp;
 
-        //Q2
+        //Q1
         cdbposttestq2 = rb_cdbposttestq2a1.isChecked() ? "1"
                 : rb_cdbposttestq2a2.isChecked() ? "2"
                 : rb_cdbposttestq2a3.isChecked() ? "3"
                 : rb_cdbposttestq2a4.isChecked() ? "4"
                 : "0";
-        temp = cdbposttestq2.equals("3") ? temp + 1 : temp;
+        temp = cdbposttestq2.equals("4") ? temp + 1 : temp;
 
         //Q3
         cdbposttestq3 = rb_cdbposttestq3a1.isChecked() ? "1"
@@ -428,34 +428,20 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
         temp = cdbposttestq4.equals("1") ? temp + 1 : temp;
 
         //Q5
-        if (rb_cdbposttestq5a1.isChecked()) {
-            cdbposttestq5 = "1";
-        }
-        if (rb_cdbposttestq5a2.isChecked()) {
-            cdbposttestq5 = "2";
-        }
-        if (rb_cdbposttestq5a3.isChecked()) {
-            cdbposttestq5 = "3";
-            temp = temp + 1;
-        }
-        if (rb_cdbposttestq5a4.isChecked()) {
-            cdbposttestq5 = "4";
-        }
+        cdbposttestq5 = rb_cdbposttestq5a1.isChecked() ? "1"
+                : rb_cdbposttestq5a2.isChecked() ? "2"
+                : rb_cdbposttestq5a3.isChecked() ? "3"
+                : rb_cdbposttestq5a4.isChecked() ? "4"
+                : "0";
+        temp = cdbposttestq5.equals("3") ? temp + 1 : temp;
 
         //Q6
-        if (rb_cdbposttestq6a1.isChecked()) {
-            cdbposttestq6 = "1";
-        }
-        if (rb_cdbposttestq6a2.isChecked()) {
-            cdbposttestq6 = "2";
-        }
-        if (rb_cdbposttestq6a3.isChecked()) {
-            cdbposttestq6 = "3";
-            temp = temp + 1;
-        }
-        if (rb_cdbposttestq6a4.isChecked()) {
-            cdbposttestq6 = "4";
-        }
+        cdbposttestq6 = rb_cdbposttestq6a1.isChecked() ? "1"
+                : rb_cdbposttestq6a2.isChecked() ? "2"
+                : rb_cdbposttestq6a3.isChecked() ? "3"
+                : rb_cdbposttestq6a4.isChecked() ? "4"
+                : "0";
+        temp = cdbposttestq6.equals("3") ? temp + 1 : temp;
 
         //Q7
         if (rb_cdbposttestq7a1.isChecked()) {
@@ -516,7 +502,6 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
             cdbposttestq10 = "4";
             temp = temp + 1;
         }
-
 
         posttest_result = String.valueOf(temp);
 
