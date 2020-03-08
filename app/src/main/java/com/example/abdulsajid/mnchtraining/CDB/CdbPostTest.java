@@ -389,7 +389,9 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
         rb_cdbposttestq8a2.setOnCheckedChangeListener(this);
         rb_cdbposttestq8a3.setOnCheckedChangeListener(this);
         rb_cdbposttestq8a4.setOnCheckedChangeListener(this);
+
     }
+
 
     void value_assignment() {
 
@@ -405,7 +407,7 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
                 : "0";
         temp = cdbposttestq1.equals("2") ? temp + 1 : temp;
 
-        //Q1
+        //Q2
         cdbposttestq2 = rb_cdbposttestq2a1.isChecked() ? "1"
                 : rb_cdbposttestq2a2.isChecked() ? "2"
                 : rb_cdbposttestq2a3.isChecked() ? "3"
@@ -478,7 +480,10 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
         posttest_result = String.valueOf(temp);
 
         ptp = Math.round(Double.parseDouble(posttest_result) / 10 * 100);
+
+
     }
+
 
     void insert_data() {
         String query = "insert into CDBPostTest("
