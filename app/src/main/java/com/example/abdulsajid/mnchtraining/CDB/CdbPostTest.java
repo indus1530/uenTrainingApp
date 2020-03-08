@@ -414,19 +414,12 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
         temp = cdbposttestq2.equals("3") ? temp + 1 : temp;
 
         //Q3
-        if (rb_cdbposttestq3a1.isChecked()) {
-            cdbposttestq3 = "1";
-        }
-        if (rb_cdbposttestq3a2.isChecked()) {
-            cdbposttestq3 = "2";
-            temp = temp + 1;
-        }
-        if (rb_cdbposttestq3a3.isChecked()) {
-            cdbposttestq3 = "3";
-        }
-        if (rb_cdbposttestq3a4.isChecked()) {
-            cdbposttestq3 = "4";
-        }
+        cdbposttestq3 = rb_cdbposttestq3a1.isChecked() ? "1"
+                : rb_cdbposttestq3a2.isChecked() ? "2"
+                : rb_cdbposttestq3a3.isChecked() ? "3"
+                : rb_cdbposttestq3a4.isChecked() ? "4"
+                : "0";
+        temp = cdbposttestq3.equals("3") ? temp + 1 : temp;
 
         //Q4
         if (rb_cdbposttestq4a1.isChecked()) {
