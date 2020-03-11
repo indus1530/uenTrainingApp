@@ -398,24 +398,16 @@ public class CdbPreTest extends AppCompatActivity implements RadioButton.OnCheck
 
 
         int temp = 0;
-        if (ed_cnic_no.getText().toString().length() > 0) {
-            cnic_no = ed_cnic_no.getText().toString().trim();
-        }
+
+        cnic_no = ed_cnic_no.getText().toString().length() > 0 ? ed_cnic_no.getText().toString().trim() : "0";
 
         //Q1
-        if (rb_cdbpretestq1a1.isChecked()) {
-            cdbpretestq1 = "1";
-        }
-        if (rb_cdbpretestq1a2.isChecked()) {
-            cdbpretestq1 = "2";
-        }
-        if (rb_cdbpretestq1a3.isChecked()) {
-            cdbpretestq1 = "3";
-        }
-        if (rb_cdbpretestq1a4.isChecked()) {
-            cdbpretestq1 = "4";
-            temp = temp + 1;
-        }
+        cdbpretestq1 = rb_cdbpretestq1a1.isChecked() ? "1"
+                : rb_cdbpretestq1a2.isChecked() ? "2"
+                : rb_cdbpretestq1a3.isChecked() ? "3"
+                : rb_cdbpretestq1a4.isChecked() ? "4"
+                : "-1";
+        temp = cdbpretestq1.eguals("4") ? temp + 1 : temp;
 
         //Q2
         if (rb_cdbpretestq2a1.isChecked()) {
