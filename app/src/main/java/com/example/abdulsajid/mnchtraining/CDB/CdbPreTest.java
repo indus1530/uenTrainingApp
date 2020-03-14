@@ -407,46 +407,29 @@ public class CdbPreTest extends AppCompatActivity implements RadioButton.OnCheck
                 : rb_cdbpretestq1a3.isChecked() ? "3"
                 : rb_cdbpretestq1a4.isChecked() ? "4"
                 : "-1";
-        temp = cdbpretestq1.eguals("4") ? temp + 1 : temp;
+        temp = cdbpretestq1.equals("4") ? temp + 1 : temp;
 
         //Q2
-        if (rb_cdbpretestq2a1.isChecked()) {
-            cdbpretestq2 = "1";
-        }
-        if (rb_cdbpretestq2a2.isChecked()) {
-            cdbpretestq2 = "2";
-        }
-        if (rb_cdbpretestq2a3.isChecked()) {
-            cdbpretestq2 = "3";
-            temp = temp + 1;
-        }
-        if (rb_cdbpretestq2a4.isChecked()) {
-            cdbpretestq2 = "4";
-        }
+        cdbpretestq2 = rb_cdbpretestq2a1.isChecked() ? "1"
+                : rb_cdbpretestq2a2.isChecked() ? "2"
+                : rb_cdbpretestq2a3.isChecked() ? "3"
+                : rb_cdbpretestq2a4.isChecked() ? "4"
+                : "-1";
+        temp = cdbpretestq2.equals("3") ? temp + 1 : temp;
 
         //Q3
-        if (rb_cdbpretestq3a1.isChecked()) {
-            cdbpretestq3 = "1";
-        }
-        if (rb_cdbpretestq3a2.isChecked()) {
-            cdbpretestq3 = "2";
-            temp = temp + 1;
-        }
-        if (rb_cdbpretestq3a3.isChecked()) {
-            cdbpretestq3 = "3";
-        }
-        if (rb_cdbpretestq3a4.isChecked()) {
-            cdbpretestq3 = "4";
-        }
+        cdbpretestq3 = rb_cdbpretestq3a1.isChecked() ? "1"
+                : rb_cdbpretestq3a2.isChecked() ? "2"
+                : rb_cdbpretestq3a3.isChecked() ? "3"
+                : rb_cdbpretestq3a4.isChecked() ? "4"
+                : "-1";
+        temp = cdbpretestq3.equals("2") ? temp + 1 : temp;
 
         //Q4
-        if (rb_cdbpretestq4a1.isChecked()) {
-            cdbpretestq4 = "1";
-            temp = temp + 1;
-        }
-        if (rb_cdbpretestq4a2.isChecked()) {
-            cdbpretestq4 = "2";
-        }
+        cdbpretestq4 = rb_cdbpretestq4a1.isChecked() ? "1"
+                : rb_cdbpretestq4a2.isChecked() ? "2"
+                : "-1";
+        temp = cdbpretestq4.equals("1") ? temp + 1 : temp;
 
         //Q5
         if (rb_cdbpretestq5a1.isChecked()) {
