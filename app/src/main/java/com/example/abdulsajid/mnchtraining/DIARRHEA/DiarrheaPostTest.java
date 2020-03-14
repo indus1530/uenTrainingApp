@@ -467,40 +467,21 @@ public class DiarrheaPostTest extends AppCompatActivity implements RadioButton.O
 
     void value_assignment() {
 
-        cnic_no = "0";
-        diarrheaposttestq1 = "-1";
-        diarrheaposttestq2 = "-1";
-        diarrheaposttestq3 = "-1";
-        diarrheaposttestq4 = "-1";
-        diarrheaposttestq5 = "-1";
-        diarrheaposttestq6 = "-1";
-        diarrheaposttestq7 = "-1";
-        diarrheaposttestq8 = "-1";
-        diarrheaposttestq9 = "-1";
-        diarrheaposttestq10 = "-1";
         posttest_result = "0";
         STATUS = "0";
 
 
         int temp = 0;
-        if (ed_cnic_no.getText().toString().length() > 0) {
-            cnic_no = ed_cnic_no.getText().toString().trim();
-        }
+
+        cnic_no = ed_cnic_no.getText().toString().length() > 0 ? ed_cnic_no.getText().toString().trim() : "0";
 
         //Q1
-        if (rb_diarrheaposttestq1a1.isChecked()) {
-            diarrheaposttestq1 = "1";
-            temp = temp + 1;
-        }
-        if (rb_diarrheaposttestq1a2.isChecked()) {
-            diarrheaposttestq1 = "2";
-        }
-        if (rb_diarrheaposttestq1a3.isChecked()) {
-            diarrheaposttestq1 = "3";
-        }
-        if (rb_diarrheaposttestq1a4.isChecked()) {
-            diarrheaposttestq1 = "4";
-        }
+        diarrheaposttestq1 = rb_diarrheaposttestq1a1.isChecked() ? "1"
+                : rb_diarrheaposttestq1a2.isChecked() ? "2"
+                : rb_diarrheaposttestq1a3.isChecked() ? "3"
+                : rb_diarrheaposttestq1a4.isChecked() ? "4"
+                : "-1";
+        temp = diarrheaposttestq1.equals("1") ? temp + 1 : temp;
 
         //Q2
         if (rb_diarrheaposttestq2a1.isChecked()) {
