@@ -455,17 +455,6 @@ public class DiarrheaPreTest extends AppCompatActivity implements RadioButton.On
 
     void value_assignment() {
 
-        cnic_no = "0";
-        diarrheapretestq1 = "-1";
-        diarrheapretestq2 = "-1";
-        diarrheapretestq3 = "-1";
-        diarrheapretestq4 = "-1";
-        diarrheapretestq5 = "-1";
-        diarrheapretestq6 = "-1";
-        diarrheapretestq7 = "-1";
-        diarrheapretestq8 = "-1";
-        diarrheapretestq9 = "-1";
-        diarrheapretestq10 = "-1";
         pretest_result = "0";
         STATUS = "0";
 
