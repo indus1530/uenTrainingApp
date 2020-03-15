@@ -532,19 +532,12 @@ public class DiarrheaPostTest extends AppCompatActivity implements RadioButton.O
         temp = diarrheaposttestq7.equals("1") ? temp + 1 : temp;
 
         //Q8
-        if (rb_diarrheaposttestq8a1.isChecked()) {
-            diarrheaposttestq8 = "1";
-        }
-        if (rb_diarrheaposttestq8a2.isChecked()) {
-            diarrheaposttestq8 = "2";
-            temp = temp + 1;
-        }
-        if (rb_diarrheaposttestq8a3.isChecked()) {
-            diarrheaposttestq8 = "3";
-        }
-        if (rb_diarrheaposttestq8a4.isChecked()) {
-            diarrheaposttestq8 = "4";
-        }
+        diarrheaposttestq8 = rb_diarrheaposttestq8a1.isChecked() ? "1"
+                : rb_diarrheaposttestq8a2.isChecked() ? "2"
+                : rb_diarrheaposttestq8a3.isChecked() ? "3"
+                : rb_diarrheaposttestq8a4.isChecked() ? "4"
+                : "-1";
+        temp = diarrheaposttestq8.equals("2") ? temp + 1 : temp;
 
         //Q9
         if (rb_diarrheaposttestq9a1.isChecked()) {
