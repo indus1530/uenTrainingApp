@@ -458,11 +458,9 @@ public class DiarrheaPreTest extends AppCompatActivity implements RadioButton.On
         pretest_result = "0";
         STATUS = "0";
 
-
         int temp = 0;
-        if (ed_cnic_no.getText().toString().length() > 0) {
-            cnic_no = ed_cnic_no.getText().toString().trim();
-        }
+
+        cnic_no = ed_cnic_no.getText().toString().length() > 0 ? ed_cnic_no.getText().toString().trim() : "0";
 
         //Q1
         if (rb_diarrheapretestq1a1.isChecked()) {
