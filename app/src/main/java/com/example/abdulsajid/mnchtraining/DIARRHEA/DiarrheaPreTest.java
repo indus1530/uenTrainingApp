@@ -471,34 +471,20 @@ public class DiarrheaPreTest extends AppCompatActivity implements RadioButton.On
         temp = diarrheapretestq1.equals("1") ? temp + 1 : temp;
 
         //Q2
-        if (rb_diarrheapretestq2a1.isChecked()) {
-            diarrheapretestq2 = "1";
-            temp = temp + 1;
-        }
-        if (rb_diarrheapretestq2a2.isChecked()) {
-            diarrheapretestq2 = "2";
-        }
-        if (rb_diarrheapretestq2a3.isChecked()) {
-            diarrheapretestq2 = "3";
-        }
-        if (rb_diarrheapretestq2a4.isChecked()) {
-            diarrheapretestq2 = "4";
-        }
+        diarrheapretestq2 = rb_diarrheapretestq2a1.isChecked() ? "1"
+                : rb_diarrheapretestq2a2.isChecked() ? "2"
+                : rb_diarrheapretestq2a3.isChecked() ? "3"
+                : rb_diarrheapretestq2a4.isChecked() ? "4"
+                : "-1";
+        temp = diarrheapretestq2.equals("1") ? temp + 1 : temp;
 
         //Q3
-        if (rb_diarrheapretestq3a1.isChecked()) {
-            diarrheapretestq3 = "1";
-            temp = temp + 1;
-        }
-        if (rb_diarrheapretestq3a2.isChecked()) {
-            diarrheapretestq3 = "2";
-        }
-        if (rb_diarrheapretestq3a3.isChecked()) {
-            diarrheapretestq3 = "3";
-        }
-        if (rb_diarrheapretestq3a4.isChecked()) {
-            diarrheapretestq3 = "4";
-        }
+        diarrheapretestq3 = rb_diarrheapretestq3a1.isChecked() ? "1"
+                : rb_diarrheapretestq3a2.isChecked() ? "2"
+                : rb_diarrheapretestq3a3.isChecked() ? "3"
+                : rb_diarrheapretestq3a4.isChecked() ? "4"
+                : "-1";
+        temp = diarrheapretestq3.equals("1") ? temp + 1 : temp;
 
         //Q4
         if (rb_diarrheapretestq4a1.isChecked()) {
