@@ -460,17 +460,6 @@ public class GdsPostTest extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        cnic_no = "0";
-        gdsposttestq1 = "-1";
-        gdsposttestq2 = "-1";
-        gdsposttestq3 = "-1";
-        gdsposttestq4 = "-1";
-        gdsposttestq5 = "-1";
-        gdsposttestq6 = "-1";
-        gdsposttestq7 = "-1";
-        gdsposttestq8 = "-1";
-        gdsposttestq9 = "-1";
-        gdsposttestq10 = "-1";
         posttest_result = "0";
         STATUS = "0";
 
