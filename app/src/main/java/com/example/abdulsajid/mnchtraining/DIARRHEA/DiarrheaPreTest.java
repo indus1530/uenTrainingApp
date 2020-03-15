@@ -463,19 +463,12 @@ public class DiarrheaPreTest extends AppCompatActivity implements RadioButton.On
         cnic_no = ed_cnic_no.getText().toString().length() > 0 ? ed_cnic_no.getText().toString().trim() : "0";
 
         //Q1
-        if (rb_diarrheapretestq1a1.isChecked()) {
-            diarrheapretestq1 = "1";
-            temp = temp + 1;
-        }
-        if (rb_diarrheapretestq1a2.isChecked()) {
-            diarrheapretestq1 = "2";
-        }
-        if (rb_diarrheapretestq1a3.isChecked()) {
-            diarrheapretestq1 = "3";
-        }
-        if (rb_diarrheapretestq1a4.isChecked()) {
-            diarrheapretestq1 = "4";
-        }
+        diarrheapretestq1 = rb_diarrheapretestq1a1.isChecked() ? "1"
+                : rb_diarrheapretestq1a2.isChecked() ? "2"
+                : rb_diarrheapretestq1a3.isChecked() ? "3"
+                : rb_diarrheapretestq1a4.isChecked() ? "4"
+                : "-1";
+        temp = diarrheapretestq1.equals("1") ? temp + 1 : temp;
 
         //Q2
         if (rb_diarrheapretestq2a1.isChecked()) {
