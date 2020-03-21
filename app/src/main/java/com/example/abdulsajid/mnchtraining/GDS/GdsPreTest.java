@@ -526,58 +526,34 @@ public class GdsPreTest extends AppCompatActivity implements RadioButton.OnCheck
         temp = gdspretestq5.equals("4") ? temp + 1 : temp;
 
         //Q6
-        if (rb_gdspretestq6a1.isChecked()) {
-            gdspretestq6 = "1";
-        }
-        if (rb_gdspretestq6a2.isChecked()) {
-            gdspretestq6 = "2";
-            temp = temp + 1;
-        }
+        gdspretestq6 = rb_gdspretestq6a1.isChecked() ? "1"
+                : rb_gdspretestq6a2.isChecked() ? "2"
+                : "-1";
+        temp = gdspretestq6.equals("2") ? temp + 1 : temp;
 
         //Q7
-        if (rb_gdspretestq7a1.isChecked()) {
-            gdspretestq7 = "1";
-        }
-        if (rb_gdspretestq7a2.isChecked()) {
-            gdspretestq7 = "2";
-        }
-        if (rb_gdspretestq7a3.isChecked()) {
-            gdspretestq7 = "3";
-            temp = temp + 1;
-        }
-        if (rb_gdspretestq7a4.isChecked()) {
-            gdspretestq7 = "4";
-        }
+        gdspretestq7 = rb_gdspretestq7a1.isChecked() ? "1"
+                : rb_gdspretestq7a2.isChecked() ? "2"
+                : rb_gdspretestq7a3.isChecked() ? "3"
+                : rb_gdspretestq7a4.isChecked() ? "4"
+                : "-1";
+        temp = gdspretestq7.equals("3") ? temp + 1 : temp;
 
         //Q8
-        if (rb_gdspretestq8a1.isChecked()) {
-            gdspretestq8 = "1";
-        }
-        if (rb_gdspretestq8a2.isChecked()) {
-            gdspretestq8 = "2";
-            temp = temp + 1;
-        }
-        if (rb_gdspretestq8a3.isChecked()) {
-            gdspretestq8 = "3";
-        }
-        if (rb_gdspretestq8a4.isChecked()) {
-            gdspretestq8 = "4";
-        }
+        gdspretestq8 = rb_gdspretestq8a1.isChecked() ? "1"
+                : rb_gdspretestq8a2.isChecked() ? "2"
+                : rb_gdspretestq8a3.isChecked() ? "3"
+                : rb_gdspretestq8a4.isChecked() ? "4"
+                : "-1";
+        temp = gdspretestq8.equals("2") ? temp + 1 : temp;
 
         //Q9
-        if (rb_gdspretestq9a1.isChecked()) {
-            gdspretestq9 = "1";
-            temp = temp + 1;
-        }
-        if (rb_gdspretestq9a2.isChecked()) {
-            gdspretestq9 = "2";
-        }
-        if (rb_gdspretestq9a3.isChecked()) {
-            gdspretestq9 = "3";
-        }
-        if (rb_gdspretestq9a4.isChecked()) {
-            gdspretestq9 = "4";
-        }
+        gdspretestq9 = rb_gdspretestq9a1.isChecked() ? "1"
+                : rb_gdspretestq9a2.isChecked() ? "2"
+                : rb_gdspretestq9a3.isChecked() ? "3"
+                : rb_gdspretestq9a4.isChecked() ? "4"
+                : "-1";
+        temp = gdspretestq9.equals("1") ? temp + 1 : temp;
 
         //Q10
         if (rb_gdspretestq10a1.isChecked()) {
