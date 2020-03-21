@@ -510,34 +510,20 @@ public class GdsPreTest extends AppCompatActivity implements RadioButton.OnCheck
         temp = gdspretestq3.equals("1") ? temp + 1 : temp;
 
         //Q4
-        if (rb_gdspretestq4a1.isChecked()) {
-            gdspretestq4 = "1";
-        }
-        if (rb_gdspretestq4a2.isChecked()) {
-            gdspretestq4 = "2";
-        }
-        if (rb_gdspretestq4a3.isChecked()) {
-            gdspretestq4 = "3";
-            temp = temp + 1;
-        }
-        if (rb_gdspretestq4a4.isChecked()) {
-            gdspretestq4 = "4";
-        }
+        gdspretestq4 = rb_gdspretestq4a1.isChecked() ? "1"
+                : rb_gdspretestq4a2.isChecked() ? "2"
+                : rb_gdspretestq4a3.isChecked() ? "3"
+                : rb_gdspretestq4a4.isChecked() ? "4"
+                : "-1";
+        temp = gdspretestq4.equals("3") ? temp + 1 : temp;
 
         //Q5
-        if (rb_gdspretestq5a1.isChecked()) {
-            gdspretestq5 = "1";
-        }
-        if (rb_gdspretestq5a2.isChecked()) {
-            gdspretestq5 = "2";
-        }
-        if (rb_gdspretestq5a3.isChecked()) {
-            gdspretestq5 = "3";
-        }
-        if (rb_gdspretestq5a4.isChecked()) {
-            gdspretestq5 = "4";
-            temp = temp + 1;
-        }
+        gdspretestq5 = rb_gdspretestq5a1.isChecked() ? "1"
+                : rb_gdspretestq5a2.isChecked() ? "2"
+                : rb_gdspretestq5a3.isChecked() ? "3"
+                : rb_gdspretestq5a4.isChecked() ? "4"
+                : "-1";
+        temp = gdspretestq5.equals("4") ? temp + 1 : temp;
 
         //Q6
         if (rb_gdspretestq6a1.isChecked()) {
