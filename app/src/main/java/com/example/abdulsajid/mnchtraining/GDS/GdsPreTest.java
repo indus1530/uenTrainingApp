@@ -502,19 +502,12 @@ public class GdsPreTest extends AppCompatActivity implements RadioButton.OnCheck
         temp = gdspretestq2.equals("3") ? temp + 1 : temp;
 
         //Q3
-        if (rb_gdspretestq3a1.isChecked()) {
-            gdspretestq3 = "1";
-            temp = temp + 1;
-        }
-        if (rb_gdspretestq3a2.isChecked()) {
-            gdspretestq3 = "2";
-        }
-        if (rb_gdspretestq3a3.isChecked()) {
-            gdspretestq3 = "3";
-        }
-        if (rb_gdspretestq3a4.isChecked()) {
-            gdspretestq3 = "4";
-        }
+        gdspretestq3 = rb_gdspretestq3a1.isChecked() ? "1"
+                : rb_gdspretestq3a2.isChecked() ? "2"
+                : rb_gdspretestq3a3.isChecked() ? "3"
+                : rb_gdspretestq3a4.isChecked() ? "4"
+                : "-1";
+        temp = gdspretestq3.equals("1") ? temp + 1 : temp;
 
         //Q4
         if (rb_gdspretestq4a1.isChecked()) {
