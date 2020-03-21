@@ -509,28 +509,18 @@ public class GdsPostTest extends AppCompatActivity implements RadioButton.OnChec
         temp = gdsposttestq5.equals("4") ? temp + 1 : temp;
 
         //Q6
-        if (rb_gdsposttestq6a1.isChecked()) {
-            gdsposttestq6 = "1";
-        }
-        if (rb_gdsposttestq6a2.isChecked()) {
-            gdsposttestq6 = "2";
-            temp = temp + 1;
-        }
+        gdsposttestq6 = rb_gdsposttestq6a1.isChecked() ? "1"
+                : rb_gdsposttestq6a2.isChecked() ? "2"
+                : "-1";
+        temp = gdsposttestq6.equals("2") ? temp + 1 : temp;
 
         //Q7
-        if (rb_gdsposttestq7a1.isChecked()) {
-            gdsposttestq7 = "1";
-        }
-        if (rb_gdsposttestq7a2.isChecked()) {
-            gdsposttestq7 = "2";
-        }
-        if (rb_gdsposttestq7a3.isChecked()) {
-            gdsposttestq7 = "3";
-            temp = temp + 1;
-        }
-        if (rb_gdsposttestq7a4.isChecked()) {
-            gdsposttestq7 = "4";
-        }
+        gdsposttestq7 = rb_gdsposttestq7a1.isChecked() ? "1"
+                : rb_gdsposttestq7a2.isChecked() ? "2"
+                : rb_gdsposttestq7a3.isChecked() ? "3"
+                : rb_gdsposttestq7a4.isChecked() ? "4"
+                : "-1";
+        temp = gdsposttestq7.equals("3") ? temp + 1 : temp;
 
         //Q8
         if (rb_gdsposttestq8a1.isChecked()) {
