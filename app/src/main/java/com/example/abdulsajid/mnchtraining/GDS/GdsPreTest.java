@@ -479,40 +479,19 @@ public class GdsPreTest extends AppCompatActivity implements RadioButton.OnCheck
 
     void value_assignment() {
 
-        cnic_no = "0";
-        gdspretestq1 = "-1";
-        gdspretestq2 = "-1";
-        gdspretestq3 = "-1";
-        gdspretestq4 = "-1";
-        gdspretestq5 = "-1";
-        gdspretestq6 = "-1";
-        gdspretestq7 = "-1";
-        gdspretestq8 = "-1";
-        gdspretestq9 = "-1";
-        gdspretestq10 = "-1";
         pretest_result = "0";
         STATUS = "0";
-
-
         int temp = 0;
-        if (ed_cnic_no.getText().toString().length() > 0) {
-            cnic_no = ed_cnic_no.getText().toString().trim();
-        }
+
+        cnic_no = ed_cnic_no.getText().toString().length() > 0 ? ed_cnic_no.getText().toString().trim() : "0";
 
         //Q1
-        if (rb_gdspretestq1a1.isChecked()) {
-            gdspretestq1 = "1";
-        }
-        if (rb_gdspretestq1a2.isChecked()) {
-            gdspretestq1 = "2";
-        }
-        if (rb_gdspretestq1a3.isChecked()) {
-            gdspretestq1 = "3";
-        }
-        if (rb_gdspretestq1a4.isChecked()) {
-            gdspretestq1 = "4";
-            temp = temp + 1;
-        }
+        gdspretestq1 = rb_gdspretestq1a1.isChecked() ? "1"
+                : rb_gdspretestq1a2.isChecked() ? "2"
+                : rb_gdspretestq1a3.isChecked() ? "3"
+                : rb_gdspretestq1a4.isChecked() ? "4"
+                : "-1";
+        temp = gdspretestq1.equals("4") ? temp + 1 : temp;
 
         //Q2
         if (rb_gdspretestq2a1.isChecked()) {
