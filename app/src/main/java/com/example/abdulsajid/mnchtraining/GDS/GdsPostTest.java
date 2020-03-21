@@ -485,34 +485,20 @@ public class GdsPostTest extends AppCompatActivity implements RadioButton.OnChec
         temp = gdsposttestq2.equals("3") ? temp + 1 : temp;
 
         //Q3
-        if (rb_gdsposttestq3a1.isChecked()) {
-            gdsposttestq3 = "1";
-            temp = temp + 1;
-        }
-        if (rb_gdsposttestq3a2.isChecked()) {
-            gdsposttestq3 = "2";
-        }
-        if (rb_gdsposttestq3a3.isChecked()) {
-            gdsposttestq3 = "3";
-        }
-        if (rb_gdsposttestq3a4.isChecked()) {
-            gdsposttestq3 = "4";
-        }
+        gdsposttestq3 = rb_gdsposttestq3a1.isChecked() ? "1"
+                : rb_gdsposttestq3a2.isChecked() ? "2"
+                : rb_gdsposttestq3a3.isChecked() ? "3"
+                : rb_gdsposttestq3a4.isChecked() ? "4"
+                : "-1";
+        temp = gdsposttestq3.equals("1") ? temp + 1 : temp;
 
         //Q4
-        if (rb_gdsposttestq4a1.isChecked()) {
-            gdsposttestq4 = "1";
-        }
-        if (rb_gdsposttestq4a2.isChecked()) {
-            gdsposttestq4 = "2";
-        }
-        if (rb_gdsposttestq4a3.isChecked()) {
-            gdsposttestq4 = "3";
-            temp = temp + 1;
-        }
-        if (rb_gdsposttestq4a4.isChecked()) {
-            gdsposttestq4 = "4";
-        }
+        gdsposttestq4 = rb_gdsposttestq4a1.isChecked() ? "1"
+                : rb_gdsposttestq4a2.isChecked() ? "2"
+                : rb_gdsposttestq4a3.isChecked() ? "3"
+                : rb_gdsposttestq4a4.isChecked() ? "4"
+                : "-1";
+        temp = gdsposttestq4.equals("3") ? temp + 1 : temp;
 
         //Q5
         if (rb_gdsposttestq5a1.isChecked()) {
