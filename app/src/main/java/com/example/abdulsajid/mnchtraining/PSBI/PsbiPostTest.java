@@ -336,22 +336,11 @@ public class PsbiPostTest extends AppCompatActivity implements RadioButton.OnChe
 
     void value_assignment() {
 
-        cnic_no = "0";
-        psbiposttestq1 = "-1";
-        psbiposttestq2 = "-1";
-        psbiposttestq3 = "-1";
-        psbiposttestq4 = "-1";
-        psbiposttestq5 = "-1";
-        psbiposttestq6 = "-1";
-        psbiposttestq7 = "-1";
         posttest_result = "0";
         STATUS = "0";
-
-
         int temp = 0;
-        if (ed_cnic_no.getText().toString().length() > 0) {
-            cnic_no = ed_cnic_no.getText().toString().trim();
-        }
+
+        cnic_no = ed_cnic_no.getText().toString().length() > 0 ? ed_cnic_no.getText().toString().trim() : "0";
 
         //Q1
         if (rb_psbiposttestq1a1.isChecked()) {
