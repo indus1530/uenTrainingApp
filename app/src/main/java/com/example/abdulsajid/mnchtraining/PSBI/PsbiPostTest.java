@@ -343,19 +343,12 @@ public class PsbiPostTest extends AppCompatActivity implements RadioButton.OnChe
         cnic_no = ed_cnic_no.getText().toString().length() > 0 ? ed_cnic_no.getText().toString().trim() : "0";
 
         //Q1
-        if (rb_psbiposttestq1a1.isChecked()) {
-            psbiposttestq1 = "1";
-        }
-        if (rb_psbiposttestq1a2.isChecked()) {
-            psbiposttestq1 = "2";
-            temp = temp + 1;
-        }
-        if (rb_psbiposttestq1a3.isChecked()) {
-            psbiposttestq1 = "3";
-        }
-        if (rb_psbiposttestq1a4.isChecked()) {
-            psbiposttestq1 = "4";
-        }
+        psbiposttestq1 = rb_psbiposttestq1a1.isChecked() ? "1"
+                : rb_psbiposttestq1a2.isChecked() ? "2"
+                : rb_psbiposttestq1a2.isChecked() ? "2"
+                : rb_psbiposttestq1a2.isChecked() ? "2"
+                : "-1";
+        temp = psbiposttestq1.equals("2") ? temp++ : temp;
 
         //Q2
         if (rb_psbiposttestq2a1.isChecked()) {
