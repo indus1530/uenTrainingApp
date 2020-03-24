@@ -371,19 +371,12 @@ public class PsbiPreTest extends AppCompatActivity implements RadioButton.OnChec
         temp = psbipretestq5.equals("3") ? temp++ : temp;
 
         //Q6
-        if (rb_psbipretestq6a1.isChecked()) {
-            psbipretestq6 = "1";
-        }
-        if (rb_psbipretestq6a2.isChecked()) {
-            psbipretestq6 = "2";
-            temp = temp + 1;
-        }
-        if (rb_psbipretestq6a3.isChecked()) {
-            psbipretestq6 = "3";
-        }
-        if (rb_psbipretestq6a4.isChecked()) {
-            psbipretestq6 = "4";
-        }
+        psbipretestq6 = rb_psbipretestq6a1.isChecked() ? "1"
+                : rb_psbipretestq6a2.isChecked() ? "2"
+                : rb_psbipretestq6a3.isChecked() ? "3"
+                : rb_psbipretestq6a4.isChecked() ? "4"
+                : "-1";
+        temp = psbipretestq6.equals("2") ? temp++ : temp;
 
         //Q7
         if (rb_psbipretestq7a1.isChecked()) {
