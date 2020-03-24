@@ -375,34 +375,20 @@ public class PsbiPostTest extends AppCompatActivity implements RadioButton.OnChe
         temp = psbiposttestq4.equals("1") ? temp++ : temp;
 
         //Q5
-        if (rb_psbiposttestq5a1.isChecked()) {
-            psbiposttestq5 = "1";
-        }
-        if (rb_psbiposttestq5a2.isChecked()) {
-            psbiposttestq5 = "2";
-        }
-        if (rb_psbiposttestq5a3.isChecked()) {
-            psbiposttestq5 = "3";
-            temp = temp + 1;
-        }
-        if (rb_psbiposttestq5a4.isChecked()) {
-            psbiposttestq5 = "4";
-        }
+        psbiposttestq5 = rb_psbiposttestq5a1.isChecked() ? "1"
+                : rb_psbiposttestq5a2.isChecked() ? "2"
+                : rb_psbiposttestq5a3.isChecked() ? "3"
+                : rb_psbiposttestq5a4.isChecked() ? "4"
+                : "-1";
+        temp = psbiposttestq5.equals("3") ? temp++ : temp;
 
         //Q6
-        if (rb_psbiposttestq6a1.isChecked()) {
-            psbiposttestq6 = "1";
-        }
-        if (rb_psbiposttestq6a2.isChecked()) {
-            psbiposttestq6 = "2";
-            temp = temp + 1;
-        }
-        if (rb_psbiposttestq6a3.isChecked()) {
-            psbiposttestq6 = "3";
-        }
-        if (rb_psbiposttestq6a4.isChecked()) {
-            psbiposttestq6 = "4";
-        }
+        psbiposttestq6 = rb_psbiposttestq6a1.isChecked() ? "1"
+                : rb_psbiposttestq6a2.isChecked() ? "2"
+                : rb_psbiposttestq6a3.isChecked() ? "3"
+                : rb_psbiposttestq6a4.isChecked() ? "4"
+                : "-1";
+        temp = psbiposttestq6.equals("2") ? temp++ : temp;
 
         //Q7
         if (rb_psbiposttestq7a1.isChecked()) {
