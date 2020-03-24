@@ -324,19 +324,10 @@ public class PsbiPreTest extends AppCompatActivity implements RadioButton.OnChec
 
     void value_assignment() {
 
-        cnic_no = "0";
-        psbipretestq1 = "-1";
-        psbipretestq2 = "-1";
-        psbipretestq3 = "-1";
-        psbipretestq4 = "-1";
-        psbipretestq5 = "-1";
-        psbipretestq6 = "-1";
-        psbipretestq7 = "-1";
         pretest_result = "0";
         STATUS = "0";
-
-
         int temp = 0;
+
         if (ed_cnic_no.getText().toString().length() > 0) {
             cnic_no = ed_cnic_no.getText().toString().trim();
         }
