@@ -27,7 +27,7 @@ public class CdbPreTest extends AppCompatActivity implements RadioButton.OnCheck
 
     //Declaration  
     TextView
-            txt_cdbpretestq1,
+            opcdbpretestq1,
             txt_cdbpretestq2,
             txt_cdbpretestq3,
             txt_cdbpretestq4,
@@ -135,7 +135,7 @@ public class CdbPreTest extends AppCompatActivity implements RadioButton.OnCheck
         ll_cdbpretestq9 = findViewById(R.id.ll_cdbpretestq9);
         ll_cdbpretestq10 = findViewById(R.id.ll_cdbpretestq10);
 
-        txt_cdbpretestq1 = findViewById(R.id.txt_cdbpretestq1);
+        opcdbpretestq1 = findViewById(R.id.txt_cdbpretestq1);
         txt_cdbpretestq2 = findViewById(R.id.txt_cdbpretestq2);
         txt_cdbpretestq3 = findViewById(R.id.txt_cdbpretestq3);
         txt_cdbpretestq4 = findViewById(R.id.txt_cdbpretestq4);
@@ -238,21 +238,21 @@ public class CdbPreTest extends AppCompatActivity implements RadioButton.OnCheck
                 || compoundButton.getId() == R.id.rb_cdbpretestq1a4) {
 
             if (rb_cdbpretestq1a1.isChecked()) {
-                txt_cdbpretestq1.clearComposingText();
+                opcdbpretestq1.clearComposingText();
                 String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>Tuberculosis</i></b></font>.";
-                txt_cdbpretestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
+                opcdbpretestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
             } else if (rb_cdbpretestq1a2.isChecked()) {
-                txt_cdbpretestq1.clearComposingText();
+                opcdbpretestq1.clearComposingText();
                 String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>Asthma</i></b></font>.";
-                txt_cdbpretestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
+                opcdbpretestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
             } else if (rb_cdbpretestq1a3.isChecked()) {
-                txt_cdbpretestq1.clearComposingText();
+                opcdbpretestq1.clearComposingText();
                 String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>Whooping cough</i></b></font>.";
-                txt_cdbpretestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
+                opcdbpretestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
             } else if (rb_cdbpretestq1a4.isChecked()) {
-                txt_cdbpretestq1.clearComposingText();
+                opcdbpretestq1.clearComposingText();
                 String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>All of the below</i></b></font>.";
-                txt_cdbpretestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
+                opcdbpretestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
             }
         }
 

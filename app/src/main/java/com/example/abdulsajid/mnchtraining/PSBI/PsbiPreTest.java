@@ -453,15 +453,15 @@ public class PsbiPreTest extends AppCompatActivity implements RadioButton.OnChec
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_psbipretestq5) == false) {
+        if (!Gothrough.IamHiden(ll_psbipretestq5)) {
             return false;
         }
 
-        if (Gothrough.IamHiden(ll_psbipretestq6) == false) {
+        if (!Gothrough.IamHiden(ll_psbipretestq6)) {
             return false;
         }
 
-        return Gothrough.IamHiden(ll_psbipretestq7) != false;
+        return Gothrough.IamHiden(ll_psbipretestq7);
     }
 
     public void onBackPressed() {
