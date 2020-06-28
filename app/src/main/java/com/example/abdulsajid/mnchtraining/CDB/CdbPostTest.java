@@ -1,6 +1,7 @@
 package com.example.abdulsajid.mnchtraining.CDB;
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
@@ -10,10 +11,12 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.abdulsajid.mnchtraining.R;
+import com.example.abdulsajid.mnchtraining.databinding.ActivityCdbPostTestBinding;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -24,6 +27,7 @@ import utils.Gothrough;
 
 public class CdbPostTest extends AppCompatActivity implements RadioButton.OnCheckedChangeListener, View.OnClickListener {
 
+    ActivityCdbPostTestBinding bi;
     //Declaration  
     TextView
             txt_cdbposttestq1,
@@ -120,93 +124,21 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
     int currentSection;
     double ptp;
 
-    void Initialization() {
-        ll_cnic = findViewById(R.id.ll_cnic);
-        ed_cnic_no = findViewById(R.id.ed_cnic_no);
-        ll_pretest_result = findViewById(R.id.ll_pretest_result);
-        ed_pretest_result = findViewById(R.id.ed_pretest_result);
-
-        btn_cdbposttestsubmit = findViewById(R.id.btn_cdbposttestsubmit);
-
-        ll_cdbposttestq1 = findViewById(R.id.ll_cdbposttestq1);
-        ll_cdbposttestq2 = findViewById(R.id.ll_cdbposttestq2);
-        ll_cdbposttestq3 = findViewById(R.id.ll_cdbposttestq3);
-        ll_cdbposttestq4 = findViewById(R.id.ll_cdbposttestq4);
-        ll_cdbposttestq5 = findViewById(R.id.ll_cdbposttestq5);
-        ll_cdbposttestq6 = findViewById(R.id.ll_cdbposttestq6);
-        ll_cdbposttestq7 = findViewById(R.id.ll_cdbposttestq7);
-        ll_cdbposttestq8 = findViewById(R.id.ll_cdbposttestq8);
-        ll_cdbposttestq9 = findViewById(R.id.ll_cdbposttestq9);
-        ll_cdbposttestq10 = findViewById(R.id.ll_cdbposttestq10);
-
-        txt_cdbposttestq1 = findViewById(R.id.txt_cdbposttestq1);
-        txt_cdbposttestq2 = findViewById(R.id.txt_cdbposttestq2);
-        txt_cdbposttestq3 = findViewById(R.id.txt_cdbposttestq3);
-        txt_cdbposttestq4 = findViewById(R.id.txt_cdbposttestq4);
-        txt_cdbposttestq5 = findViewById(R.id.txt_cdbposttestq5);
-        txt_cdbposttestq6 = findViewById(R.id.txt_cdbposttestq6);
-        txt_cdbposttestq7 = findViewById(R.id.txt_cdbposttestq7);
-        txt_cdbposttestq8 = findViewById(R.id.txt_cdbposttestq8);
-        txt_cdbposttestq9 = findViewById(R.id.txt_cdbposttestq9);
-        txt_cdbposttestq10 = findViewById(R.id.txt_cdbposttestq10);
-
-        rb_cdbposttestq1a1 = findViewById(R.id.rb_cdbposttestq1a1);
-        rb_cdbposttestq1a2 = findViewById(R.id.rb_cdbposttestq1a2);
-        rb_cdbposttestq1a3 = findViewById(R.id.rb_cdbposttestq1a3);
-        rb_cdbposttestq1a4 = findViewById(R.id.rb_cdbposttestq1a4);
-        rb_cdbposttestq2a1 = findViewById(R.id.rb_cdbposttestq2a1);
-        rb_cdbposttestq2a2 = findViewById(R.id.rb_cdbposttestq2a2);
-        rb_cdbposttestq2a3 = findViewById(R.id.rb_cdbposttestq2a3);
-        rb_cdbposttestq2a4 = findViewById(R.id.rb_cdbposttestq2a4);
-        rb_cdbposttestq3a1 = findViewById(R.id.rb_cdbposttestq3a1);
-        rb_cdbposttestq3a2 = findViewById(R.id.rb_cdbposttestq3a2);
-        rb_cdbposttestq3a3 = findViewById(R.id.rb_cdbposttestq3a3);
-        rb_cdbposttestq3a4 = findViewById(R.id.rb_cdbposttestq3a4);
-        rb_cdbposttestq4a1 = findViewById(R.id.rb_cdbposttestq4a1);
-        rb_cdbposttestq4a2 = findViewById(R.id.rb_cdbposttestq4a2);
-        rb_cdbposttestq5a1 = findViewById(R.id.rb_cdbposttestq5a1);
-        rb_cdbposttestq5a2 = findViewById(R.id.rb_cdbposttestq5a2);
-        rb_cdbposttestq5a3 = findViewById(R.id.rb_cdbposttestq5a3);
-        rb_cdbposttestq5a4 = findViewById(R.id.rb_cdbposttestq5a4);
-        rb_cdbposttestq6a1 = findViewById(R.id.rb_cdbposttestq6a1);
-        rb_cdbposttestq6a2 = findViewById(R.id.rb_cdbposttestq6a2);
-        rb_cdbposttestq6a3 = findViewById(R.id.rb_cdbposttestq6a3);
-        rb_cdbposttestq6a4 = findViewById(R.id.rb_cdbposttestq6a4);
-        rb_cdbposttestq7a1 = findViewById(R.id.rb_cdbposttestq7a1);
-        rb_cdbposttestq7a2 = findViewById(R.id.rb_cdbposttestq7a2);
-        rb_cdbposttestq7a3 = findViewById(R.id.rb_cdbposttestq7a3);
-        rb_cdbposttestq7a4 = findViewById(R.id.rb_cdbposttestq7a4);
-        rb_cdbposttestq8a1 = findViewById(R.id.rb_cdbposttestq8a1);
-        rb_cdbposttestq8a2 = findViewById(R.id.rb_cdbposttestq8a2);
-        rb_cdbposttestq8a3 = findViewById(R.id.rb_cdbposttestq8a3);
-        rb_cdbposttestq8a4 = findViewById(R.id.rb_cdbposttestq8a4);
-        rb_cdbposttestq9a1 = findViewById(R.id.rb_cdbposttestq9a1);
-        rb_cdbposttestq9a2 = findViewById(R.id.rb_cdbposttestq9a2);
-        rb_cdbposttestq9a3 = findViewById(R.id.rb_cdbposttestq9a3);
-        rb_cdbposttestq9a4 = findViewById(R.id.rb_cdbposttestq9a4);
-        rb_cdbposttestq10a1 = findViewById(R.id.rb_cdbposttestq10a1);
-        rb_cdbposttestq10a2 = findViewById(R.id.rb_cdbposttestq10a2);
-        rb_cdbposttestq10a3 = findViewById(R.id.rb_cdbposttestq10a3);
-        rb_cdbposttestq10a4 = findViewById(R.id.rb_cdbposttestq10a4);
-
-    }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cdb_post_test);
-
-        Initialization();
-        events_call();
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_cdb_post_test);
+        bi.setCallback(this);
+        setupSkips();
 
         Intent getcnicno = getIntent();
         cnic_no = getcnicno.getExtras().getString("cnic_no");
         pretest_result = getcnicno.getExtras().getString("pretest_result");
         ed_cnic_no.setText(cnic_no);
         ed_pretest_result.setText(pretest_result);
-        ed_cnic_no.setEnabled(false);
-        ed_pretest_result.setEnabled(false);
+        bi.edCnicNo.setEnabled(false);
+        bi.edPretestResult.setEnabled(false);
 
         Date SDateTime = Calendar.getInstance().getTime();
         SimpleDateFormat Dateformat = new SimpleDateFormat("dd-MMM-yyyy");
@@ -240,32 +172,6 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-
-
-        //GDS-Q1  
-        if (compoundButton.getId() == R.id.rb_cdbposttestq1a1
-                || compoundButton.getId() == R.id.rb_cdbposttestq1a2
-                || compoundButton.getId() == R.id.rb_cdbposttestq1a3
-                || compoundButton.getId() == R.id.rb_cdbposttestq1a4) {
-
-            if (rb_cdbposttestq1a1.isChecked()) {
-                txt_cdbposttestq1.clearComposingText();
-                String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>Tuberculosis</i></b></font>.";
-                txt_cdbposttestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
-            } else if (rb_cdbposttestq1a2.isChecked()) {
-                txt_cdbposttestq1.clearComposingText();
-                String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>Asthma</i></b></font>.";
-                txt_cdbposttestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
-            } else if (rb_cdbposttestq1a3.isChecked()) {
-                txt_cdbposttestq1.clearComposingText();
-                String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>Whooping cough</i></b></font>.";
-                txt_cdbposttestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
-            } else if (rb_cdbposttestq1a4.isChecked()) {
-                txt_cdbposttestq1.clearComposingText();
-                String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>All of the below</i></b></font>.";
-                txt_cdbposttestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
-            }
-        }
 
 
         //GDS-Q3  
@@ -363,7 +269,30 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
 
     }
 
-    void events_call() {
+    void setupSkips() {
+
+        bi.cdbposttestq1.setOnCheckedChangeListener((new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.rbCdbposttestq1a1.getId()) {
+                    bi.txtCdbposttestq1.clearComposingText();
+                    String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>Tuberculosis</i></b></font>.";
+                    bi.txtCdbposttestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
+                } else if (i == bi.rbCdbposttestq1a2.getId()) {
+                    bi.txtCdbposttestq1.clearComposingText();
+                    String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>Asthma</i></b></font>.";
+                    bi.txtCdbposttestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
+                } else if (i == bi.rbCdbposttestq1a3.getId()) {
+                    bi.txtCdbposttestq1.clearComposingText();
+                    String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>Whooping cough</i></b></font>.";
+                    bi.txtCdbposttestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
+                } else if (i == bi.rbCdbposttestq1a4.getId()) {
+                    bi.txtCdbposttestq1.clearComposingText();
+                    String styledText = "1- Cough or difficult breathing that lasts for more than 14 days may indicate <font color='blue'><b><i>All of the below</i></b></font>.";
+                    bi.txtCdbposttestq1.setText(Html.fromHtml(styledText), TextView.BufferType.SPANNABLE);
+                }
+            }
+        }));
 
         btn_cdbposttestsubmit.setOnClickListener(this);
 

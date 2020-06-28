@@ -71,10 +71,7 @@
             android:layout_marginBottom="5dp"
             android:fadeScrollbars="false"
             android:fillViewport="true"
-            android:paddingLeft="5dp"
-            android:paddingTop="5dp"
-            android:paddingRight="5dp"
-            android:paddingBottom="5dp"
+            android:padding="5dp"
             android:scrollbarSize="10dip">
 
 
@@ -177,7 +174,9 @@
                             android:text="@string/cdbtestq1" />
 
 
-                        <RadioGroup style="@style/RadioGroup">
+                        <RadioGroup
+                            android:id="@+id/cdbposttestq1"
+                            style="@style/RadioGroup">
 
                             <RadioButton
                                 android:id="@+id/rb_cdbposttestq1a1"
