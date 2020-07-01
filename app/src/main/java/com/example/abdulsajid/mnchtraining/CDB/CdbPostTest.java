@@ -19,7 +19,6 @@ import com.example.abdulsajid.mnchtraining.R;
 import com.example.abdulsajid.mnchtraining.databinding.ActivityCdbPostTestBinding;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import data.LocalDataManager;
@@ -140,14 +139,8 @@ public class CdbPostTest extends AppCompatActivity implements RadioButton.OnChec
         bi.edCnicNo.setEnabled(false);
         bi.edPretestResult.setEnabled(false);
 
-        Date SDateTime = Calendar.getInstance().getTime();
-        SimpleDateFormat Dateformat = new SimpleDateFormat("dd-MMM-yyyy");
-        SimpleDateFormat Timeformat = new SimpleDateFormat("HH:mm:ss");
-        String SToday = Dateformat.format(SDateTime);
-        String STime = Timeformat.format(SDateTime);
-
-        cdbposttest_date = SToday;
-        cdbposttest_time = STime;
+        cdbposttest_date = new SimpleDateFormat("dd-MM-yyyy").format(new Date().getTime());
+        cdbposttest_time = new SimpleDateFormat("HH:mm:ss").format(new Date().getTime());
     }
 
     @Override
