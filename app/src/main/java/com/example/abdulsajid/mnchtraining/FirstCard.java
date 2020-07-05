@@ -11,6 +11,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.example.abdulsajid.mnchtraining.R;
+
 public class FirstCard extends Activity {
 
 
